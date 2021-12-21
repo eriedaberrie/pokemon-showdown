@@ -1830,4 +1830,17 @@ export const Aliases: {[alias: string]: string} = {
 	zugadoon: "Blacephalon",
 	merutan: "Meltan",
 	merumetaru: "Melmetal",
+  
+  // misc uranium
+  alpaca: "Alpico",
+  cubbfly: "Cubblfly",
+  flimpact: "Flame Impact",
+  "s51a": "S51-A",
+  
+  // uranium megas
+  marchilles: "Archilles-Mega",
+  melectruxo: "Electruxo-Mega",
+  mmeta: "Metalynx-Mega",
+  minfla: "Inflagetah-Mega",
+  "ms51": "S51-A-Mega",
 };
