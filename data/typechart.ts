@@ -256,6 +256,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 	ground: {
 		damageTaken: {
 			sandstorm: 3,
+      thunderstorm: 3,
 			Bug: 0,
 			Dark: 0,
 			Dragon: 0,
@@ -409,10 +410,10 @@ export const TypeChart: {[k: string]: TypeData} = {
 	},
 	steel: {
 		damageTaken: {
-      fallout: 3,
 			psn: 3,
 			tox: 3,
 			sandstorm: 3,
+      fallout: 3,
 			Bug: 2,
 			Dark: 0,
 			Dragon: 2,

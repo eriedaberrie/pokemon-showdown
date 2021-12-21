@@ -310,6 +310,20 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		activate: "  The mysterious strong winds weakened the attack!",
 		block: "  The mysterious strong winds blow on regardless!",
 	},
+	thunderstorm: {
+		weatherName: "Thunderstorm",
+		start: "  A thunderstorm started!",
+		end: "  The thunderstorm subsided.",
+		upkeep: "  (The thunderstorm is raging.)",
+		damage: "  [POKEMON] is hit by lightning!",
+	},
+	fallout: {
+		weatherName: "Toxic Fallout",
+		start: "  A Toxic Fallout has set in!",
+		end: "  The air is clean again.",
+		upkeep: "  (The geiger counter is FEROCIOUSLY ticking.)", // "  (The toxic fallout continues.)",
+		damage: "  [POKEMON] is affected by the radiation!",
+	},
 
 	// terrain
 	electricterrain: {
@@ -331,6 +345,11 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		start: "  The battlefield got weird!",
 		end: "  The weirdness disappeared from the battlefield!",
 		block: "  [POKEMON] is protected by the Psychic Terrain!",
+	},
+	stickyterrain: {
+		start: "  The battlefield became sticky!",
+		end: "  The stickiness disappeared from the battlefield!",
+		block: "  [POKEMON] is protected by the Sticky Terrain!",
 	},
 
 	// field effects

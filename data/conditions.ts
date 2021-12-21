@@ -640,7 +640,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-weather', 'none');
 		},
 	},
-	sandstorm: {
+	thunderstorm: {
 		name: 'Thunderstorm',
 		effectType: 'Weather',
 		duration: 5,
@@ -650,14 +650,6 @@ export const Conditions: {[k: string]: ConditionData} = {
 			// }
 			return 5;
 		},
-		// This should be applied directly to the stat before any of the other modifiers are chained
-		// So we give it increased priority.
-		onModifySpDPriority: 10,
-		onModifySpD(spd, pokemon) {
-			if (pokemon.hasType('Rock') && this.field.isWeather('sandstorm')) {
-				return this.modify(spd, 1.5);
-			}
-		},
 		onFieldStart(field, source, effect) {
 			if (effect?.effectType === 'Ability') {
 				if (this.gen <= 5) this.effectState.duration = 0;
@@ -666,13 +658,69 @@ export const Conditions: {[k: string]: ConditionData} = {
 				this.add('-weather', 'Thunderstorm');
 			}
 		},
+		onWeatherModifyDamage(damage, attacker, defender, move) {
+			// if (defender.hasItem('utilityumbrella')) return;
+			if (move.type === 'Electric') {
+				this.debug('thunderstorm electric boost');
+				return this.chainModify(1.5);
+			}
+		},
 		onFieldResidualOrder: 1,
 		onFieldResidual() {
 			this.add('-weather', 'Thunderstorm', '[upkeep]');
 			if (this.field.isWeather('thunderstorm')) this.eachEvent('Weather');
 		},
 		onWeather(target) {
-			this.damage(target.baseMaxhp / 16);
+      if (this.effectState.duration % 2)
+      {
+        const electricweather = this.dex.getActiveMove('Stealth Rock');
+        electricweather.type = "Electric";
+        const typeMod = this.clampIntRange(pokemon.runEffectiveness(electricweather), -6, 6);
+        this.damage(target.baseMaxhp * Math.pow(2, typeMod / 8);
+      }
+		},
+		onFieldEnd() {
+			this.add('-weather', 'none');
+		},
+	},
+	fallout: {
+		name: 'ToxicFallout',
+		effectType: 'Weather',
+		duration: 5,
+		durationCallback(source, effect) {
+			// if (source?.hasItem('smoothrock')) {
+			// 	return 8;
+			// }
+			return 5;
+		},
+		onFieldStart(field, source, effect) {
+			if (effect?.effectType === 'Ability') {
+				if (this.gen <= 5) this.effectState.duration = 0;
+				this.add('-weather', 'Toxic Fallout', '[from] ability: ' + effect, '[of] ' + source);
+			} else {
+				this.add('-weather', 'Toxic Fallout');
+			}
+		},
+		onWeatherModifyDamage(damage, attacker, defender, move) {
+			// if (defender.hasItem('utilityumbrella')) return;
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.debug('fallout SE on nuclear nerf');
+				return this.chainModify(0.75);
+			}
+		},
+		onFieldResidualOrder: 1,
+		onFieldResidual() {
+			this.add('-weather', 'Fallout', '[upkeep]');
+			if (this.field.isWeather('fallout')) this.eachEvent('Weather');
+		},
+		onWeather(target) {
+      if (this.effectState.duration % 2)
+      {
+        const electricweather = this.dex.getActiveMove('Stealth Rock');
+        nuclearweather.type = "Nuclear";
+        const typeMod = this.clampIntRange(pokemon.runEffectiveness(nuclearweather), -6, 6);
+        this.damage(target.baseMaxhp * Math.pow(2, typeMod / 8);
+      }
 		},
 		onFieldEnd() {
 			this.add('-weather', 'none');
