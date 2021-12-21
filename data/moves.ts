@@ -19938,9 +19938,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Laser Pulse",
 		pp: 20,
 		flags: {protect: 1, pulse: 1, mirror: 1},
-		onModifyMove(move, pokemon) {
-      const laserPulseTypes = ["Fire", "Electric", "Ice"] // stupid mechanic btw
-			move.type = laserPulseTypes[]
+		onModifyMove(move) {
+      const laserPulseTypes = ["Fire", "Electric", "Ice"]; // stupid mechanic btw
+			move.type = laserPulseTypes[this.random(3)];
 		},
 		priority: 0,
 		secondary: null,
@@ -20059,7 +20059,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onModifyMove(move) {
 			if (this.field.isWeather('fallout')) move.accuracy = true;
 		},
-		secondary: null;
+		secondary: null,
 		target: "normal",
 		type: "Nuclear",
 		contestType: "Cool",

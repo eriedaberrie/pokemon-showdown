@@ -645,9 +645,6 @@ export const Conditions: {[k: string]: ConditionData} = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			// if (source?.hasItem('smoothrock')) {
-			// 	return 8;
-			// }
 			return 5;
 		},
 		onFieldStart(field, source, effect) {
@@ -659,7 +656,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			}
 		},
 		onWeatherModifyDamage(damage, attacker, defender, move) {
-			// if (defender.hasItem('utilityumbrella')) return;
+			if (defender.hasItem('utilityumbrella')) return;
 			if (move.type === 'Electric') {
 				this.debug('thunderstorm electric boost');
 				return this.chainModify(1.5);
@@ -676,7 +673,7 @@ export const Conditions: {[k: string]: ConditionData} = {
         const electricweather = this.dex.getActiveMove('Stealth Rock');
         electricweather.type = "Electric";
         const typeMod = this.clampIntRange(pokemon.runEffectiveness(electricweather), -6, 6);
-        this.damage(target.baseMaxhp * Math.pow(2, typeMod / 8);
+        this.damage(target.baseMaxhp * Math.pow(2, typeMod / 8));
       }
 		},
 		onFieldEnd() {
@@ -688,9 +685,6 @@ export const Conditions: {[k: string]: ConditionData} = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			// if (source?.hasItem('smoothrock')) {
-			// 	return 8;
-			// }
 			return 5;
 		},
 		onFieldStart(field, source, effect) {
@@ -719,7 +713,7 @@ export const Conditions: {[k: string]: ConditionData} = {
         const electricweather = this.dex.getActiveMove('Stealth Rock');
         nuclearweather.type = "Nuclear";
         const typeMod = this.clampIntRange(pokemon.runEffectiveness(nuclearweather), -6, 6);
-        this.damage(target.baseMaxhp * Math.pow(2, typeMod / 8);
+        this.damage(target.baseMaxhp * Math.pow(2, typeMod / 8));
       }
 		},
 		onFieldEnd() {
