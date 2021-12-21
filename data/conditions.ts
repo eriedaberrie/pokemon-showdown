@@ -672,7 +672,7 @@ export const Conditions: {[k: string]: ConditionData} = {
       {
         const electricweather = this.dex.getActiveMove('Stealth Rock');
         electricweather.type = "Electric";
-        const typeMod = this.clampIntRange(pokemon.runEffectiveness(electricweather), -6, 6);
+        const typeMod = this.clampIntRange(target.runEffectiveness(electricweather), -6, 6);
         this.damage(target.baseMaxhp * Math.pow(2, typeMod / 8));
       }
 		},
@@ -681,7 +681,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 	},
 	fallout: {
-		name: 'ToxicFallout',
+		name: 'Toxic Fallout',
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
@@ -712,7 +712,7 @@ export const Conditions: {[k: string]: ConditionData} = {
       {
         const electricweather = this.dex.getActiveMove('Stealth Rock');
         nuclearweather.type = "Nuclear";
-        const typeMod = this.clampIntRange(pokemon.runEffectiveness(nuclearweather), -6, 6);
+        const typeMod = this.clampIntRange(target.runEffectiveness(nuclearweather), -6, 6);
         this.damage(target.baseMaxhp * Math.pow(2, typeMod / 8));
       }
 		},

@@ -6953,7 +6953,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	fallout: {
 		name: "Fallout",
 		desc: "For 5 turns, the weather becomes Toxic Fallout, which reduces the weaknesses of the Nuclear type for Nuclear-type Pokemon from x2 to x1.5. At the end of every other turn except the last, all active Pokemon lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Nuclear type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively, unless they are a Steel or Nuclear type, or have the Magic Guard Ability. Fails if the current weather is Thunderstorm.",
-		shortDesc: "For 5 turns, toxic fallout reduces Nuclear-type weaknesses.",
+		shortDesc: "For 5 turns, toxic fallout reduces Nuclear weaknesses.",
 	},
 	protonbeam: {
 		name: "Proton Beam",
@@ -6990,7 +6990,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	nuclearwind: {
 		name: "Nuclear Wind",
-		desc: "Has a 5% chance to cause a Nuclear Fallout for 5 turns.",
-		shortDesc: "5% chance to cause a Nuclear Fallout for 5 turns.",
+		desc: "Has a 5% chance to cause a Toxic Fallout for 5 turns.",
+		shortDesc: "5% chance to cause a Toxic Fallout for 5 turns.",
 	},
 };

@@ -20073,7 +20073,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {},
-		weather: 'ToxicFallout',
+		weather: 'Toxic Fallout',
 		secondary: null,
 		target: "all",
 		type: "Nuclear",
@@ -20216,7 +20216,7 @@ export const Moves: {[moveid: string]: MoveData} = {
         if (!target.isGrounded()) {
           const baseMove = this.dex.moves.get(effect.id);
           if (baseMove.priority > 0) {
-            this.hint("Sticky Terrain does affect defending Pokémon even if they're immune to Ground.")
+            this.hint("Unlike Psychic Terrain, Sticky Terrain affects moves used against grounded targets.")
           }
         }
 				this.add('-activate', target, 'move: Sticky Terrain');
