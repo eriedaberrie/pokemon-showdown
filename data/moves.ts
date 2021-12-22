@@ -20073,7 +20073,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {},
-		weather: 'Toxic Fallout',
+		weather: 'ToxicFallout',
 		secondary: null,
 		target: "all",
 		type: "Nuclear",
