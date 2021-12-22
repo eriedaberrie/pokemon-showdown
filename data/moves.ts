@@ -19755,7 +19755,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: null,
 		target: "normal",
-		type: "Psychic",
+		type: "Water",
 		contestType: "Cool",
 	},
 	atomicpunch: {
@@ -19841,7 +19841,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 85,
 		category: "Special",
-		name: "Body Slam",
+		name: "Sky Fall",
 		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
@@ -19876,9 +19876,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1}, // why the FUCK is it sound based
-		self: {
-			volatileStatus: 'confusion',
-		},
 		secondary: {
 			chance: 100,
 			boosts: {
@@ -19886,7 +19883,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 		},
 		target: "allAdjacent",
-		type: "Normal",
+		type: "Ground",
 		contestType: "Cool",
 	},
 	instantcrush: {

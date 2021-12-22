@@ -5723,7 +5723,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	steelroller: {
 		name: "Steel Roller",
-		desc: "Fails if there is no terrain active. Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain.",
+		desc: "Fails if there is no terrain active. Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, Psychic Terrain, and Sticky Terrain.",
 		shortDesc: "Fails if there is no terrain active. Ends the terrain.",
 	},
 	steelwing: {
@@ -6263,7 +6263,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	thunder: {
 		name: "Thunder",
 		desc: "Has a 30% chance to paralyze the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance or Thunderstorm, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 70%.",
-		shortDesc: "30% chance to paralyze. Can't miss in rain or thunderstorm.",
+		shortDesc: "30% chance to paralyze. Can't miss in rain+.",
 		gen7: {
 			desc: "Has a 30% chance to paralyze the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance or Thunderstorm, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%.",
 		},
@@ -6970,8 +6970,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks. If the user is holding a Power Herb, the move completes in one turn.",
 		shortDesc: "Disappears turn 1. Hits turn 2. Breaks protection.",
 
-		// prepare: "#shadowforce",
-		// activate: "#shadowforce",
+		prepare: "#shadowforce",
+		activate: "#shadowforce",
 	},
 	metalcruncher: {
 		name: "Metal Cruncher",
