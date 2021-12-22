@@ -1740,7 +1740,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
   // uranium
 	sharpcoral: {
 		name: "Sharp Coral",
-		desc: "This Pokemon's Attack and Special Attack are doubled; Defense and Special Defense are halved.",
-		shortDesc: "Attack and Sp. Atk stats are doubled, Defense and Sp. Def are halved.",
+		desc: "This Pokemon's Attack and Special Attack are doubled. This pokemon takes double damage from attacks.",
+		shortDesc: "Doubles Attack and Sp. Atk; takes double damage.",
 	},
 };

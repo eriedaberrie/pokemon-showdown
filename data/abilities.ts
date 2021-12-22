@@ -4500,13 +4500,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onModifySpa(atk) {
 			return this.chainModify(2);
 		},
-		onModifyDefPriority: 6,
-		onModifyDef(def) {
-			return this.chainModify(0.5);
-		},
-		onModifySpdPriority: 6,
-		onModifySpd(def) {
-			return this.chainModify(0.5);
+		onSourceModifyDamage(damage) {
+			return this.chainModify(2);
 		},
     name: "Sharp Coral",
     rating: 1,
