@@ -19885,6 +19885,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 				spe: -2,
 			},
 		},
+    self: {
+      onHit(source) {
+        source.addVolatile('confusion'); // hardcoded in because stupid sheer force
+      },
+    },
 		target: "allAdjacent",
 		type: "Ground",
 		contestType: "Cool",
