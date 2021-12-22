@@ -681,7 +681,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 	},
 	fallout: {
-		name: 'ToxicFallout',
+		name: 'Fallout',
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
@@ -690,9 +690,9 @@ export const Conditions: {[k: string]: ConditionData} = {
 		onFieldStart(field, source, effect) {
 			if (effect?.effectType === 'Ability') {
 				if (this.gen <= 5) this.effectState.duration = 0;
-				this.add('-weather', 'ToxicFallout', '[from] ability: ' + effect, '[of] ' + source);
+				this.add('-weather', 'Fallout', '[from] ability: ' + effect, '[of] ' + source);
 			} else {
-				this.add('-weather', 'ToxicFallout');
+				this.add('-weather', 'Fallout');
 			}
 		},
 		onWeatherModifyDamage(damage, attacker, defender, move) {
