@@ -19876,6 +19876,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1}, // why the FUCK is it sound based
+    onHit(source) {
+      source.addVolatile('confusion'); // hardcoded in because stupid sheer force
+    },
 		secondary: {
 			chance: 100,
 			boosts: {
