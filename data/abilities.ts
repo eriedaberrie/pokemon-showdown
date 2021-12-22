@@ -4489,4 +4489,27 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -4,
 	},
+  
+  // uranium abilities start here
+  sharpcoral: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk) {
+			return this.chainModify(2);
+		},
+		onModifySpaPriority: 5,
+		onModifySpa(atk) {
+			return this.chainModify(2);
+		},
+		onModifyDefPriority: 6,
+		onModifyDef(def) {
+			return this.chainModify(0.5);
+		},
+		onModifySpdPriority: 6,
+		onModifySpd(def) {
+			return this.chainModify(0.5);
+		},
+    name: "Sharp Coral",
+    rating: 1,
+    num: -100,
+  }
 };

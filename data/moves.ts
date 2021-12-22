@@ -19876,19 +19876,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1}, // why the FUCK is it sound based
-    onHit(source) {
-      source.addVolatile('confusion'); // hardcoded in because stupid sheer force
-    },
 		secondary: {
 			chance: 100,
 			boosts: {
 				spe: -2,
 			},
 		},
-    self: {
-      onHit(source) {
-        source.addVolatile('confusion'); // hardcoded in because stupid sheer force
-      },
+    onHit(target, source) {
+      source.addVolatile('confusion'); // hardcoded in because stupid sheer force interaction
     },
 		target: "allAdjacent",
 		type: "Ground",
@@ -19917,19 +19912,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		volatileStatus: 'focusenergy',
-		condition: {
-			onStart(target, source, effect) {
-				if (effect && (['imposter', 'psychup', 'transform'].includes(effect.id))) {
-					this.add('-start', target, 'move: Focus Energy', '[silent]');
-				} else {
-					this.add('-start', target, 'move: Focus Energy');
-				}
-			},
-			onModifyCritRatio(critRatio) {
-				return critRatio + 2;
-			},
-		},
+    self: {
+      volatileStatus: 'focusenergy',
+    },
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
@@ -19945,7 +19930,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, pulse: 1, mirror: 1},
 		onModifyMove(move) {
       const laserPulseTypes = ["Fire", "Electric", "Ice"]; // stupid mechanic btw
-			move.type = laserPulseTypes[this.random(3)];
+			move.type = this.sample(laserPulseTypes);
 		},
 		priority: 0,
 		secondary: null,
@@ -20221,7 +20206,7 @@ export const Moves: {[moveid: string]: MoveData} = {
         if (!target.isGrounded()) {
           const baseMove = this.dex.moves.get(effect.id);
           if (baseMove.priority > 0) {
-            this.hint("Unlike Psychic Terrain, Sticky Terrain affects moves used against grounded targets.")
+            this.hint("Unlike Psychic Terrain, Sticky Terrain protects non-grounded targets.")
           }
         }
 				this.add('-activate', target, 'move: Sticky Terrain');

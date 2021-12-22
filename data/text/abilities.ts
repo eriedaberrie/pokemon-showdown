@@ -1736,4 +1736,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
+  
+  // uranium
+	sharpcoral: {
+		name: "Sharp Coral",
+		desc: "This Pokemon's Attack and Special Attack are doubled; Defense and Special Defense are halved.",
+		shortDesc: "Attack and Sp. Atk stats are doubled, Defense and Sp. Def are halved.",
+	},
 };
