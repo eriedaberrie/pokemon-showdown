@@ -685,7 +685,7 @@ export class BattleActions {
 					this.battle.add('-miss', pokemon, target);
 				}
         if (move.id === 'hurricane' && this.battle.field.isWeather('thunderstorm')) {
-          this.hint("Thunderstorm only affects Thunder, not Hurricane.");
+          this.battle.hint("Thunderstorm only affects Thunder, not Hurricane.");
         }
 				if (!move.ohko && pokemon.hasItem('blunderpolicy') && pokemon.useItem()) {
 					this.battle.boost({spe: 2}, pokemon);
