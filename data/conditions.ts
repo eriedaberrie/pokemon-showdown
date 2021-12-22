@@ -640,6 +640,59 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-weather', 'none');
 		},
 	},
+	hail: {
+		name: 'Hail',
+		effectType: 'Weather',
+		duration: 5,
+		durationCallback(source, effect) {
+			if (source?.hasItem('icyrock')) {
+				return 8;
+			}
+			return 5;
+		},
+		onFieldStart(field, source, effect) {
+			if (effect?.effectType === 'Ability') {
+				if (this.gen <= 5) this.effectState.duration = 0;
+				this.add('-weather', 'Hail', '[from] ability: ' + effect, '[of] ' + source);
+			} else {
+				this.add('-weather', 'Hail');
+			}
+		},
+		onFieldResidualOrder: 1,
+		onFieldResidual() {
+			this.add('-weather', 'Hail', '[upkeep]');
+			if (this.field.isWeather('hail')) this.eachEvent('Weather');
+		},
+		onWeather(target) {
+			this.damage(target.baseMaxhp / 16);
+		},
+		onFieldEnd() {
+			this.add('-weather', 'none');
+		},
+	},
+	deltastream: {
+		name: 'DeltaStream',
+		effectType: 'Weather',
+		duration: 0,
+		onEffectivenessPriority: -1,
+		onEffectiveness(typeMod, target, type, move) {
+			if (move && move.effectType === 'Move' && move.category !== 'Status' && type === 'Flying' && typeMod > 0) {
+				this.add('-activate', '', 'deltastream');
+				return 0;
+			}
+		},
+		onFieldStart(field, source, effect) {
+			this.add('-weather', 'DeltaStream', '[from] ability: ' + effect, '[of] ' + source);
+		},
+		onFieldResidualOrder: 1,
+		onFieldResidual() {
+			this.add('-weather', 'DeltaStream', '[upkeep]');
+			this.eachEvent('Weather');
+		},
+		onFieldEnd() {
+			this.add('-weather', 'none');
+		},
+	},
 	thunderstorm: {
 		name: 'Thunderstorm',
 		effectType: 'Weather',
@@ -697,7 +750,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			// if (defender.hasItem('utilityumbrella')) return;
-			if (target.getMoveHitData(move).typeMod > 0) {
+			if (defender.getMoveHitData(move).typeMod > 0) {
 				this.debug('fallout SE on nuclear nerf');
 				return this.chainModify(0.75);
 			}
@@ -710,64 +763,11 @@ export const Conditions: {[k: string]: ConditionData} = {
 		onWeather(target) {
       if (!(this.effectState.duration % 2))
       {
-        const electricweather = this.dex.getActiveMove('Stealth Rock');
+        const nuclearweather = this.dex.getActiveMove('Stealth Rock');
         nuclearweather.type = "Nuclear";
         const typeMod = this.clampIntRange(target.runEffectiveness(nuclearweather), -6, 6);
         this.damage(target.baseMaxhp * Math.pow(2, typeMod) / 8);
       }
-		},
-		onFieldEnd() {
-			this.add('-weather', 'none');
-		},
-	},
-	hail: {
-		name: 'Hail',
-		effectType: 'Weather',
-		duration: 5,
-		durationCallback(source, effect) {
-			if (source?.hasItem('icyrock')) {
-				return 8;
-			}
-			return 5;
-		},
-		onFieldStart(field, source, effect) {
-			if (effect?.effectType === 'Ability') {
-				if (this.gen <= 5) this.effectState.duration = 0;
-				this.add('-weather', 'Hail', '[from] ability: ' + effect, '[of] ' + source);
-			} else {
-				this.add('-weather', 'Hail');
-			}
-		},
-		onFieldResidualOrder: 1,
-		onFieldResidual() {
-			this.add('-weather', 'Hail', '[upkeep]');
-			if (this.field.isWeather('hail')) this.eachEvent('Weather');
-		},
-		onWeather(target) {
-			this.damage(target.baseMaxhp / 16);
-		},
-		onFieldEnd() {
-			this.add('-weather', 'none');
-		},
-	},
-	deltastream: {
-		name: 'DeltaStream',
-		effectType: 'Weather',
-		duration: 0,
-		onEffectivenessPriority: -1,
-		onEffectiveness(typeMod, target, type, move) {
-			if (move && move.effectType === 'Move' && move.category !== 'Status' && type === 'Flying' && typeMod > 0) {
-				this.add('-activate', '', 'deltastream');
-				return 0;
-			}
-		},
-		onFieldStart(field, source, effect) {
-			this.add('-weather', 'DeltaStream', '[from] ability: ' + effect, '[of] ' + source);
-		},
-		onFieldResidualOrder: 1,
-		onFieldResidual() {
-			this.add('-weather', 'DeltaStream', '[upkeep]');
-			this.eachEvent('Weather');
 		},
 		onFieldEnd() {
 			this.add('-weather', 'none');

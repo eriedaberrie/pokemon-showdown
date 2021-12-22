@@ -914,7 +914,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	overcoat: {
 		name: "Overcoat",
-		shortDesc: "This Pokemon is immune to powder moves and damage from Sandstorm or Hail.",
+		shortDesc: "This Pokemon is immune to powder moves and Sandstorm, Hail, and Fallout damage.",
 		gen5: {
 			shortDesc: "This Pokemon is immune to damage from Sandstorm or Hail.",
 		},

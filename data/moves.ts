@@ -20246,7 +20246,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 30,
+			chance: 5,
 			weather: 'fallout', // why does this exist in the game
 		},
 		target: "normal",

@@ -6952,7 +6952,7 @@ export const MovesText: {[k: string]: MoveText} = {
   },
 	fallout: {
 		name: "Fallout",
-		desc: "For 5 turns, the weather becomes Toxic Fallout, which reduces the weaknesses of the Nuclear type for Nuclear-type Pokemon from x2 to x1.5. At the end of every other turn except the last, all active Pokemon lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Nuclear type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively, unless they are a Steel or Nuclear type, or have the Magic Guard Ability. Fails if the current weather is Thunderstorm.",
+		desc: "For 5 turns, the weather becomes Toxic Fallout, which reduces the weaknesses of the Nuclear type for Nuclear-type Pokemon from x2 to x1.5. At the end of every other turn except the last, all active Pokemon lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Nuclear type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively, unless they are a Steel or Nuclear type, or have the Magic Guard Ability. Fails if the current weather is Fallout.",
 		shortDesc: "For 5 turns, toxic fallout reduces Nuclear weaknesses.",
 	},
 	protonbeam: {
@@ -6970,8 +6970,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks. If the user is holding a Power Herb, the move completes in one turn.",
 		shortDesc: "Disappears turn 1. Hits turn 2. Breaks protection.",
 
-		prepare: "#shadowforce",
-		activate: "#shadowforce",
+		// prepare: "#shadowforce",
+		// activate: "#shadowforce",
 	},
 	metalcruncher: {
 		name: "Metal Cruncher",
