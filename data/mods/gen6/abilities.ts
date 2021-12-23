@@ -123,4 +123,16 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		inherit: true,
 		isPermanent: false,
 	},
+	energizate: {
+		inherit: true,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.energizateBoosted) return this.chainModify([5325, 4096]);
+		},
+	},
+	atomizate: {
+		inherit: true,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.atomizateBoosted) return this.chainModify([5325, 4096]);
+		},
+	},
 };

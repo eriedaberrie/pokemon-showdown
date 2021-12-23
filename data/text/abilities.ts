@@ -1740,11 +1740,93 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
   // uranium
 	sharpcoral: {
 		name: "Sharp Coral",
-		desc: "This Pokemon's Attack and Special Attack are doubled. This pokemon takes double damage from attacks.",
-		shortDesc: "Doubles Attack and Sp. Atk; takes double damage.",
+		desc: "The power of this Pokemon's moves are doubled. This pokemon takes double damage from attacks.",
+		shortDesc: "Moves used do double damage; recieves double damage from moves.",
 	},
 	lazy: {
 		name: "Lazy",
 		shortDesc: "On switch-in, this Pokemon falls asleep for 2 turns.",
+	},
+	rebuild: {
+		name: "Rebuild",
+		desc: "It it wasn't hit by a damaging move, this Pokemon restores 1/8 of its maximum HP, rounded down, at the end of each turn.",
+		shortDesc: "If unhit, this Pokemon heals 1/8 of its max HP each turn.",
+	},
+	petrify: {
+		name: "Petrify",
+		desc: "On switch-in, this Pokemon lowers the Speed of adjacent opposing Pokemon by 1 stage. Pokemon behind a substitute are immune.",
+    shortDesc: "On switch-in, this Pokemon lowers the Speed of adjacent opponents by 1 stage.",
+	},
+	infuriate: {
+		name: "Infuriate",
+		shortDesc: "This Pokemon's Attack is raised by 1 stage after it is damaged by a physical move.",
+	},
+	elementalist: {
+		name: "Elementalist",
+		shortDesc: "Has 1.5x attacking stats while using a Fire, Water, or Electric-type attack.",
+	},
+	energizate: {
+		name: "Energizate",
+		desc: "This Pokemon's Normal-type moves become Electric-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Electric type and have 1.2x power.",
+		gen6: {
+			desc: "This Pokemon's Normal-type moves become Electric-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+			shortDesc: "This Pokemon's Normal-type moves become Electric type and have 1.3x power.",
+		},
+	},
+	acceleration: {
+		name: "Acceleration",
+		desc: "The power of this Pokemon's priority moves is multiplied by 1.5.",
+		shortDesc: "This Pokemon's priority moves have 1.5x power.",
+	},
+	bloodlust: {
+		name: "Bloodlust",
+		desc: "After an attack, this Pokemon gains 1/8 of the damage in HP dealt to other Pokemon.",
+		shortDesc: "After an attack, this Pokemon gains 1/8 of the damage dealt to other Pokemon.",
+	},
+	atomizate: {
+		name: "Atomizate",
+		desc: "This Pokemon's Normal-type moves become Nuclear-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Nuclear type and have 1.2x power.",
+		gen6: {
+			desc: "This Pokemon's Normal-type moves become Nuclear-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+			shortDesc: "This Pokemon's Normal-type moves become Nuclear type and have 1.3x power.",
+		},
+	},
+	leadskin: {
+		name: "Lead Skin",
+		desc: "This Pokemon is immune to Nuclear-type moves.",
+		shortDesc: "Nuclear immunity.",
+	},
+	deepfreeze: {
+		name: "Deep Freeze",
+		shortDesc: "30% chance a Pokemon making contact with this Pokemon will be frozen.",
+	},
+	stormbringer: {
+		name: "Stormbringer",
+		shortDesc: "On switch-in, this Pokemon summons Thunderstorm.",
+	},
+	quickcharge: {
+		name: "Quick Charge",
+		shortDesc: "On this Pokemon's first turn, its moves have their priority increased by 4.",
+	},
+	soundboost: {
+		name: "Sound Boost",
+		desc: "This Pokemon's sound-based moves have their power multiplied by 1.3.",
+		shortDesc: "This Pokemon's sound moves have 1.3x power.",
+	},
+	disenchant: {
+		name: "Disenchant",
+		desc: "This Pokemon is immune to Fairy-type moves.",
+		shortDesc: "Fairy immunity.",
+	},
+	geigersense: {
+		name: "Geiger Sense",
+		desc: "On switch-in, this Pokemon's Attack and Special Attack are raised by 1 stage if another Nuclear-type Pokemon is on the field.",
+    shortDesc: "On switch-in, raises Attack and Sp. Atk if another Nuclear-type is on field.",
+	},
+	chernobyl: {
+		name: "Chernobyl",
+		shortDesc: "On switch-in, this Pokemon summons Toxic Fallout (5 turns).",
 	},
 };

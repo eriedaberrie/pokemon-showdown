@@ -4493,24 +4493,21 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
   // uranium abilities start here
   sharpcoral: {
 		onModifyAtkPriority: 5,
-		onModifyAtk(atk) {
-			return this.chainModify(2);
-		},
-		onModifySpaPriority: 5,
-		onModifySpa(atk) {
-			return this.chainModify(2);
+		onBasePower(basePower) {
+      return this.chainModify(2);
 		},
 		onSourceModifyDamage(damage) {
+      this.debug('Sharp Coral boost');
 			return this.chainModify(2);
 		},
+		isBreakable: true,
     name: "Sharp Coral",
     rating: 1,
     num: -101,
   },
 	lazy: {
 		onStart(pokemon) {
-      if (!pokemon.status && pokemon.setStatus('slp', pokemon))
-      {
+      if (!pokemon.status && pokemon.setStatus('slp', pokemon)) {
         pokemon.statusState.time = 3;
 			  pokemon.statusState.startTime = 3;
       }
@@ -4520,27 +4517,219 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: -102,
 	},
 	rebuild: {
-		beforeTurnCallback(pokemon) {
+		onStart(pokemon) {
 			pokemon.addVolatile('rebuild');
 		},
     condition: {
-      duration: 1,
 			onHit(pokemon, source, move) {
 				if (move.category !== 'Status') {
 					pokemon.volatiles['rebuild'].lostFocus = true;
+          this.debug('Rebuild lost focus');
 				}
 			},
     },
 		onResidualOrder: 5,
 		onResidualSubOrder: 5,
 		onResidual(pokemon) {
-      if (pokemon.volatiles['rebuild'] && !pokemon.volatiles['rebuild'].lostFocus)
-      {
+      if (pokemon.volatiles['rebuild'] && !pokemon.volatiles['rebuild'].lostFocus) {
         this.heal(pokemon.baseMaxhp / 8);
       }
+      pokemon.volatiles['rebuild'].lostFocus = false;
     },
 		name: "Rebuild",
 		rating: 3,
 		num: -103,
+	},
+	petrify: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Petrify', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({spe: -1}, target, pokemon, null, true);
+				}
+			}
+		},
+		name: "Petrify",
+		rating: 3.5,
+		num: -104,
+	},
+	infuriate: {
+		onDamagingHit(damage, target, source, move) {
+			if (move.category === 'Physical') {
+				this.boost({atk: 1});
+			}
+		},
+		name: "Infuriate",
+		rating: 3.5,
+		num: -105,
+	},
+	elementalist: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (['Fire', 'Water', 'Electric'].includes(move.type)) {
+				this.debug('Elementalist boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (['Fire', 'Water', 'Electric'].includes(move.type)) {
+				this.debug('Elementalist boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Elementalist",
+		rating: 4,
+		num: -106,
+	},
+	energizate: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && !noModifyType.includes(move.id) && !(move.isZ && move.category !== 'Status')) {
+				move.type = 'Electric';
+				move.energizateBoosted = true;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.energizateBoosted) return this.chainModify([4915, 4096]);
+		},
+		name: "Energizate",
+		rating: 3,
+		num: -107,
+	},
+	acceleration: {
+		onBasePowerPriority: 30,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.priority > 0) {
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Acceleration",
+		rating: 4,
+		num: -108,
+	},
+	bloodlust: {
+		onAfterMoveSecondarySelf(source, target, move) {
+      if (move.totalDamage) {
+        this.heal(move.totalDamage / 8, source);
+      }
+		},
+		name: "Bloodlust",
+		rating: 3.5,
+		num: -109,
+	},
+	atomizate: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && !noModifyType.includes(move.id) && !(move.isZ && move.category !== 'Status')) {
+				move.type = 'Nuclear';
+				move.atomizateBoosted = true;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.atomizateBoosted) return this.chainModify([4915, 4096]);
+		},
+		name: "Atomizate",
+		rating: 5,
+		num: -110,
+	},
+	leadskin: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Nuclear') {
+				this.add('-immune', target, '[from] ability: Lead Skin');
+				return null;
+			}
+		},
+		isBreakable: true,
+		name: "Lead Skin",
+		rating: 0.5,
+		num: -111,
+	},
+	deepfreeze: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(3, 10)) {
+					source.trySetStatus('frz', target);
+				}
+			}
+		},
+		name: "Deep Freeze",
+		rating: 4.5,
+		num: -112,
+	},
+	stormbringer: {
+		onStart(source) {
+			this.field.setWeather('thunderstorm');
+		},
+		name: "Stormbringer",
+		rating: 4,
+		num: -113,
+	},
+	quickcharge: {
+		onModifyPriority(priority, pokemon) {
+			if (pokemon.activeMoveActions <= 1) return priority + 4;
+		},
+		name: "Quick Charge",
+		rating: 3,
+		num: -114,
+	},
+	soundboost: {
+		onBasePowerPriority: 7,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['sound']) {
+				this.debug('Sound Boost boost');
+				return this.chainModify([5325, 4096]);
+			}
+		},
+		name: "Sound Boost",
+		rating: 3.5,
+		num: -115,
+	},
+	disenchant: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Fairy') {
+				this.add('-immune', target, '[from] ability: Disenchant');
+				return null;
+			}
+		},
+		isBreakable: true,
+		name: "Disenchant",
+		rating: 2.5,
+		num: -116,
+	},
+	geigersense: {
+		onStart(pokemon) {
+			for (const target of this.getAllActive()) {
+				if ((target !== pokemon) && target.hasType('Nuclear')) {
+          this.boost({atk: 1, spa: 1});
+          break;
+        }
+			}
+    },
+		name: "Geiger Sense",
+		rating: 1,
+		num: -117,
+	},
+	chernobyl: {
+		onStart(source) {
+			this.field.setWeather('fallout'); // REALLY can't be bothered to add a whole primal weather for an unobtainable ability
+		},
+		name: "Chernobyl",
+		rating: 5,
+		num: -118,
 	},
 };
