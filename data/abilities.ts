@@ -4506,5 +4506,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
     name: "Sharp Coral",
     rating: 1,
     num: -100,
-  }
+  },
+	lazy: {
+		onStart(pokemon) {
+      if (pokemon.setStatus('slp', pokemon))
+      {
+        pokemon.statusState.time = 3;
+			  pokemon.statusState.startTime = 3;
+      }
+		},
+		name: "Lazy",
+		rating: 1,
+		num: -101,
+	},
 };

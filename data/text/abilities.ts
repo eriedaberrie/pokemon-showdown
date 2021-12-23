@@ -1743,4 +1743,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's Attack and Special Attack are doubled. This pokemon takes double damage from attacks.",
 		shortDesc: "Doubles Attack and Sp. Atk; takes double damage.",
 	},
+	lazy: {
+		name: "Lazy",
+		shortDesc: "On switch-in, this Pokemon falls asleep for 2 turns.",
+	},
 };
