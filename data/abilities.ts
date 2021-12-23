@@ -4509,7 +4509,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
   },
 	lazy: {
 		onStart(pokemon) {
-      if (pokemon.setStatus('slp', pokemon))
+      if (!pokemon.status && pokemon.setStatus('slp', pokemon))
       {
         pokemon.statusState.time = 3;
 			  pokemon.statusState.startTime = 3;
