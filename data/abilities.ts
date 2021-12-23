@@ -4505,7 +4505,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
     name: "Sharp Coral",
     rating: 1,
-    num: -100,
+    num: -101,
   },
 	lazy: {
 		onStart(pokemon) {
@@ -4516,7 +4516,31 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
       }
 		},
 		name: "Lazy",
-		rating: 1,
-		num: -101,
+		rating: -1,
+		num: -102,
+	},
+	rebuild: {
+		beforeTurnCallback(pokemon) {
+			pokemon.addVolatile('rebuild');
+		},
+    condition: {
+      duration: 1,
+			onHit(pokemon, source, move) {
+				if (move.category !== 'Status') {
+					pokemon.volatiles['rebuild'].lostFocus = true;
+				}
+			},
+    },
+		onResidualOrder: 5,
+		onResidualSubOrder: 5,
+		onResidual(pokemon) {
+      if (pokemon.volatiles['rebuild'] && !pokemon.volatiles['rebuild'].lostFocus)
+      {
+        this.heal(pokemon.baseMaxhp / 8);
+      }
+    },
+		name: "Rebuild",
+		rating: 3,
+		num: -103,
 	},
 };
