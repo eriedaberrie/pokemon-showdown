@@ -1858,6 +1858,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 135,
 	},
 	lightningrod: {
+		onImmunity(type, pokemon) {
+			if (type === 'thunderstorm') return false;
+		},
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Electric') {
 				if (!this.boost({spa: 1})) {
@@ -2195,6 +2198,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 141,
 	},
 	motordrive: {
+		onImmunity(type, pokemon) {
+			if (type === 'thunderstorm') return false;
+		},
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Electric') {
 				if (!this.boost({spe: 1})) {
@@ -4191,6 +4197,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 72,
 	},
 	voltabsorb: {
+		onImmunity(type, pokemon) {
+			if (type === 'thunderstorm') return false;
+		},
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Electric') {
 				if (!this.heal(target.baseMaxhp / 4)) {
@@ -4648,8 +4657,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: -110,
 	},
 	leadskin: {
+		onImmunity(type, pokemon) {
+			if (type === 'fallout') return false;
+		},
 		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Nuclear') {
+			if (target !== source && move.type === 'Nuclear' && move.category !== 'Status') {
 				this.add('-immune', target, '[from] ability: Lead Skin');
 				return null;
 			}
@@ -4681,10 +4693,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	quickcharge: {
 		onModifyPriority(priority, pokemon) {
-			if (pokemon.activeMoveActions <= 1) return priority + 4;
+			if (pokemon.activeMoveActions === 0) return priority + 4;
 		},
 		name: "Quick Charge",
-		rating: 3,
+		rating: 4,
 		num: -114,
 	},
 	soundboost: {
@@ -4701,7 +4713,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	disenchant: {
 		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Fairy') {
+			if (target !== source && move.type === 'Fairy' && move.category !== 'Status') {
 				this.add('-immune', target, '[from] ability: Disenchant');
 				return null;
 			}
@@ -4714,7 +4726,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	geigersense: {
 		onStart(pokemon) {
 			for (const target of this.getAllActive()) {
-				if ((target !== pokemon) && target.hasType('Nuclear')) {
+				if (target !== pokemon && target.hasType('Nuclear')) {
           this.boost({atk: 1, spa: 1});
           break;
         }
