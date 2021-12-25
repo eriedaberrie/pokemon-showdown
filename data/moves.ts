@@ -20098,7 +20098,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, defrost: 1},
 		onEffectiveness(typeMod, target, type) {
-			if (type === 'Fairy') return 2; // imma stay faithful to the game code here. 10/10 programming guys.
+			if (type === 'Fairy') {
+        return 1; // not quite what it does ingame but its bugged ingame and this is what everone *thinks* it does so...
+      } else if (target.hasType('Fairy')) {
+        return 0;
+      }
 		},
 		secondary: {
 			chance: 10,

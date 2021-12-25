@@ -4633,7 +4633,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         this.heal(move.totalDamage / 8, source);
       }
 		},
-		name: "Bloodlust",
+		name: "Blood Lust",
 		rating: 3.5,
 		num: -109,
 	},

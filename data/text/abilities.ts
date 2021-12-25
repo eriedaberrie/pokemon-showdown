@@ -702,7 +702,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	lightningrod: {
 		name: "Lightning Rod",
-		desc: "This Pokemon is immune to Electric-type moves and raises its Special Attack by 1 stage when hit by an Electric-type move. If this Pokemon is not the target of a single-target Electric-type move used by another Pokemon, this Pokemon redirects that move to itself if it is within the range of that move.",
+		desc: "This Pokemon is immune to Electric-type moves and Thunderstorm damage and raises its Special Attack by 1 stage when hit by an Electric-type move. If this Pokemon is not the target of a single-target Electric-type move used by another Pokemon, this Pokemon redirects that move to itself if it is within the range of that move.",
 		shortDesc: "This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity.",
 		gen4: {
 			desc: "If this Pokemon is not the target of a single-target Electric-type move used by another Pokemon, this Pokemon redirects that move to itself.",
@@ -836,7 +836,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	motordrive: {
 		name: "Motor Drive",
-		desc: "This Pokemon is immune to Electric-type moves and raises its Speed by 1 stage when hit by an Electric-type move.",
+		desc: "This Pokemon is immune to Electric-type moves and Thunderstorm damage and raises its Speed by 1 stage when hit by an Electric-type move.",
 		shortDesc: "This Pokemon's Speed is raised 1 stage if hit by an Electric move; Electric immunity.",
 	},
 	moxie: {
@@ -1640,7 +1640,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	voltabsorb: {
 		name: "Volt Absorb",
-		desc: "This Pokemon is immune to Electric-type moves and restores 1/4 of its maximum HP, rounded down, when hit by an Electric-type move.",
+		desc: "This Pokemon is immune to Electric-type moves and Thunderstorm damage and restores 1/4 of its maximum HP, rounded down, when hit by an Electric-type move.",
 		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Electric moves; Electric immunity.",
 		gen3: {
 			desc: "This Pokemon is immune to damaging Electric-type moves and restores 1/4 of its maximum HP, rounded down, when hit by one.",
@@ -1780,7 +1780,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		shortDesc: "This Pokemon's priority moves have 1.5x power.",
 	},
 	bloodlust: {
-		name: "Bloodlust",
+		name: "Blood Lust",
 		desc: "After an attack, this Pokemon gains 1/8 of the damage in HP dealt to other Pokemon.",
 		shortDesc: "After an attack, this Pokemon gains 1/8 of the damage dealt to other Pokemon.",
 	},
