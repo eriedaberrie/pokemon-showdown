@@ -17334,8 +17334,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   },
 	electruxomega: {
 		num: -2006,
-		name: "Elextruxo-Mega",
-		baseSpecies: "Elextruxo",
+		name: "Electruxo-Mega",
+		baseSpecies: "Electruxo",
 		forme: "Mega",
 		types: ["Water", "Electric"],
 		genderRatio: {M: 0.875, F: 0.125},
