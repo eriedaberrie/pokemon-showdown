@@ -5290,11 +5290,12 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		spritenum: 475,
 		onModifyCritRatio(critRatio, user) {
-			if (this.toID(user.baseSpecies.baseSpecies) === 'farfetchd') {
+			if ((this.toID(user.baseSpecies.baseSpecies) === 'farfetchd') ||
+        (this.toID(user.baseSpecies.baseSpecies)) === 'barand') {
 				return critRatio + 2;
 			}
 		},
-		itemUser: ["Farfetch\u2019d"],
+		itemUser: ["Farfetch\u2019d", "Barand"],
 		num: 259,
 		gen: 2,
 		isNonstandard: "Past",
@@ -7130,5 +7131,241 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 112,
 		gen: 8,
 		isNonstandard: "CAP",
+	},
+  
+  // uranium items start here
+	hafliberry: {
+		name: "Hafli Berry",
+		spritenum: 768,
+		isBerry: true,
+		naturalGift: {
+			basePower: 80,
+			type: "Nuclear",
+		},
+		onSourceModifyDamage(damage, source, target, move) {
+			if (move.type === 'Nuclear' && target.getMoveHitData(move).typeMod > 0) {
+				const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
+				if (hitSub) return;
+
+				if (target.eatItem()) {
+					this.debug('-50% reduction');
+					this.add('-enditem', target, this.effect, '[weaken]');
+					return this.chainModify(0.5);
+				}
+			}
+		},
+		onEat() { },
+		num: -1001,
+		gen: 6,
+	},
+	coconutmilk: {
+		name: "Coconut Milk",
+		spritenum: 769,
+		fling: {
+			basePower: 30,
+		},
+		num: -1002,
+		gen: 6,
+	},
+	carrotwine: {
+		name: "Carrot Wine",
+		spritenum: 770,
+		fling: {
+			basePower: 30,
+		},
+		num: -1003,
+		gen: 6,
+	},
+	junglecrown: {
+		name: "Jungle Crown",
+		spritenum: 771,
+		fling: {
+			basePower: 30,
+		},
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Fighting') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		num: -1004,
+		gen: 6,
+	},
+	metalynxite: {
+		name: "Metalynxite",
+		spritenum: 772,
+		megaStone: "Metalynx-Mega",
+		megaEvolves: "Metalynx",
+		itemUser: ["Metalynx"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1005,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	archillesite: {
+		name: "Archillesite",
+		spritenum: 773,
+		megaStone: "Archilles-Mega",
+		megaEvolves: "Archilles",
+		itemUser: ["Archilles"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1006,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	electruxolite: {
+		name: "Elextruxolite",
+		spritenum: 774,
+		megaStone: "Electruxo-Mega",
+		megaEvolves: "Electruxo",
+		itemUser: ["Electruxo"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1007,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	baariettite: {
+		name: "Baariettite",
+		spritenum: 775,
+		megaStone: "Baariette-Mega",
+		megaEvolves: " Baariette",
+		itemUser: ["Baariette"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1008,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	drilgannite: {
+		name: "Drilgannite",
+		spritenum: 776,
+		megaStone: "Drilgann-Mega",
+		megaEvolves: "Drilgann",
+		itemUser: ["Drilgann"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1009,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	inflagetite: {
+		name: "Inflagetite",
+		spritenum: 777,
+		megaStone: "Inflagetah-Mega",
+		megaEvolves: "Inflagetah",
+		itemUser: ["Inflagetah"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1010,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	dramsamaite: {
+		name: "Dramsamaite",
+		spritenum: 778,
+		megaStone: "Dramsama-Mega",
+		megaEvolves: "Dramsama",
+		itemUser: ["Dramsama"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1011,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	syrentideite: {
+		name: "Syrentideite",
+		spritenum: 779,
+		megaStone: "Syrentide-Mega",
+		megaEvolves: "Syrentide",
+		itemUser: ["Syrentide"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1012,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	unidentifiedfallenobject: {
+		name: "Unidentified Fallen Object",
+		spritenum: 780,
+		megaStone: "S51-A-Mega",
+		megaEvolves: "S51-A",
+		itemUser: ["S51-A"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1013,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	kiricornite: {
+		name: "Kiricornite",
+		spritenum: 781,
+		megaStone: "Kiricorn-Mega",
+		megaEvolves: "Kiricorn",
+		itemUser: ["Kiricorn"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1014,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	whimsicottite: {
+		name: "Whimsicottite",
+		spritenum: 782,
+		megaStone: "Whimsicott-Mega",
+		megaEvolves: "Whimsicott",
+		itemUser: ["Whimsicott"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1015,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	arbokite: {
+		name: "Arbokite",
+		spritenum: 782,
+		megaStone: "Arbok-Mega",
+		megaEvolves: "Arbok",
+		itemUser: ["Arbok"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1016,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	aromaticherb: {
+		name: "Aromatic Herb",
+		spritenum: 783,
+		fling: {
+			basePower: 80,
+		},
+		num: -1017,
+		gen: 6,
 	},
 };

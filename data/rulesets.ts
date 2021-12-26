@@ -1822,4 +1822,39 @@ export const Rulesets: {[k: string]: FormatData} = {
 			}
 		},
 	},
+  
+  // ucc clauses
+  nuclearclausemod: {
+    effectType: 'Rule',
+    name: 'Nuclear Clause Mod',
+    desc: 'Prevents Pok&eacute;mon without the Nuclear type from using Nuclear-type moves.',
+    onBegin() {
+      this.add('rule', 'Nuclear Clause Mod: Pok&eacute;mon without the Nuclear type can\'t use Nuclear-type moves');
+    },
+    onHit(target, source, move) {
+			if ((move.type === 'Nuclear') && !source.hasType('Nuclear')) {
+        this.add('-message', 'Nuclear Clause Mod activated.');
+        return false;
+      }
+		},
+  },
+  softbatonpassclausemod: {
+    effectType: 'Rule',
+    name: 'Soft Baton Pass Clause Mod',
+    desc: 'Prevents Baton Pass from passing positive stat boosts.',
+    onBegin() {
+      this.add('rule', 'Soft Baton Pass Mod: Baton Pass doesn\'t pass positive stat boosts')
+    },
+    onHit(target, source, move) {
+      if (move.id !== 'batonpass') return;
+      let activated = false;
+      for (const stat of ['atk', 'def', 'spa', 'spd', 'spe', 'accuracy', 'evasion']) {
+        if (target[stat] > 0) {
+          target[stat] = 0;
+          activated = true;
+        }
+      }
+      if (activated) this.add('-message', 'Soft Baton Pass Clause Mod activated.');
+    }
+  }
 };

@@ -6035,7 +6035,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUber",
 	},
 	eternatuseternamax: {
-		isNonstandard: "Unobtainable",
+		tier: "Illegal",
 		tier: "Illegal",
 	},
 	kubfu: {
@@ -6494,4 +6494,724 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+  orchynx: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  metalynx: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  metalynxmega: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  raptorch: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  archilles: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  archillesmega: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  eletux: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  electruxo: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  electruxomega: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  chyinmunk: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  kinetmunk: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  birbie: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  aveden: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  splendifowl: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  cubbug: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  cubblfly: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  nimflora: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  barewl: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  dearewl: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  gararewl: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  grozard: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  terlard: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  tonemy: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  tofurang: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  dunseraph: {
+    isNonstandard: "Uranium",
+    tier: "Dunseraph"
+  },
+  fortog: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  folerog: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  blubelrog: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  feleng: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  felunge: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  feliger: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  empirilla: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  owten: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  eshouten: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  smore: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  firoke: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  brailip: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  brainoar: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  tancoon: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  tanscure: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  sponee: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  sponaree: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  pahar: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  palij: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  pajay: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  jerbolta: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  comite: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  cometeor: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  astronite: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  baashaun: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  baaschaf: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  baariette: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  baariettemega: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  tricwe: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  harylect: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  costraw: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  trawpint: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  lunapup: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  herolune: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  minyan: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  vilucard: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  modrille: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  drilgann: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  drilgann: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  cocaran: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  cararalm: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  cocancer: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  corsoreef: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  tubjaw: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  tubareel: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  cassnail: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  sableau: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  escartress: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  nupin: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  gellin: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  barand: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  glaslug: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  glavinug: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  s51: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  s51a: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  s51amega: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  paraudio: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  paraboom: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  flager: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  inflagetah: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  inflagetahmega: {
+    isNonstandard: "Uranium",
+    tier: "Uber",
+  },
+  chimical: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  chimaconda: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  tikiki: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  frikitiki: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  unymph: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  harptera: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  chicoatl: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  quetzoral: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  coatlith: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  tracton: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  snopach: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  dermafrost: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  slothohm: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  theriamp: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  titanice: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  frynai: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  saidine: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  daikatuna: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  selkid: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  syrentide: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  syrentidemega: {
+    isNonstandard: "Uranium",
+    tier: "Uber",
+  },
+  miasmedic: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  jackdeary: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  winotinger: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  duplicat: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  nucleon: {
+    isNonstandard: "Uranium",
+    tier: "Uber",
+  },
+  ratsy: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  raffiti: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  gargryph: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  masking: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  dramsama: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  dramsamamega: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  antarki: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  chupacho: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  luchabra: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  linkite: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  chainite: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  pufluff: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  alpico: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  anderind: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  colarva: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  frosulo: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  frosthra: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  fafurr: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  fafninter: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  shrimputy: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  krilvolver: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  lavent: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  swabone: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  skelerogue: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  navighast: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  stenowatt: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  jungore: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  majungold: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  hagoop: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  haagross: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  xenomite: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  xenogen: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  xenoqueen: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  hazma: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  geigeroach: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  minicorn: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  kiricorn: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  kiricornmega: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  oblivicorn: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  luxi: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  luxor: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  luxelong: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  praseopunk: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  neopunk: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  sheebit: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  terrabbit: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  laissure: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  volchik: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  voltasu: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  yatagaryu: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  devimp: {
+    isNonstandard: "Uranium",
+    tier: "Alpha",
+  },
+  fallengel: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  beliaddon: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  seikamater: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  garlikid: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  baitatao: {
+    isNonstandard: "Uranium",
+    tier: "Illegal",
+  },
+  leviathao: {
+    isNonstandard: "Uranium",
+    tier: "Illegal",
+  },
+  krakanao: {
+    isNonstandard: "Uranium",
+    tier: "Illegal",
+  },
+  lanthan: {
+    isNonstandard: "Uranium",
+    tier: "Uber",
+  },
+  actan: {
+    isNonstandard: "Uranium",
+    tier: "Gamma",
+  },
+  urayne: {
+    isNonstandard: "Uranium",
+    tier: "Uber",
+  },
+  uraynebeta: {
+    isNonstandard: "Uranium",
+    tier: "Uber",
+  },
+  uraynegamma: {
+    isNonstandard: "Uranium",
+    tier: "Illegal",
+  },
+  aotius: {
+    isNonstandard: "Uranium",
+    tier: "Illegal",
+  },
+  mutios: {
+    isNonstandard: "Uranium",
+    tier: "Illegal",
+  },
+  zephy: {
+    isNonstandard: "Uranium",
+    tier: "Illegal",
+  },
+  whimsicottmega: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
+  arbokmega: {
+    isNonstandard: "Uranium",
+    tier: "Beta",
+  },
 };
