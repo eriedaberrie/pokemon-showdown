@@ -124,6 +124,18 @@ export const Tags: {[id: string]: TagData} = {
 
 	// Tiers
 	// -----
+	gamma: {
+		name: "Gamma",
+		speciesFilter: species => species.tier === 'Gamma' || species.tier === '(Gamma)',
+	},
+	beta: {
+		name: "Beta",
+		speciesFilter: species => species.tier === 'Beta',
+	},
+	alpha: {
+		name: "Alpha",
+		speciesFilter: species => species.tier === 'Alpha',
+	},
 	uber: {
 		name: "Uber",
 		speciesFilter: species => species.tier === 'Uber' || species.tier === '(Uber)' || species.tier === 'AG',

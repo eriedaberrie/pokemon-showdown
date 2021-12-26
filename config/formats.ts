@@ -5,7 +5,7 @@ export const Formats: FormatList = [
   {
     name: '[Gen 6 Uranium] Gamma',
     mod: 'gen6uranium',
-    ruleset: ['Standard', 'Nuclear Clause Mod', 'Soft Baton Pass Clause Mod'],
+    ruleset: ['Standard', 'Nuclear Clause Mod', 'Soft Baton Pass Clause Mod', 'Uranium Pokedex'],
     banlist: ['Uber', 'Shadow Tag'],
   },
   {
@@ -23,7 +23,7 @@ export const Formats: FormatList = [
   {
     name: '[Gen 6 Uranium] Anything Goes',
     mod: 'gen6uranium',
-    ruleset: ['Obtainable', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
+    ruleset: ['Obtainable', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Uranium Pokedex'],
   },
   {
     name: '[Gen 6 Uranium] National Dex',
@@ -55,7 +55,7 @@ export const Formats: FormatList = [
     name: '[Gen 6 Uranium] Double Battle',
     mod: 'gen6uranium',
     gameType: 'doubles',
-    ruleset: ['Standard Doubles', 'Nuclear Clause Mod'],
+    ruleset: ['Standard Doubles', 'Nuclear Clause Mod', 'Uranium Pokedex'],
     banlist: ['DUber'],
   },
   {

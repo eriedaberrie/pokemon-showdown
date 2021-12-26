@@ -19417,6 +19417,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     heightm: 8.4,
     weightkg: 638.5,
     color: "Brown",
+		tags: ["Sub-Legendary"],
     eggGroups: ["Undiscovered"],
   },
   garlikid: {
@@ -19429,6 +19430,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     heightm: 1.4,
     weightkg: 33.4,
     color: "Green",
+		tags: ["Sub-Legendary"],
     eggGroups: ["Undiscovered"],
   },
   baitatao: {
@@ -19441,6 +19443,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     heightm: 3.3,
     weightkg: 255.5,
     color: "Red",
+		tags: ["Restricted Legendary"],
     eggGroups: ["Undiscovered"],
   },
   leviathao: {
@@ -19453,6 +19456,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     heightm: 1.4,
     weightkg: 150.6,
     color: "Blue",
+		tags: ["Restricted Legendary"],
     eggGroups: ["Undiscovered"],
   },
   krakanao: {
@@ -19465,6 +19469,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     heightm: 1.8,
     weightkg: 88.8,
     color: "Blue",
+		tags: ["Restricted Legendary"],
     eggGroups: ["Undiscovered"],
   },
   lanthan: {
@@ -19477,6 +19482,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     heightm: 2.5,
     weightkg: 1430.0,
     color: "Brown",
+		tags: ["Sub-Legendary"],
     eggGroups: ["Undiscovered"],
   },
   actan: {
@@ -19489,6 +19495,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     heightm: 3.3,
     weightkg: 1270.0,
     color: "Blue",
+		tags: ["Sub-Legendary"],
     eggGroups: ["Undiscovered"],
   },
   urayne: {
@@ -19501,6 +19508,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     heightm: 2.3,
     weightkg: 240.0,
     color: "Gray",
+		tags: ["Restricted Legendary"],
     eggGroups: ["Undiscovered"],
   },
   aotius: {
@@ -19513,6 +19521,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     heightm: 4.8,
     weightkg: 360.0,
     color: "White",
+		tags: ["Restricted Legendary"],
     eggGroups: ["Undiscovered"],
   },
   mutios: {
@@ -19525,6 +19534,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     heightm: 4.8,
     weightkg: 360.0,
     color: "Black",
+		tags: ["Restricted Legendary"],
     eggGroups: ["Undiscovered"],
   },
   zephy: {
@@ -19537,6 +19547,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     heightm: 0.9,
     weightkg: 28.0,
     color: "Blue",
+		tags: ["Mythical"],
     eggGroups: ["Undiscovered"],
   },
 };
