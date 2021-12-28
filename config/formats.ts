@@ -6,7 +6,7 @@ export const Formats: FormatList = [
     name: '[Gen 6 Uranium] Gamma',
     mod: 'gen6uranium',
     ruleset: ['Standard', 'Nuclear Clause Mod', 'Soft Baton Pass Clause Mod', 'Uranium Pokedex'],
-    banlist: ['Uber', 'Shadow Tag'],
+    banlist: ['Uber', 'Shadow Tag', 'Belly Drum'],
   },
   {
     name: '[Gen 6 Uranium] Beta',
@@ -29,7 +29,7 @@ export const Formats: FormatList = [
     name: '[Gen 6] National Dex',
     mod: 'gen6',
     ruleset: ['Standard', 'Nuclear Clause Mod', 'Soft Baton Pass Clause Mod'],
-    banlist: ['Uber', 'Shadow Tag'],
+    banlist: ['Uber', 'Soul Dew', 'Shadow Tag'],
   },
   {
     name: '[Gen 6] National Dex AG',
@@ -63,7 +63,7 @@ export const Formats: FormatList = [
     mod: 'gen6',
     gameType: 'doubles',
     ruleset: ['Standard Doubles', 'Nuclear Clause Mod'],
-    banlist: ['DUber'],
+    banlist: ['DUber', 'Soul Dew', 'Dark Void'],
   },
 	{
 		name: "[Gen 6] Doubles Custom Game",
