@@ -3855,7 +3855,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	bergmite: {
-		tier: "LC",
+		tier: "Illegal",
 	},
 	avalugg: {
 		randomBattleMoves: ["avalanche", "earthquake", "rapidspin", "recover", "roar", "toxic"],
