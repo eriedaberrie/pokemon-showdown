@@ -6495,505 +6495,505 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
   orchynx: {
-    tier: "OU",
+    tier: "Alpha",
   },
   metalynx: {
-    tier: "OU",
+    tier: "Beta",
   },
   metalynxmega: {
-    tier: "OU",
+    tier: "Gamma",
   },
   raptorch: {
-    tier: "OU",
+    tier: "Alpha",
   },
   archilles: {
-    tier: "OU",
+    tier: "Gamma",
   },
   archillesmega: {
-    tier: "OU",
+    tier: "Gamma",
   },
   eletux: {
-    tier: "OU",
+    tier: "Alpha",
   },
   electruxo: {
-    tier: "OU",
+    tier: "Alpha",
   },
   electruxomega: {
-    tier: "OU",
+    tier: "Gamma",
   },
   chyinmunk: {
-    tier: "OU",
+    tier: "Alpha",
   },
   kinetmunk: {
-    tier: "OU",
+    tier: "Alpha",
   },
   birbie: {
-    tier: "OU",
+    tier: "Alpha",
   },
   aveden: {
-    tier: "OU",
+    tier: "Alpha",
   },
   splendifowl: {
-    tier: "OU",
+    tier: "Alpha",
   },
   cubbug: {
-    tier: "OU",
+    tier: "Alpha",
   },
   cubblfly: {
-    tier: "OU",
+    tier: "Beta",
   },
   nimflora: {
-    tier: "OU",
+    tier: "Gamma",
   },
   barewl: {
-    tier: "OU",
+    tier: "Alpha",
   },
   dearewl: {
-    tier: "OU",
+    tier: "Alpha",
   },
   gararewl: {
-    tier: "OU",
+    tier: "Beta",
   },
   grozard: {
-    tier: "OU",
+    tier: "Alpha",
   },
   terlard: {
-    tier: "OU",
+    tier: "Alpha",
   },
   tonemy: {
-    tier: "OU",
+    tier: "Alpha",
   },
   tofurang: {
-    tier: "OU",
+    tier: "Beta",
   },
   dunseraph: {
-    tier: "Dunseraph"
+    tier: "Gamma"
   },
   fortog: {
-    tier: "OU",
+    tier: "Alpha",
   },
   folerog: {
-    tier: "OU",
+    tier: "Alpha",
   },
   blubelrog: {
-    tier: "OU",
+    tier: "Beta",
   },
   feleng: {
-    tier: "OU",
+    tier: "Alpha",
   },
   felunge: {
-    tier: "OU",
+    tier: "Alpha",
   },
   feliger: {
-    tier: "OU",
+    tier: "Gamma",
   },
   empirilla: {
-    tier: "OU",
+    tier: "Alpha",
   },
   owten: {
-    tier: "OU",
+    tier: "Alpha",
   },
   eshouten: {
-    tier: "OU",
+    tier: "Alpha",
   },
   smore: {
-    tier: "OU",
+    tier: "Alpha",
   },
   firoke: {
-    tier: "OU",
+    tier: "Alpha",
   },
   brailip: {
-    tier: "OU",
+    tier: "Alpha",
   },
   brainoar: {
-    tier: "OU",
+    tier: "Alpha",
   },
   tancoon: {
-    tier: "OU",
+    tier: "Alpha",
   },
   tanscure: {
-    tier: "OU",
+    tier: "Beta",
   },
   sponee: {
-    tier: "OU",
+    tier: "Alpha",
   },
   sponaree: {
-    tier: "OU",
+    tier: "Alpha",
   },
   pahar: {
-    tier: "OU",
+    tier: "Alpha",
   },
   palij: {
-    tier: "OU",
+    tier: "Alpha",
   },
   pajay: {
-    tier: "OU",
+    tier: "Alpha",
   },
   jerbolta: {
-    tier: "OU",
+    tier: "Alpha",
   },
   comite: {
-    tier: "OU",
+    tier: "Alpha",
   },
   cometeor: {
-    tier: "OU",
+    tier: "Alpha",
   },
   astronite: {
-    tier: "OU",
+    tier: "Beta",
   },
   baashaun: {
-    tier: "OU",
+    tier: "Alpha",
   },
   baaschaf: {
-    tier: "OU",
+    tier: "Alpha",
   },
   baariette: {
-    tier: "OU",
+    tier: "Beta",
   },
   baariettemega: {
-    tier: "OU",
+    tier: "Gamma",
   },
   tricwe: {
-    tier: "OU",
+    tier: "Alpha",
   },
   harylect: {
-    tier: "OU",
+    tier: "Alpha",
   },
   costraw: {
-    tier: "OU",
+    tier: "Alpha",
   },
   trawpint: {
-    tier: "OU",
+    tier: "Alpha",
   },
   lunapup: {
-    tier: "OU",
+    tier: "Alpha",
   },
   herolune: {
-    tier: "OU",
+    tier: "Alpha",
   },
   minyan: {
-    tier: "OU",
+    tier: "Alpha",
   },
   vilucard: {
-    tier: "OU",
+    tier: "Alpha",
   },
   modrille: {
-    tier: "OU",
+    tier: "Alpha",
   },
   drilgann: {
-    tier: "OU",
+    tier: "Alpha",
   },
   drilgann: {
-    tier: "OU",
+    tier: "Gamma",
   },
   cocaran: {
-    tier: "OU",
+    tier: "Alpha",
   },
   cararalm: {
-    tier: "OU",
+    tier: "Alpha",
   },
   cocancer: {
-    tier: "OU",
+    tier: "Gamma",
   },
   corsoreef: {
-    tier: "OU",
+    tier: "Alpha",
   },
   tubjaw: {
-    tier: "OU",
+    tier: "Alpha",
   },
   tubareel: {
-    tier: "OU",
+    tier: "Gamma",
   },
   cassnail: {
-    tier: "OU",
+    tier: "Alpha",
   },
   sableau: {
-    tier: "OU",
+    tier: "Alpha",
   },
   escartress: {
-    tier: "OU",
+    tier: "Gamma",
   },
   nupin: {
-    tier: "OU",
+    tier: "Alpha",
   },
   gellin: {
-    tier: "OU",
+    tier: "Alpha",
   },
   barand: {
-    tier: "OU",
+    tier: "Alpha",
   },
   glaslug: {
-    tier: "OU",
+    tier: "Alpha",
   },
   glavinug: {
-    tier: "OU",
+    tier: "Alpha",
   },
   s51: {
-    tier: "OU",
+    tier: "Beta",
   },
   s51a: {
-    tier: "OU",
+    tier: "Gamma",
   },
   s51amega: {
-    tier: "OU",
+    tier: "Gamma",
   },
   paraudio: {
-    tier: "OU",
+    tier: "Alpha",
   },
   paraboom: {
-    tier: "OU",
+    tier: "Gamma",
   },
   flager: {
-    tier: "OU",
+    tier: "Alpha",
   },
   inflagetah: {
-    tier: "OU",
+    tier: "Gamma",
   },
   inflagetahmega: {
     tier: "Uber",
   },
   chimical: {
-    tier: "OU",
+    tier: "Alpha",
   },
   chimaconda: {
-    tier: "OU",
+    tier: "Gamma",
   },
   tikiki: {
-    tier: "OU",
+    tier: "Alpha",
   },
   frikitiki: {
-    tier: "OU",
+    tier: "Gamma",
   },
   unymph: {
-    tier: "OU",
+    tier: "Alpha",
   },
   harptera: {
-    tier: "OU",
+    tier: "Gamma",
   },
   chicoatl: {
-    tier: "OU",
+    tier: "Alpha",
   },
   quetzoral: {
-    tier: "OU",
+    tier: "Alpha",
   },
   coatlith: {
-    tier: "OU",
+    tier: "Beta",
   },
   tracton: {
-    tier: "OU",
+    tier: "Beta",
   },
   snopach: {
-    tier: "OU",
+    tier: "Alpha",
   },
   dermafrost: {
-    tier: "OU",
+    tier: "Alpha",
   },
   slothohm: {
-    tier: "OU",
+    tier: "Alpha",
   },
   theriamp: {
-    tier: "OU",
+    tier: "Gamma",
   },
   titanice: {
-    tier: "OU",
+    tier: "Alpha",
   },
   frynai: {
-    tier: "OU",
+    tier: "Alpha",
   },
   saidine: {
-    tier: "OU",
+    tier: "Alpha",
   },
   daikatuna: {
-    tier: "OU",
+    tier: "Gamma",
   },
   selkid: {
-    tier: "OU",
+    tier: "Alpha",
   },
   syrentide: {
-    tier: "OU",
+    tier: "Beta",
   },
   syrentidemega: {
     tier: "Uber",
   },
   miasmedic: {
-    tier: "OU",
+    tier: "Alpha",
   },
   jackdeary: {
-    tier: "OU",
+    tier: "Alpha",
   },
   winotinger: {
-    tier: "OU",
+    tier: "Beta",
   },
   duplicat: {
-    tier: "OU",
+    tier: "Alpha",
   },
   nucleon: {
     tier: "Uber",
   },
   ratsy: {
-    tier: "OU",
+    tier: "Alpha",
   },
   raffiti: {
-    tier: "OU",
+    tier: "Beta",
   },
   gargryph: {
-    tier: "OU",
+    tier: "Beta",
   },
   masking: {
-    tier: "OU",
+    tier: "Alpha",
   },
   dramsama: {
-    tier: "OU",
+    tier: "Beta",
   },
   dramsamamega: {
-    tier: "OU",
+    tier: "Beta",
   },
   antarki: {
-    tier: "OU",
+    tier: "Gamma",
   },
   chupacho: {
-    tier: "OU",
+    tier: "Alpha",
   },
   luchabra: {
-    tier: "OU",
+    tier: "Beta",
   },
   linkite: {
-    tier: "OU",
+    tier: "Alpha",
   },
   chainite: {
-    tier: "OU",
+    tier: "Beta",
   },
   pufluff: {
-    tier: "OU",
+    tier: "Alpha",
   },
   alpico: {
-    tier: "OU",
+    tier: "Gamma",
   },
   anderind: {
-    tier: "OU",
+    tier: "Alpha",
   },
   colarva: {
-    tier: "OU",
+    tier: "Alpha",
   },
   frosulo: {
-    tier: "OU",
+    tier: "Alpha",
   },
   frosthra: {
-    tier: "OU",
+    tier: "Beta",
   },
   fafurr: {
-    tier: "OU",
+    tier: "Alpha",
   },
   fafninter: {
-    tier: "OU",
+    tier: "Gamma",
   },
   shrimputy: {
-    tier: "OU",
+    tier: "Alpha",
   },
   krilvolver: {
-    tier: "OU",
+    tier: "Alpha",
   },
   lavent: {
-    tier: "OU",
+    tier: "Beta",
   },
   swabone: {
-    tier: "OU",
+    tier: "Alpha",
   },
   skelerogue: {
-    tier: "OU",
+    tier: "Alpha",
   },
   navighast: {
-    tier: "OU",
+    tier: "Beta",
   },
   stenowatt: {
-    tier: "OU",
+    tier: "Alpha",
   },
   jungore: {
-    tier: "OU",
+    tier: "Alpha",
   },
   majungold: {
-    tier: "OU",
+    tier: "Alpha",
   },
   hagoop: {
-    tier: "OU",
+    tier: "Alpha",
   },
   haagross: {
-    tier: "OU",
+    tier: "Beta",
   },
   xenomite: {
-    tier: "OU",
+    tier: "Alpha",
   },
   xenogen: {
-    tier: "OU",
+    tier: "Beta",
   },
   xenoqueen: {
-    tier: "OU",
+    tier: "Gamma",
   },
   hazma: {
-    tier: "OU",
+    tier: "Alpha",
   },
   geigeroach: {
-    tier: "OU",
+    tier: "Beta",
   },
   minicorn: {
-    tier: "OU",
+    tier: "Alpha",
   },
   kiricorn: {
-    tier: "OU",
+    tier: "Beta",
   },
   kiricornmega: {
-    tier: "OU",
+    tier: "Gamma",
   },
   oblivicorn: {
-    tier: "OU",
+    tier: "Gamma",
   },
   luxi: {
-    tier: "OU",
+    tier: "Alpha",
   },
   luxor: {
-    tier: "OU",
+    tier: "Alpha",
   },
   luxelong: {
-    tier: "OU",
+    tier: "Gamma",
   },
   praseopunk: {
-    tier: "OU",
+    tier: "Alpha",
   },
   neopunk: {
-    tier: "OU",
+    tier: "Beta",
   },
   sheebit: {
-    tier: "OU",
+    tier: "Alpha",
   },
   terrabbit: {
-    tier: "OU",
+    tier: "Alpha",
   },
   laissure: {
-    tier: "OU",
+    tier: "Gamma",
   },
   volchik: {
-    tier: "OU",
+    tier: "Alpha",
   },
   voltasu: {
-    tier: "OU",
+    tier: "Alpha",
   },
   yatagaryu: {
-    tier: "OU",
+    tier: "Gamma",
   },
   devimp: {
-    tier: "OU",
+    tier: "Alpha",
   },
   fallengel: {
-    tier: "OU",
+    tier: "Beta",
   },
   beliaddon: {
-    tier: "OU",
+    tier: "Gamma",
   },
   seikamater: {
-    tier: "OU",
+    tier: "Gamma",
   },
   garlikid: {
-    tier: "OU",
+    tier: "Beta",
   },
   baitatao: {
     tier: "Illegal",
@@ -7008,7 +7008,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Uber",
   },
   actan: {
-    tier: "OU",
+    tier: "Gamma",
   },
   urayne: {
     tier: "Uber",
@@ -7029,9 +7029,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Illegal",
   },
   whimsicottmega: {
-    tier: "OU",
+    tier: "Beta",
   },
   arbokmega: {
-    tier: "OU",
+    tier: "Beta",
   },
 };

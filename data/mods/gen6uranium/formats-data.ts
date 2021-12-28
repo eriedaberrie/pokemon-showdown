@@ -3855,7 +3855,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	bergmite: {
-		tier: "Illegal",
+		tier: "LC",
 	},
 	avalugg: {
 		randomBattleMoves: ["avalanche", "earthquake", "rapidspin", "recover", "roar", "toxic"],
@@ -3993,7 +3993,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
     tier: "Beta",
   },
   dunseraph: {
-    tier: "Dunseraph"
+    tier: "Gamma"
   },
   fortog: {
     tier: "Alpha",
@@ -4421,6 +4421,15 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
   garlikid: {
     tier: "Beta",
   },
+  baitatao: {
+    tier: "Illegal",
+  },
+  leviathao: {
+    tier: "Illegal",
+  },
+  krakanao: {
+    tier: "Illegal",
+  },
   lanthan: {
     tier: "Uber",
   },
@@ -4432,6 +4441,18 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
   },
   uraynebeta: {
     tier: "Uber",
+  },
+  uraynegamma: {
+    tier: "Illegal",
+  },
+  aotius: {
+    tier: "Illegal",
+  },
+  mutios: {
+    tier: "Illegal",
+  },
+  zephy: {
+    tier: "Illegal",
   },
   whimsicottmega: {
     tier: "Beta",
