@@ -93555,16 +93555,10 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
   },
   aotius: {
     learnset: {
-      atomicpunch: ["6L1"],
-      halflife: ["6L30"],
-      nuclearwaste: ["6L10"],
     },
   },
   mutios: {
     learnset: {
-      atomicpunch: ["6L1"],
-      halflife: ["6L30"],
-      nuclearwaste: ["6L10"],
     },
   },
   zephy: {

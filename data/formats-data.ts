@@ -7010,6 +7010,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
   actan: {
     tier: "Gamma",
   },
+  actannuclear: {
+    tier: "Illegal",
+  },
   urayne: {
     tier: "Uber",
   },
