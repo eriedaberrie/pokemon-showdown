@@ -2413,6 +2413,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Arbokite",
 		desc: "If held by a Arbok, this item allows it to Mega Evolve in battle.",
 	},
+	nucleararbokite: {
+		name: "Nuclear Arbokite",
+		desc: "If held by a Nuclear Arbok, this item allows it to Mega Evolve in battle.",
+	},
 	aromaticherb: {
 		name: "Aromatic Herb",
 		desc: "Evolves Spritzee into Miasmedic when traded.",

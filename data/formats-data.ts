@@ -164,7 +164,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
 	},
+	ekansnuclear: {
+    tier: "Alpha",
+		doublesTier: "Uranium",
+	},
 	arbok: {
+    tier: "Alpha",
+		doublesTier: "Uranium",
+	},
+	arboknuclear: {
     tier: "Alpha",
 		doublesTier: "Uranium",
 	},
@@ -7233,6 +7241,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   arbokmega: {
+    tier: "Beta",
+		doublesTier: "Uranium",
+  },
+  arboknuclearmega: {
     tier: "Beta",
 		doublesTier: "Uranium",
   },

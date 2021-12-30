@@ -7357,6 +7357,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: -1016,
 		gen: 6,
 	},
+	nucleararbokite: {
+		name: "Nuclear Arbokite",
+		spritenum: 783,
+		megaStone: "Arbok-Nuclear-Mega",
+		megaEvolves: "Arbok-Nuclear",
+		itemUser: ["Arbok-Nuclear"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1016,
+		gen: 6,
+	},
 	aromaticherb: {
 		name: "Aromatic Herb",
 		spritenum: 784,
