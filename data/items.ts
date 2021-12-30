@@ -2277,7 +2277,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 	},
 	nucleargyaradosite: {
-		name: "Gyaradosite (N)",
+		name: "Nuclear Gyaradosite",
 		spritenum: 589,
 		megaStone: "Gyarados-Nuclear-Mega",
 		megaEvolves: "Gyarados-Nuclear",

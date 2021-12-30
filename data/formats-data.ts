@@ -1136,6 +1136,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
 	},
+	magikarpnuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+	},
 	gyarados: {
 		randomBattleMoves: ["bounce", "dragondance", "earthquake", "powerwhip", "waterfall"],
 		randomBattleLevel: 76,
@@ -1149,11 +1153,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	gyaradosnuclear: {
-		randomBattleMoves: ["bounce", "dragondance", "earthquake", "powerwhip", "waterfall"],
-		randomBattleLevel: 76,
-		randomDoubleBattleMoves: ["bounce", "dragondance", "icefang", "powerwhip", "protect", "waterfall"],
-		randomDoubleBattleLevel: 81,
-    tier: "Beta",
+    tier: "Uber",
+		doublesTier: "Uranium",
+	},
+	gyaradosnuclearmega: {
+    tier: "Uber",
 		doublesTier: "Uranium",
 	},
 	lapras: {
@@ -6965,7 +6969,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   gargryph: {
-    tier: "Beta",
+    tier: "Alpha",
 		doublesTier: "Uranium",
   },
   masking: {
