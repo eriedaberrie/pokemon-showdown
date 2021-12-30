@@ -86103,9 +86103,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       halflife: ["6S0"],
       nuclearslash: ["6S0"],
     },
-		eventData: [
-			{generation: 6, moves: ["halflife", "nuclearslash"]},
-		],
   },
   tanscurenuclear: {
     learnset: {
@@ -86165,6 +86162,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       uturn: ["6M"],
       xscissor: ["6M"],
     },
+		eventData: [
+			{generation: 6, moves: ["halflife", "nuclearslash"]},
+		],
   },
   sponee: {
     learnset: {
