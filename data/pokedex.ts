@@ -2835,7 +2835,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Magikarp-Nuclear",
 		evoLevel: 20,
 		eggGroups: ["Water 2", "Dragon"],
-		otherFormes: ["Gyarados-Mega"],
+		otherFormes: ["Gyarados-Nuclear-Mega"],
 		formeOrder: ["Gyarados-Nuclear", "Gyarados-Nuclear-Mega"],
 	},
 	gyaradosnuclearmega: {

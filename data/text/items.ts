@@ -721,6 +721,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Gyaradosite",
 		desc: "If held by a Gyarados, this item allows it to Mega Evolve in battle.",
 	},
+	nucleargyaradosite: {
+		name: "Nuclear Gyaradosite",
+		desc: "If held by a Nuclear Gyarados, this item allows it to Mega Evolve in battle.",
+	},
 	habanberry: {
 		name: "Haban Berry",
 		desc: "Halves damage taken from a supereffective Dragon-type attack. Single use.",
