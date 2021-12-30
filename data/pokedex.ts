@@ -18014,7 +18014,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   },
   palijnuclear: {
     num: -2041,
-    name: "Palij",
+    name: "Palij-Nuclear",
     types: ["Fire", "Nuclear"],
     baseStats: {hp: 60, atk: 45, def: 60, spa: 90, spd: 80, spe: 85},
     abilities: {0: "Flash Fire", 1: "Big Pecks", H: "Flame Body"},

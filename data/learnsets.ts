@@ -86100,8 +86100,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       toxic: ["6M"],
       uturn: ["6M"],
       xscissor: ["6M"],
-      halflife: ["6S0"],
-      nuclearslash: ["6S0"],
     },
   },
   tanscurenuclear: {
@@ -86161,6 +86159,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       toxic: ["6M"],
       uturn: ["6M"],
       xscissor: ["6M"],
+      halflife: ["6S0"],
+      nuclearslash: ["6S0"],
     },
 		eventData: [
 			{generation: 6, moves: ["halflife", "nuclearslash"]},
@@ -86384,6 +86384,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
     eventData: [
 			{generation: 6, level: 5, abilities: ["flamebody"], moves: ["quickattack", "halflife", "incinerate", "nuclearwind"], pokeball: "cherishball"},      
     ],
+		eventOnly: true,
   },
   palij: {
     learnset: {
@@ -86482,6 +86483,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       uturn: ["6M"],
       willowisp: ["6M"],
     },
+		eventOnly: true,
   },
   pajay: {
     learnset: {
@@ -86584,6 +86586,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       uturn: ["6M"],
       willowisp: ["6L1", "6M"],
     },
+		eventOnly: true,
   },
   jerbolta: {
     learnset: {
