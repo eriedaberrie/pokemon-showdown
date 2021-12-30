@@ -161,12 +161,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	ekans: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	arbok: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	pichu: {
 		tier: "LC",
@@ -493,12 +493,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	mankey: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	primeape: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	growlithe: {
 		tier: "LC",
@@ -1133,19 +1133,28 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	magikarp: {
-		tier: "LC",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	gyarados: {
 		randomBattleMoves: ["bounce", "dragondance", "earthquake", "powerwhip", "waterfall"],
 		randomBattleLevel: 76,
 		randomDoubleBattleMoves: ["bounce", "dragondance", "icefang", "powerwhip", "protect", "waterfall"],
 		randomDoubleBattleLevel: 81,
-		tier: "UU",
-		doublesTier: "(DUU)",
+    tier: "Beta",
+		doublesTier: "Uranium",
 	},
 	gyaradosmega: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Gamma",
+		doublesTier: "Uranium",
+	},
+	gyaradosnuclear: {
+		randomBattleMoves: ["bounce", "dragondance", "earthquake", "powerwhip", "waterfall"],
+		randomBattleLevel: 76,
+		randomDoubleBattleMoves: ["bounce", "dragondance", "icefang", "powerwhip", "protect", "waterfall"],
+		randomDoubleBattleLevel: 81,
+    tier: "Beta",
+		doublesTier: "Uranium",
 	},
 	lapras: {
 		tier: "(PU)",
@@ -1169,7 +1178,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	eevee: {
-		tier: "LC",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	eeveestarter: {
 		isNonstandard: "LGPE",
@@ -1185,40 +1195,40 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["healbell", "icywind", "protect", "scald", "toxic", "wish"],
 		randomDoubleBattleLevel: 88,
-		tier: "NU",
-		doublesTier: "(DUU)",
+    tier: "Gamma",
+		doublesTier: "Uranium",
 	},
 	jolteon: {
 		randomBattleMoves: ["hypervoice", "shadowball", "thunderbolt", "voltswitch"],
 		randomBattleLevel: 82,
 		randomDoubleBattleMoves: ["faketears", "protect", "shadowball", "thunderbolt", "thunderwave"],
 		randomDoubleBattleLevel: 86,
-		tier: "PU",
-		doublesTier: "(DUU)",
+    tier: "Beta",
+		doublesTier: "Uranium",
 	},
 	flareon: {
 		randomBattleMoves: ["facade", "flamecharge", "flareblitz", "quickattack", "superpower"],
 		randomBattleLevel: 86,
 		randomDoubleBattleMoves: ["facade", "flamecharge", "flareblitz", "protect", "quickattack", "superpower"],
 		randomDoubleBattleLevel: 88,
-		tier: "(PU)",
-		doublesTier: "(DUU)",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	espeon: {
 		randomBattleMoves: ["calmmind", "dazzlinggleam", "morningsun", "psychic", "shadowball"],
 		randomBattleLevel: 82,
 		randomDoubleBattleMoves: ["calmmind", "dazzlinggleam", "morningsun", "protect", "psychic", "shadowball"],
 		randomDoubleBattleLevel: 84,
-		tier: "NU",
-		doublesTier: "(DUU)",
+    tier: "Beta",
+		doublesTier: "Uranium",
 	},
 	umbreon: {
 		randomBattleMoves: ["foulplay", "protect", "toxic", "wish"],
 		randomBattleLevel: 82,
 		randomDoubleBattleMoves: ["foulplay", "helpinghand", "moonlight", "protect", "snarl", "toxic"],
 		randomDoubleBattleLevel: 88,
-		tier: "RU",
-		doublesTier: "(DUU)",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	leafeon: {
 		randomBattleMoves: ["doubleedge", "knockoff", "leafblade", "swordsdance", "synthesis", "xscissor"],
@@ -1233,16 +1243,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 88,
 		randomDoubleBattleMoves: ["blizzard", "freezedry", "helpinghand", "protect", "shadowball", "wish"],
 		randomDoubleBattleLevel: 88,
-		tier: "(PU)",
-		doublesTier: "(DUU)",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	sylveon: {
 		randomBattleMoves: ["calmmind", "hypervoice", "mysticalfire", "protect", "psyshock", "shadowball", "wish"],
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["calmmind", "hypervoice", "mysticalfire", "protect", "psyshock"],
 		randomDoubleBattleLevel: 80,
-		tier: "NU",
-		doublesTier: "DUU",
+    tier: "Gamma",
+		doublesTier: "Uranium",
 	},
 	porygon: {
 		tier: "LC",
@@ -1516,20 +1526,20 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	mareep: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	flaaffy: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	ampharos: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	ampharosmega: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	azurill: {
 		tier: "LC",
@@ -1612,12 +1622,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	misdreavus: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	mismagius: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	unown: {
 		isNonstandard: "Past",
@@ -1652,16 +1662,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 90,
 		randomDoubleBattleMoves: ["glare", "headbutt", "protect", "rockslide"],
 		randomDoubleBattleLevel: 90,
-		tier: "(PU)",
-		doublesTier: "(DUU)",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	gligar: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	gliscor: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Gamma",
+		doublesTier: "Uranium",
 	},
 	snubbull: {
 		isNonstandard: "Past",
@@ -1745,8 +1755,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 93,
 		randomDoubleBattleMoves: ["icywind", "lifedew", "recover", "scald", "toxic"],
 		randomDoubleBattleLevel: 95,
-		tier: "(PU)",
-		doublesTier: "(DUU)",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	corsolagalar: {
 		randomBattleMoves: ["haze", "nightshade", "stealthrock", "strengthsap", "willowisp"],
@@ -2010,18 +2020,20 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	lotad: {
-		tier: "LC",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	lombre: {
-		tier: "NFE",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	ludicolo: {
 		randomBattleMoves: ["gigadrain", "hydropump", "icebeam", "raindance", "scald"],
 		randomBattleLevel: 86,
 		randomDoubleBattleMoves: ["energyball", "fakeout", "hydropump", "icebeam", "raindance"],
 		randomDoubleBattleLevel: 86,
-		tier: "(PU)",
-		doublesTier: "(DUU)",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	seedot: {
 		tier: "LC",
@@ -2178,12 +2190,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomDoubleBattleMoves: ["disable", "encore", "fakeout", "foulplay", "knockoff", "quash", "recover", "willowisp"],
 		randomDoubleBattleLevel: 88,
 		randomBattleNoDynamaxMoves: ["encore", "knockoff", "recover", "taunt", "toxic", "willowisp"],
-		tier: "(PU)",
-		doublesTier: "(DUU)",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	sableyemega: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Gamma",
+		doublesTier: "Uranium",
 	},
 	mawile: {
 		randomBattleMoves: ["ironhead", "playrough", "stealthrock", "suckerpunch", "swordsdance"],
@@ -2873,12 +2885,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	buizel: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	floatzel: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	cherubi: {
 		tier: "NFE",
@@ -3526,7 +3538,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	cottonee: {
-		tier: "LC",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	whimsicott: {
 		randomBattleMoves: ["defog", "energyball", "leechseed", "moonblast", "stunspore", "taunt", "uturn"],
@@ -3534,8 +3547,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomDoubleBattleMoves: ["encore", "energyball", "helpinghand", "moonblast", "tailwind", "taunt"],
 		randomDoubleBattleLevel: 82,
 		randomBattleNoDynamaxMoves: ["defog", "encore", "energyball", "leechseed", "moonblast", "stunspore", "taunt", "uturn"],
-		tier: "PU",
-		doublesTier: "DOU",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	petilil: {
 		tier: "LC",
@@ -4402,15 +4415,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomDoubleBattleLevel: 84,
 	},
 	spritzee: {
-		tier: "LC",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	aromatisse: {
 		randomBattleMoves: ["calmmind", "moonblast", "protect", "toxic", "wish"],
 		randomBattleLevel: 88,
 		randomDoubleBattleMoves: ["healpulse", "moonblast", "protect", "thunderbolt", "trickroom", "wish"],
 		randomDoubleBattleLevel: 86,
-		tier: "PU",
-		doublesTier: "(DUU)",
+    tier: "Alpha",
+		doublesTier: "Uranium",
 	},
 	swirlix: {
 		tier: "NFE",
@@ -6496,545 +6510,726 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
   orchynx: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   metalynx: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   metalynxmega: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   raptorch: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   archilles: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   archillesmega: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   eletux: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   electruxo: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   electruxomega: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   chyinmunk: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   kinetmunk: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   birbie: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   aveden: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   splendifowl: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   cubbug: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   cubblfly: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   nimflora: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   barewl: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   dearewl: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   gararewl: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   grozard: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   terlard: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   tonemy: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   tofurang: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   dunseraph: {
-    tier: "Gamma"
+    tier: "Gamma",
+		doublesTier: "Uranium",
   },
   fortog: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   folerog: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   blubelrog: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   feleng: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   felunge: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   feliger: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   empirilla: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   owten: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   eshouten: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   smore: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   firoke: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   brailip: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   brainoar: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   tancoon: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   tanscure: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   sponee: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   sponaree: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   pahar: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   palij: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   pajay: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   jerbolta: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   comite: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   cometeor: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   astronite: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   baashaun: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   baaschaf: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   baariette: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   baariettemega: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   tricwe: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   harylect: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   costraw: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   trawpint: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   lunapup: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   herolune: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   minyan: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   vilucard: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   modrille: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   drilgann: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   drilgann: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   cocaran: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   cararalm: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   cocancer: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   corsoreef: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   tubjaw: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   tubareel: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   cassnail: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   sableau: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   escartress: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   nupin: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   gellin: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   barand: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   glaslug: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   glavinug: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   s51: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   s51a: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   s51amega: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   paraudio: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   paraboom: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   flager: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   inflagetah: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   inflagetahmega: {
     tier: "Uber",
+		doublesTier: "Uranium",
   },
   chimical: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   chimaconda: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   tikiki: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   frikitiki: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   unymph: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   harptera: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   chicoatl: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   quetzoral: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   coatlith: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   tracton: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   snopach: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   dermafrost: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   slothohm: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   theriamp: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   titanice: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   frynai: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   saidine: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   daikatuna: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   selkid: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   syrentide: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   syrentidemega: {
     tier: "Uber",
+		doublesTier: "Uranium",
   },
   miasmedic: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   jackdeary: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   winotinger: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   duplicat: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   nucleon: {
     tier: "Uber",
+		doublesTier: "Uranium",
   },
   ratsy: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   raffiti: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   gargryph: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   masking: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   dramsama: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   dramsamamega: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   antarki: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   chupacho: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   luchabra: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   linkite: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   chainite: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   pufluff: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   alpico: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   anderind: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   colarva: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   frosulo: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   frosthra: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   fafurr: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   fafninter: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   shrimputy: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   krilvolver: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   lavent: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   swabone: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   skelerogue: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   navighast: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   stenowatt: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   jungore: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   majungold: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   hagoop: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   haagross: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   xenomite: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   xenogen: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   xenoqueen: {
-    tier: "Gamma",
+    tier: "Uber",
+		doublesTier: "Uranium",
   },
   hazma: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   geigeroach: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   minicorn: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   kiricorn: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   kiricornmega: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   oblivicorn: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   luxi: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   luxor: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   luxelong: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   praseopunk: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   neopunk: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   sheebit: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   terrabbit: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   laissure: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   volchik: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   voltasu: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   yatagaryu: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   devimp: {
     tier: "Alpha",
+		doublesTier: "Uranium",
   },
   fallengel: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   beliaddon: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   seikamater: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   garlikid: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   baitatao: {
     tier: "Illegal",
+		isNonstandard: "Unobtainable",
   },
   leviathao: {
     tier: "Illegal",
+		isNonstandard: "Unobtainable",
   },
   krakanao: {
     tier: "Illegal",
+		isNonstandard: "Unobtainable",
   },
   lanthan: {
     tier: "Uber",
+		doublesTier: "Uranium",
   },
   actan: {
     tier: "Gamma",
+		doublesTier: "Uranium",
   },
   actannuclear: {
     tier: "Illegal",
+		isNonstandard: "Unobtainable",
   },
   urayne: {
     tier: "Uber",
+		doublesTier: "Uranium",
   },
   uraynebeta: {
     tier: "Uber",
+		doublesTier: "Uranium",
   },
   uraynegamma: {
     tier: "Illegal",
+		isNonstandard: "Unobtainable",
   },
   aotius: {
     tier: "Illegal",
+		isNonstandard: "Unobtainable",
   },
   mutios: {
     tier: "Illegal",
+		isNonstandard: "Unobtainable",
   },
   zephy: {
     tier: "Illegal",
+		isNonstandard: "Unobtainable",
   },
   whimsicottmega: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
   arbokmega: {
     tier: "Beta",
+		doublesTier: "Uranium",
   },
 };

@@ -140,6 +140,10 @@ export const Tags: {[id: string]: TagData} = {
 		name: "Uber",
 		speciesFilter: species => species.tier === 'Uber' || species.tier === '(Uber)' || species.tier === 'AG',
 	},
+	canonuber: {
+		name: "CanonUber",
+		speciesFilter: species => species.tier === 'CanonUber' || species.tier === '(CanonUber)' || species.tier === 'AG',
+	},
 	ou: {
 		name: "OU",
 		speciesFilter: species => species.tier === 'OU' || species.tier === '(OU)',
@@ -215,6 +219,10 @@ export const Tags: {[id: string]: TagData} = {
 
 	// Doubles tiers
 	// -------------
+  uranium: {
+    name: "Uranium",
+    speciesFilter: species => species.doublesTier === 'Uranium',
+  },
 	duber: {
 		name: "DUber",
 		speciesFilter: species => species.doublesTier === 'DUber' || species.doublesTier === '(DUber)',

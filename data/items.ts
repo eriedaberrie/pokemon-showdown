@@ -220,7 +220,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 658,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	apicotberry: {
 		name: "Apicot Berry",
@@ -2276,7 +2275,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 676,
 		gen: 6,
-		isNonstandard: "Past",
+	},
+	nucleargyaradosite: {
+		name: "Gyaradosite (N)",
+		spritenum: 589,
+		megaStone: "Gyarados-Nuclear-Mega",
+		megaEvolves: "Gyarados-Nuclear",
+		itemUser: ["Gyarados-Nuclear"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 676,
+		gen: 6,
 	},
 	habanberry: {
 		name: "Haban Berry",
@@ -4693,7 +4704,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 754,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	sachet: {
 		name: "Sachet",
@@ -7203,7 +7213,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: -1005,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	archillesite: {
 		name: "Archillesite",
@@ -7217,7 +7226,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: -1006,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	electruxolite: {
 		name: "Elextruxolite",
@@ -7231,13 +7239,12 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: -1007,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	baariettite: {
 		name: "Baariettite",
 		spritenum: 775,
 		megaStone: "Baariette-Mega",
-		megaEvolves: " Baariette",
+		megaEvolves: "Baariette",
 		itemUser: ["Baariette"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -7245,7 +7252,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: -1008,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	drilgannite: {
 		name: "Drilgannite",
@@ -7259,7 +7265,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: -1009,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	inflagetite: {
 		name: "Inflagetite",
@@ -7273,7 +7278,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: -1010,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	dramsamaite: {
 		name: "Dramsamaite",
@@ -7287,7 +7291,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: -1011,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	syrentideite: {
 		name: "Syrentideite",
@@ -7301,7 +7304,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: -1012,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	unidentifiedfallenobject: {
 		name: "Unidentified Fallen Object",
@@ -7315,7 +7317,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: -1013,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	kiricornite: {
 		name: "Kiricornite",
@@ -7329,7 +7330,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: -1014,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	whimsicottite: {
 		name: "Whimsicottite",
@@ -7343,7 +7343,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: -1015,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	arbokite: {
 		name: "Arbokite",
@@ -7357,7 +7356,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: -1016,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	aromaticherb: {
 		name: "Aromatic Herb",
