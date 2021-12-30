@@ -5301,11 +5301,12 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 475,
 		onModifyCritRatio(critRatio, user) {
 			if ((this.toID(user.baseSpecies.baseSpecies) === 'farfetchd') ||
-        (this.toID(user.baseSpecies.baseSpecies)) === 'barand') {
+        (this.toID(user.baseSpecies.baseSpecies) === 'barand') ||
+        (this.toID(user.baseSpecies.baseSpecies) === 'barandnuclear')) {
 				return critRatio + 2;
 			}
 		},
-		itemUser: ["Farfetch\u2019d", "Barand"],
+		itemUser: ["Farfetch\u2019d", "Barand", "Barand-Nuclear"],
 		num: 259,
 		gen: 2,
 		isNonstandard: "Past",
@@ -7246,6 +7247,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		megaStone: "Baariette-Mega",
 		megaEvolves: "Baariette",
 		itemUser: ["Baariette"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1008,
+		gen: 6,
+	},
+	nuclearbaariettite: {
+		name: "Nuclear Baariettite",
+		spritenum: 775,
+		megaStone: "Baariette-Nuclear-Mega",
+		megaEvolves: "Baariette-Nuclear",
+		itemUser: ["Baariette-Nuclear"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;

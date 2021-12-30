@@ -2381,6 +2381,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Baariettite",
 		desc: "If held by a Baariette, this item allows it to Mega Evolve in battle.",
 	},
+	nuclearbaariettite: {
+		name: "Nuclear Baariettite",
+		desc: "If held by a Nuclear Baariette, this item allows it to Mega Evolve in battle.",
+	},
 	drilgannite: {
 		name: "Drilgannite",
 		desc: "If held by a Drilgann, this item allows it to Mega Evolve in battle.",

@@ -165,7 +165,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	ekansnuclear: {
-    tier: "Alpha",
+    tier: "Uber",
 		doublesTier: "Uranium",
 	},
 	arbok: {
@@ -173,7 +173,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	arboknuclear: {
-    tier: "Alpha",
+    tier: "Uber",
 		doublesTier: "Uranium",
 	},
 	pichu: {
@@ -1681,10 +1681,18 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
 	},
+  gligarnuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
 	gliscor: {
     tier: "Gamma",
 		doublesTier: "Uranium",
 	},
+  gliscornuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
 	snubbull: {
 		isNonstandard: "Past",
 		tier: "Illegal",
@@ -1770,6 +1778,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
 	},
+  corsolanuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
 	corsolagalar: {
 		randomBattleMoves: ["haze", "nightshade", "stealthrock", "strengthsap", "willowisp"],
 		randomBattleLevel: 84,
@@ -6560,8 +6572,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  chyinmunknuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   kinetmunk: {
     tier: "Alpha",
+		doublesTier: "Uranium",
+  },
+  kinetmunknuclear: {
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
   birbie: {
@@ -6652,8 +6672,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  owtennuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   eshouten: {
     tier: "Alpha",
+		doublesTier: "Uranium",
+  },
+  eshoutennuclear: {
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
   smore: {
@@ -6676,8 +6704,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  tancoonnuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   tanscure: {
     tier: "Beta",
+		doublesTier: "Uranium",
+  },
+  tanscurenuclear: {
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
   sponee: {
@@ -6692,16 +6728,32 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  paharnuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   palij: {
     tier: "Alpha",
+		doublesTier: "Uranium",
+  },
+  palijnuclear: {
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
   pajay: {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  pajaynuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   jerbolta: {
     tier: "Alpha",
+		doublesTier: "Uranium",
+  },
+  jerboltanuclear: {
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
   comite: {
@@ -6720,16 +6772,32 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  baashaunnuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   baaschaf: {
     tier: "Alpha",
+		doublesTier: "Uranium",
+  },
+  baaschafnuclear: {
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
   baariette: {
     tier: "Beta",
 		doublesTier: "Uranium",
   },
+  baariettenuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   baariettemega: {
     tier: "Gamma",
+		doublesTier: "Uranium",
+  },
+  baariettenuclearmega: {
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
   tricwe: {
@@ -6744,8 +6812,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  costrawnuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   trawpint: {
     tier: "Alpha",
+		doublesTier: "Uranium",
+  },
+  trawpintnuclear: {
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
   lunapup: {
@@ -6792,12 +6868,24 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  corsoreefnuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   tubjaw: {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  tubjawnuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   tubareel: {
     tier: "Gamma",
+		doublesTier: "Uranium",
+  },
+  tubareelnuclear: {
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
   cassnail: {
@@ -6816,12 +6904,24 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  nupinnuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   gellin: {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  gellinnuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   barand: {
     tier: "Alpha",
+		doublesTier: "Uranium",
+  },
+  barandnuclear: {
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
   glaslug: {
@@ -6848,8 +6948,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  paraudionuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   paraboom: {
     tier: "Gamma",
+		doublesTier: "Uranium",
+  },
+  paraboomnuclear: {
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
   flager: {
@@ -7000,8 +7108,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  chupachonuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   luchabra: {
     tier: "Beta",
+		doublesTier: "Uranium",
+  },
+  luchabranuclear: {
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
   linkite: {
@@ -7084,8 +7200,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  hagoopnuclear: {
+    tier: "Uber",
+		doublesTier: "Uranium",
+  },
   haagross: {
     tier: "Beta",
+		doublesTier: "Uranium",
+  },
+  haagrossnuclear: {
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
   xenomite: {
@@ -7245,7 +7369,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   arboknuclearmega: {
-    tier: "Beta",
+    tier: "Uber",
 		doublesTier: "Uranium",
   },
 };
