@@ -18678,7 +18678,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Syrentide-Mega",
 		baseSpecies: "Syrentide",
 		forme: "Mega",
-		types: ["Fire", "Ground"],
+		types: ["Water", "Fairy"],
     gender: "F",
 		baseStats: {hp: 98, atk: 68, def: 128, spa: 118, spd: 158, spe: 88},
 		abilities: {0: "Pixilate"},

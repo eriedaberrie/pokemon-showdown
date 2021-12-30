@@ -7346,7 +7346,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	arbokite: {
 		name: "Arbokite",
-		spritenum: 782,
+		spritenum: 783,
 		megaStone: "Arbok-Mega",
 		megaEvolves: "Arbok",
 		itemUser: ["Arbok"],
@@ -7359,7 +7359,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	aromaticherb: {
 		name: "Aromatic Herb",
-		spritenum: 783,
+		spritenum: 784,
 		fling: {
 			basePower: 80,
 		},
