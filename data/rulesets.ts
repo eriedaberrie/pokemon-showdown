@@ -524,7 +524,8 @@ export const Rulesets: {[k: string]: FormatData} = {
 			for (const set of team) {
 				const species = this.dex.species.get(set.species);
 				if (speciesTable.has(species.num)) {
-					return [`You are limited to one of each Pokémon by Species Clause.`, `(You have more than one ${species.baseSpecies})`];
+					return [`You are limited to one of each Pokémon by Species Clause.`,
+            `(You have more than one ${['-Nuclear', '-Mystery'].includes(species.baseSpecies.slice(-8)) ? species.baseSpecies.slice(0, -8) : species.baseSpecies})`];
 				}
 				speciesTable.add(species.num);
 			}

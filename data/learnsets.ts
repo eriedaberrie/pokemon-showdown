@@ -86382,7 +86382,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       nuclearwind: ["6S0"],
     },
     eventData: [
-			{generation: 6, level: 5, abilities: ["flamebody"], moves: ["quickattack", "halflife", "incinerate", "nuclearwind"], pokeball: "cherishball"},      
+			{generation: 6, level: 5, isHidden: true, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["quickattack", "halflife", "incinerate", "nuclearwind"], pokeball: "cherishball"},
     ],
 		eventOnly: true,
   },
@@ -86483,6 +86483,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       uturn: ["6M"],
       willowisp: ["6M"],
     },
+    eventData: [
+			{generation: 6, level: 5, isHidden: true, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["quickattack", "halflife", "incinerate", "nuclearwind"], pokeball: "cherishball"},
+    ],
 		eventOnly: true,
   },
   pajay: {
@@ -86586,6 +86589,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       uturn: ["6M"],
       willowisp: ["6L1", "6M"],
     },
+    eventData: [
+			{generation: 6, level: 5, isHidden: true, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["quickattack", "halflife", "incinerate", "nuclearwind"], pokeball: "cherishball"},
+    ],
 		eventOnly: true,
   },
   jerbolta: {
