@@ -1842,9 +1842,9 @@ export const Rulesets: {[k: string]: FormatData} = {
   nuclearclausemod: {
     effectType: 'Rule',
     name: 'Nuclear Clause Mod',
-    desc: "Prevents Pok&eacute;mon without the Nuclear type from using Nuclear-type moves.",
+    desc: "Prevents Pok&eacute;mon without the Nuclear type from using damaging Nuclear-type moves.",
     onBegin() {
-      this.add('rule', "Nuclear Clause Mod: Non-Nuclear Pok&eacute;mon can't use Nuclear moves");
+      this.add('rule', "Nuclear Clause Mod: Non-Nuclear Pokémon can't use damaging Nuclear moves");
     },
 		onTryHit(target, source, move) {
 			if ((move.type === 'Nuclear') && !source.hasType('Nuclear')) {
@@ -1858,7 +1858,7 @@ export const Rulesets: {[k: string]: FormatData} = {
     name: 'Soft Baton Pass Clause Mod',
     desc: 'Prevents Baton Pass from passing positive stat boosts.',
     onBegin() {
-      this.add('rule', 'Soft Baton Pass Mod: Baton Pass doesn\'t pass positive stat boosts')
+      this.add('rule', "Soft Baton Pass Mod: Baton Pass doesn't pass positive stat boosts")
     },
     onTryHit(target, source, move) {
       if (move.id !== 'batonpass') return;

@@ -20071,7 +20071,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	protonbeam: {
 		num: -21,
-		accuracy: 100,
+		accuracy: 90,
 		basePower: 100,
 		category: "Special",
 		name: "Proton Beam",

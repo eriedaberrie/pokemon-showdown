@@ -721,11 +721,8 @@ export const Conditions: {[k: string]: ConditionData} = {
 			if (this.field.isWeather('thunderstorm')) this.eachEvent('Weather');
 		},
 		onWeather(target) {
-      if (!(this.effectState.duration % 2))
-      {
-        const electricweather = this.dex.getActiveMove('Stealth Rock');
-        electricweather.type = "Electric";
-        const typeMod = this.clampIntRange(target.runEffectiveness(electricweather), -6, 6);
+      if (!(this.effectState.duration % 2)) {
+        const typeMod = target.runEffectiveness(this.dex.getActiveMove('Thundershock'));
         this.damage(target.baseMaxhp * Math.pow(2, typeMod) / 8);
       }
 		},
@@ -761,11 +758,8 @@ export const Conditions: {[k: string]: ConditionData} = {
 			if (this.field.isWeather('fallout')) this.eachEvent('Weather');
 		},
 		onWeather(target) {
-      if (!(this.effectState.duration % 2))
-      {
-        const nuclearweather = this.dex.getActiveMove('Stealth Rock');
-        nuclearweather.type = "Nuclear";
-        const typeMod = this.clampIntRange(target.runEffectiveness(nuclearweather), -6, 6);
+      if (!(this.effectState.duration % 2)) {
+        const typeMod = target.runEffectiveness(this.dex.getActiveMove('Gamma Ray'));
         this.damage(target.baseMaxhp * Math.pow(2, typeMod) / 8);
       }
 		},
