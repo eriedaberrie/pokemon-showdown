@@ -18407,7 +18407,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   vilucardmystery: {
     num: -2057,
     name: "Vilucard-Mystery",
-    baseForme: "Vilucard",
+    baseSpecies: "Vilucard",
     forme: "Mystery",
     types: ["Dark", "Poison"],
     baseStats: {hp: 75, atk: 108, def: 60, spa: 102, spd: 58, spe: 90},
