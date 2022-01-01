@@ -6836,7 +6836,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  minyanmystery: {
+    tier: "Alpha",
+		doublesTier: "Uranium",
+  },
   vilucard: {
+    tier: "Alpha",
+		doublesTier: "Uranium",
+  },
+  vilucardmystery: {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
@@ -6856,11 +6864,23 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  cocaranmystery: {
+    tier: "Alpha",
+		doublesTier: "Uranium",
+  },
   cararalm: {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  cararalmmystery: {
+    tier: "Alpha",
+		doublesTier: "Uranium",
+  },
   cocancer: {
+    tier: "Gamma",
+		doublesTier: "Uranium",
+  },
+  cocancermystery: {
     tier: "Gamma",
 		doublesTier: "Uranium",
   },
