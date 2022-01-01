@@ -85234,7 +85234,13 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       uproar: ["6T"],
       yawn: ["6L1"],
       zenheadbutt: ["6M"],
+      bestow: ["6S0"],
+      wrap: ["6S0"],
+      present: ["6S0"],
     },
+		eventData: [
+			{generation: 6, level: 5, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["cutecharm"], moves: ["bestow", "wrap", "present", "return"], pokeball: "cherishball"},
+		],
   },
   felunge: {
     learnset: {
@@ -85513,7 +85519,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       uturn: ["6M"],
       wingattack: ["6L13"],
       zenheadbutt: ["6L40", "6M"],
+      flashcannon: ["6S0"],
     },
+		eventData: [
+			{generation: 6, level: 5, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["serenegrace"], moves: ["peck", "charm", "foresight", "flashcannon"], pokeball: "cherishball"},
+		],
   },
   owtennuclear: {
     learnset: {
@@ -85978,7 +85988,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       uturn: ["6M"],
       xscissor: ["6M"],
       yawn: ["6E"],
+      extremespeed: ["6S0"],
     },
+		eventData: [
+			{generation: 6, level: 5, gender: "M", nature: "Jolly", ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["runaway"], moves: ["tackle", "howl", "extremespeed"], pokeball: "cherishball"},
+		],
   },
   tancoonnuclear: {
     learnset: {
@@ -90026,7 +90040,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       toxic: ["6M"],
       waterfall: ["6M"],
       waterpulse: ["6M", "6E"],
+      venoshock: ["6S0"],
+      tickle: ["6S0"],
     },
+		eventData: [
+			{generation: 6, level: 5, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["naturalcure"], moves: ["tackle", "protect", "venoshock", "tickle"], pokeball: "cherishball"},
+		],
   },
   glavinug: {
     learnset: {
@@ -90326,7 +90345,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       trickroom: ["6M"],
       uproar: ["6L32", "6T"],
       zenheadbutt: ["6L38", "6M"],
+      destinybond: ["6S0"],
+      aromatherapy: ["6S0"],
     },
+		eventData: [
+			{generation: 6, level: 5, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["soundproof"], moves: ["slam", "destinybond", "aromatherapy", "poisonjab"], pokeball: "cherishball"},
+		],
   },
   paraudionuclear: {
     learnset: {
@@ -90771,7 +90795,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       willowisp: ["6M", "6E"],
       wrap: ["6L9"],
       zenheadbutt: ["6M"],
+      sandtomb: ["6S0"],
+      hex: ["6S0"],
     },
+		eventData: [
+			{generation: 6, level: 5, nature: "Timid", ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, isHidden: true, moves: ["curse", "sandtomb", "overheat", "hex"], pokeball: "cherishball"},
+		],
   },
   chimaconda: {
     learnset: {
@@ -91430,7 +91459,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       vicegrip: ["6L1"],
       xscissor: ["6M"],
       zapcannon: ["6E"],
+      present: ["6S0"],
+      fissure: ["6S0"],
     },
+		eventData: [
+			{generation: 6, level: 5, nature: "Jolly", ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["speedboost"], moves: ["present", "crunch", "dragonrush", "fissure"], pokeball: "cherishball"},
+		],
   },
   snopach: {
     learnset: {
@@ -91784,7 +91818,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       uproar: ["6T"],
       waterfall: ["6M"],
       waterpulse: ["6M"],
+      doomdesire: ["6S0"],
+      destinybond: ["6S0"],
+      shadowclaw: ["6S0"],
+      whirlpool: ["6S0"],
     },
+		eventData: [
+			{generation: 6, level: 5, nature: "Adamant", ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["forewarn"], moves: ["doomdesire", "destinybond", "shadowclaw", "whirlpool"], pokeball: "cherishball"},
+		],
   },
   frynai: {
     learnset: {
@@ -94170,7 +94211,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       thrash: ["6L40"],
       thunderpunch: ["6T"],
       toxic: ["6M"],
+      smackdown: ["6S0"],
     },
+		eventData: [
+			{generation: 6, level: 5, gender: "F", nature: "Adamant", ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["battlearmor"], moves: ["tackle", "defensecurl", "smackdown"], pokeball: "cherishball"},
+		],
   },
   majungold: {
     learnset: {
@@ -94728,7 +94773,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       trick: ["6T"],
       trickroom: ["6M"],
       zenheadbutt: ["6M"],
+      fallout: ["6S0"],
+      suckerpunch: ["6S0"],
+      clearsmog: ["6S0"],
+      payback: ["6S0"],
     },
+		eventData: [
+			{generation: 6, level: 5, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["fallout", "suckerpunch", "clearsmog", "payback"], pokeball: "cherishball"},
+		],
   },
   geigeroach: {
     learnset: {
@@ -95674,7 +95726,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       voltswitch: ["6E"],
       wildcharge: ["6E"],
       wingattack: ["6L25"],
+      cottonguard: ["6S0"],
+      sweetkiss: ["6S0"],
     },
+		eventData: [
+			{generation: 6, level: 5, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["megahorn", "voltswitch", "cottonguard", "sweetkiss"], pokeball: "cherishball"},
+		],
   },
   voltasu: {
     learnset: {
@@ -95905,7 +95962,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       torment: ["6L42", "6M"],
       toxic: ["6M"],
       willowisp: ["6M"],
+      metalwhip: ["6S0"],
     },
+		eventData: [
+			{generation: 6, level: 5, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["nastyplot", "ember", "bite", "metalwhip"], pokeball: "cherishball"},
+		],
   },
   fallengel: {
     learnset: {
