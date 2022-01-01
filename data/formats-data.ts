@@ -7084,7 +7084,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
+  jackdearymystery: {
+    tier: "Alpha",
+		doublesTier: "Uranium",
+  },
   winotinger: {
+    tier: "Beta",
+		doublesTier: "Uranium",
+  },
+  winotingermystery: {
     tier: "Beta",
 		doublesTier: "Uranium",
   },
