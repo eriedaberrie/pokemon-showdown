@@ -92205,7 +92205,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       xscissor: ["6M"],
     },
   },
-  jackdearynuclear: {
+  jackdearymystery: {
     learnset: {
       aerialace: ["6M"],
       attract: ["6M"],
