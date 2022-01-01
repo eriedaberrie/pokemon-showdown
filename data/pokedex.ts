@@ -514,6 +514,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	ekansnuclear: {
 		num: 23,
 		name: "Ekans-Nuclear",
+		forme: "Nuclear",
 		types: ["Poison", "Nuclear"],
 		baseStats: {hp: 35, atk: 60, def: 44, spa: 40, spd: 54, spe: 55},
 		abilities: {0: "Intimidate", 1: "Shed Skin"},
@@ -555,6 +556,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	arboknuclear: {
 		num: 24,
 		name: "Arbok-Nuclear",
+		forme: "Nuclear",
 		types: ["Poison", "Nuclear"],
 		baseStats: {hp: 60, atk: 95, def: 69, spa: 65, spd: 79, spe: 80},
 		abilities: {0: "Intimidate", 1: "Shed Skin"},
@@ -2785,6 +2787,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	magikarpnuclear: {
 		num: 129,
 		name: "Magikarp-Nuclear",
+		forme: "Nuclear",
 		types: ["Water", "Nuclear"],
 		baseStats: {hp: 20, atk: 10, def: 55, spa: 15, spd: 20, spe: 80},
 		abilities: {0: "Swift Swim"},
@@ -2826,6 +2829,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	gyaradosnuclear: {
 		num: 130,
 		name: "Gyarados-Nuclear",
+		forme: "Nuclear",
 		types: ["Water", "Nuclear"],
 		baseStats: {hp: 95, atk: 125, def: 79, spa: 60, spd: 100, spe: 81},
 		abilities: {0: "Intimidate"},
@@ -4084,6 +4088,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	gligarnuclear: {
 		num: 207,
 		name: "Gligar-Nuclear",
+		forme: "Nuclear",
 		types: ["Ground", "Nuclear"],
 		baseStats: {hp: 65, atk: 75, def: 105, spa: 35, spd: 65, spe: 85},
 		abilities: {0: "Hyper Cutter", 1: "Sand Veil"},
@@ -4335,6 +4340,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	corsolanuclear: {
 		num: 222,
 		name: "Corsola-Nuclear",
+		forme: "Nuclear",
 		types: ["Water", "Nuclear"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 65, atk: 55, def: 95, spa: 65, spd: 95, spe: 35},
@@ -8264,6 +8270,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	gliscornuclear: {
 		num: 472,
 		name: "Gliscor-Nuclear",
+		forme: "Nuclear",
 		types: ["Ground", "Nuclear"],
 		baseStats: {hp: 75, atk: 95, def: 125, spa: 45, spd: 75, spe: 95},
 		abilities: {0: "Hyper Cutter", 1: "Sand Veil"},
@@ -17484,6 +17491,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   chyinmunknuclear: {
     num: -2007,
     name: "Chyinmunk-Nuclear",
+		forme: "Nuclear",
     types: ["Normal", "Nuclear"],
     baseStats: {hp: 35, atk: 40, def: 50, spa: 55, spd: 50, spe: 55},
     abilities: {0: "Run Away", 1: "Pickup"},
@@ -17509,6 +17517,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   kinetmunknuclear: {
     num: -2008,
     name: "Kinetmunk-Nuclear",
+		forme: "Nuclear",
     types: ["Normal", "Nuclear"],
     baseStats: {hp: 65, atk: 45, def: 70, spa: 75, spd: 70, spe: 90},
     abilities: {0: "Run Away", 1: "Pickup"},
@@ -17808,6 +17817,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   owtennuclear: {
     num: -2030,
     name: "Owten-Nuclear",
+		forme: "Nuclear",
     types: ["Normal", "Nuclear"],
     baseStats: {hp: 50, atk: 60, def: 30, spa: 40, spd: 35, spe: 75},
     abilities: {0: "Serene Grace", 1: "Insomnia"},
@@ -17833,6 +17843,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   eshoutennuclear: {
     num: -2031,
     name: "Eshouten-Nuclear",
+		forme: "Nuclear",
     types: ["Normal", "Nuclear"],
     baseStats: {hp: 75, atk: 85, def: 55, spa: 65, spd: 60, spe: 110},
     abilities: {0: "Serene Grace", 1: "Insomnia"},
@@ -17911,6 +17922,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   tancoonnuclear: {
     num: -2036,
     name: "Tancoon-Nuclear",
+		forme: "Nuclear",
     types: ["Dark", "Nuclear"],
     baseStats: {hp: 55, atk: 55, def: 40, spa: 45, spd: 55, spe: 60},
     abilities: {0: "Guts", 1: "Run Away"},
@@ -17936,6 +17948,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   tanscurenuclear: {
     num: -2037,
     name: "Tanscure-Nuclear",
+		forme: "Nuclear",
     types: ["Dark", "Nuclear"],
     baseStats: {hp: 80, atk: 85, def: 60, spa: 55, spd: 80, spe: 95},
     abilities: {0: "Guts", 1: "Moxie"},
@@ -17989,6 +18002,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   paharnuclear: {
     num: -2040,
     name: "Pahar-Nuclear",
+		forme: "Nuclear",
     types: ["Fire", "Nuclear"],
     baseStats: {hp: 45, atk: 45, def: 50, spa: 70, spd: 60, spe: 60},
     abilities: {0: "Flash Fire", 1: "Big Pecks", H: "Flame Body"},
@@ -18015,6 +18029,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   palijnuclear: {
     num: -2041,
     name: "Palij-Nuclear",
+		forme: "Nuclear",
     types: ["Fire", "Nuclear"],
     baseStats: {hp: 60, atk: 45, def: 60, spa: 90, spd: 80, spe: 85},
     abilities: {0: "Flash Fire", 1: "Big Pecks", H: "Flame Body"},
@@ -18042,6 +18057,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   pajaynuclear: {
     num: -2042,
     name: "Pajay-Nuclear",
+		forme: "Nuclear",
     types: ["Fire", "Nuclear"],
     baseStats: {hp: 80, atk: 50, def: 60, spa: 110, spd: 80, spe: 100},
     abilities: {0: "Flash Fire", 1: "Big Pecks", H: "Flame Body"},
@@ -18066,6 +18082,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   jerboltanuclear: {
     num: -2043,
     name: "Jerbolta-Nuclear",
+		forme: "Nuclear",
     types: ["Electric", "Nuclear"],
     baseStats: {hp: 60, atk: 65, def: 45, spa: 85, spd: 65, spe: 110},
     abilities: {0: "Quick Charge"},
@@ -18132,6 +18149,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   baashaunnuclear: {
     num: -2047,
     name: "Baashaun-Nuclear",
+		forme: "Nuclear",
     types: ["Dark", "Nuclear"],
     genderRatio: {M: 0.75, F: 0.25},
     baseStats: {hp: 70, atk: 75, def: 50, spa: 35, spd: 40, spe: 40},
@@ -18160,6 +18178,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   baaschafnuclear: {
     num: -2048,
     name: "Baaschaf-Nuclear",
+		forme: "Nuclear",
     types: ["Dark", "Nuclear"],
     genderRatio: {M: 0.75, F: 0.25},
     baseStats: {hp: 85, atk: 90, def: 70, spa: 45, spd: 65, spe: 55},
@@ -18206,6 +18225,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   baariettenuclear: {
     num: -2049,
     name: "Baariette-Nuclear",
+		forme: "Nuclear",
     types: ["Dark", "Nuclear"],
     genderRatio: {M: 0.75, F: 0.25},
     baseStats: {hp: 100, atk: 125, def: 85, spa: 75, spd: 85, spe: 75},
@@ -18277,6 +18297,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   costrawnuclear: {
     num: -2052,
     name: "Costraw-Nuclear",
+		forme: "Nuclear",
     types: ["Poison", "Nuclear"],
     baseStats: {hp: 55, atk: 40, def: 40, spa: 55, spd: 55, spe: 60},
     abilities: {0: "Shed Skin", 1: "Infiltrator"},
@@ -18302,6 +18323,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   trawpintnuclear: {
     num: -2053,
     name: "Trawpint-Nuclear",
+		forme: "Nuclear",
     types: ["Poison", "Nuclear"],
     baseStats: {hp: 90, atk: 50, def: 85, spa: 85, spd: 95, spe: 85},
     abilities: {0: "Shed Skin", 1: "Infiltrator"},
@@ -18548,6 +18570,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   corsoreefnuclear: {
     num: -2063,
     name: "Corsoreef-Nuclear",
+		forme: "Nuclear",
     types: ["Water", "Nuclear"],
     genderRatio: {M: 0.25, F: 0.75},
     baseStats: {hp: 90, atk: 55, def: 105, spa: 60, spd: 105, spe: 25},
@@ -18575,6 +18598,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   tubjawnuclear: {
     num: -2064,
     name: "Tubjaw-Nuclear",
+		forme: "Nuclear",
     types: ["Water", "Nuclear"],
     genderRatio: {M: 0.875, F: 0.125},
     baseStats: {hp: 70, atk: 70, def: 90, spa: 45, spd: 65, spe: 65},
@@ -18602,6 +18626,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   tubareelnuclear: {
     num: -2065,
     name: "Tubareel-Nuclear",
+		forme: "Nuclear",
     types: ["Water", "Nuclear"],
     genderRatio: {M: 0.875, F: 0.125},
     baseStats: {hp: 105, atk: 100, def: 140, spa: 55, spd: 85, spe: 65},
@@ -18668,6 +18693,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   nupinnuclear: {
     num: -2069,
     name: "Nupin-Nuclear",
+		forme: "Nuclear",
     types: ["Grass", "Nuclear"],
     gender: "N",
     baseStats: {hp: 75, atk: 20, def: 45, spa: 80, spd: 70, spe: 25},
@@ -18695,6 +18721,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   gellinnuclear: {
     num: -2070,
     name: "Gellin-Nuclear",
+		forme: "Nuclear",
     types: ["Grass", "Nuclear"],
     gender: "N",
     baseStats: {hp: 90, atk: 35, def: 75, spa: 120, spd: 100, spe: 85},
@@ -18720,6 +18747,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   barandnuclear: {
     num: -2071,
     name: "Barand-Nuclear",
+		forme: "Nuclear",
     types: ["Dragon", "Nuclear"],
     baseStats: {hp: 45, atk: 115, def: 45, spa: 40, spd: 30, spe: 85},
     abilities: {0: "Rivalry", 1: "Shed Skin"},
@@ -18813,6 +18841,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   paraudionuclear: {
     num: -2076,
     name: "Paraudio-Nuclear",
+		forme: "Nuclear",
     types: ["Normal", "Nuclear"],
     baseStats: {hp: 50, atk: 40, def: 55, spa: 60, spd: 50, spe: 50},
     abilities: {0: "Soundproof", 1: "Sound Boost"},
@@ -18838,6 +18867,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   paraboomnuclear: {
     num: -2077,
     name: "Paraboom-Nuclear",
+		forme: "Nuclear",
     types: ["Normal", "Nuclear"],
     baseStats: {hp: 90, atk: 65, def: 75, spa: 105, spd: 75, spe: 80},
     abilities: {0: "Soundproof", 1: "Sound Boost"},
@@ -19340,6 +19370,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   chupachonuclear: {
     num: -2111,
     name: "Chupacho-Nuclear",
+		forme: "Nuclear",
     types: ["Poison", "Nuclear"],
     baseStats: {hp: 68, atk: 77, def: 55, spa: 30, spd: 35, spe: 75},
     abilities: {0: "Poison Point", 1: "Poison Touch"},
@@ -19365,6 +19396,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   luchabranuclear: {
     num: -2112,
     name: "Luchabra-Nuclear",
+		forme: "Nuclear",
     types: ["Poison", "Nuclear"],
     baseStats: {hp: 110, atk: 120, def: 85, spa: 60, spd: 85, spe: 75},
     abilities: {0: "Poison Point", 1: "Poison Touch"},
@@ -19633,6 +19665,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   hagoopnuclear: {
     num: -2132,
     name: "Hagoop-Nuclear",
+		forme: "Nuclear",
     types: ["Poison", "Nuclear"],
     genderRatio: {M: 0.875, F: 0.125},
     baseStats: {hp: 60, atk: 45, def: 45, spa: 85, spd: 105, spe: 50},
@@ -19660,6 +19693,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   haagrossnuclear: {
     num: -2133,
     name: "Haagross-Nuclear",
+		forme: "Nuclear",
     types: ["Poison", "Nuclear"],
     genderRatio: {M: 0.875, F: 0.125},
     baseStats: {hp: 80, atk: 65, def: 65, spa: 105, spd: 125, spe: 70},
@@ -20076,6 +20110,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   actannuclear: {
     num: -2162,
     name: "Actan-Nuclear",
+		forme: "Nuclear",
     baseSpecies: "Actan",
 		forme: "Nuclear",
     types: ["Nuclear", "Steel"],
