@@ -19259,7 +19259,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
   winotingermystery: {
     num: -2102,
     name: "Winotinger-Mystery",
-    baseSpecies: "Wintinger",
+    baseSpecies: "Winotinger",
     forme: "Mystery",
     types: ["Fairy", "Fighting"],
     baseStats: {hp: 110, atk: 80, def: 85, spa: 105, spd: 85, spe: 85},
