@@ -6899,8 +6899,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	subduction: {
 		name: "Subduction",
-		desc: "Has a 100% chance to lower the target's Speed by 1 stage. Confuses user.",
-		shortDesc: "100% chance lower adjacent Pkmn Speed by 1. Confuses user.",
+		desc: "Has a 100% chance to lower the target's Speed by 2 stages. Confuses user.",
+		shortDesc: "100% chance lower adjacent Pkmn Speed by 2. Confuses user.",
 	},
 	instantcrush: {
 		name: "Instant Crush",
