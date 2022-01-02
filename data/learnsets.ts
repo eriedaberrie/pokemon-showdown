@@ -89127,7 +89127,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       toxic: ["6L53", "6M"],
       waterfall: ["6M"],
       waterpulse: ["6M", "6E"],
+      gammaray: ["6S0"],
     },
+    eventData: [
+			{generation: 6, moves: ["gammaray"]},
+    ],
   },
   tubjaw: {
     learnset: {
@@ -96635,6 +96639,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       toxic: ["6M"],
       uproar: ["6T"],
       nuclearslash: ["6L1"],
+      inferno: ["6L1"],
     }
   },
   urayne: {
