@@ -6856,7 +6856,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
-  drilgann: {
+  drilgannmega: {
     tier: "Gamma",
 		doublesTier: "Uranium",
   },
