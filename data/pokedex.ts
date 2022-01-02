@@ -18448,7 +18448,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		formeOrder: ["Drilgann", "Drilgann-Mega"],
 	},
 	drilgannmega: {
-		num: -2049,
+		num: -2059,
 		name: "Drilgann-Mega",
 		baseSpecies: "Drilgann",
 		forme: "Mega",
