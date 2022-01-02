@@ -85425,7 +85425,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
   },
   owten: {
     learnset: {
-    learnset: {
       aerialace: ["6M"],
       aircutter: ["6T"],
       airslash: ["6L30"],
@@ -85492,6 +85491,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		],
   },
   owtennuclear: {
+    learnset: {
       aerialace: ["6M"],
       aircutter: ["6T"],
       airslash: ["6L30"],
