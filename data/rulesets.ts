@@ -1842,9 +1842,9 @@ export const Rulesets: {[k: string]: FormatData} = {
   nuclearclausemod: {
     effectType: 'Rule',
     name: 'Nuclear Clause Mod',
-    desc: "Prevents Pok&eacute;mon without the Nuclear type from using damaging Nuclear-type moves.",
+    desc: "Prevents Pok&eacute;mon without the Nuclear type from using Nuclear-type moves.",
     onBegin() {
-      this.add('rule', "Nuclear Clause Mod: Non-Nuclear Pokémon can't use damaging Nuclear moves");
+      this.add('rule', "Nuclear Clause Mod: Non-Nuclear Pokémon can't use Nuclear-type moves");
     },
     onTryMove(pokemon, target, move) {
       if ((move.id === 'fallout') && !pokemon.hasType('Nuclear')) {
