@@ -17459,7 +17459,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoLevel: 27,
     eggGroups: ["Monster", "Water 1"],
 		otherFormes: ["Electruxo-Mega"],
-		formeOrder: ["Electruxo", "Elextruxo-Mega"],
+		formeOrder: ["Electruxo", "Electruxo-Mega"],
   },
 	electruxomega: {
 		num: -2006,

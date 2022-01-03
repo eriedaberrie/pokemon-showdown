@@ -7229,7 +7229,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 	},
 	electruxolite: {
-		name: "Elextruxolite",
+		name: "Electruxolite",
 		spritenum: 774,
 		megaStone: "Electruxo-Mega",
 		megaEvolves: "Electruxo",
