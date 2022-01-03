@@ -6995,4 +6995,9 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 5% chance to cause a Toxic Fallout for 5 turns.",
 		shortDesc: "5% chance to cause a Toxic Fallout for 5 turns.",
 	},
+	gemstoneglimmer: {
+		name: "Gemstone Glimmer",
+		desc: "Has a 25% chance to lower the target's accuracy by 1 stage.",
+		shortDesc: "25% chance to lower the target's accuracy by 1.",
+	},
 };
