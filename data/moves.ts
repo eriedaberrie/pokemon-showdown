@@ -8344,7 +8344,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 60,
 		category: "Special",
 		realMove: "Hidden Power",
-		isNonstandard: "Past",
 		name: "Hidden Power Fairy",
 		pp: 15,
 		priority: 0,

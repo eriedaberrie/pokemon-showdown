@@ -318,7 +318,7 @@ export class ModdedDex {
 	getHiddenPower(ivs: AnyObject) {
 		const hpTypes = [
 			'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Ghost', 'Steel',
-			'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Dark',
+			'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Dark', 'Fairy',
 		];
 		const tr = this.trunc;
 		const stats = {hp: 31, atk: 31, def: 31, spe: 31, spa: 31, spd: 31};
@@ -345,7 +345,7 @@ export class ModdedDex {
 				i *= 2;
 			}
 			return {
-				type: hpTypes[tr(hpTypeX * 15 / 63)],
+				type: hpTypes[tr(hpTypeX * 16 / 63)],
 				// After Gen 6, Hidden Power is always 60 base power
 				power: (this.gen && this.gen < 6) ? tr(hpPowerX * 40 / 63) + 30 : 60,
 			};
