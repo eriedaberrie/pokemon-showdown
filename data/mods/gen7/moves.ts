@@ -443,6 +443,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	hiddenpowerfairy: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	howl: {
 		inherit: true,
 		flags: {snatch: 1},
