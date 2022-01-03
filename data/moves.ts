@@ -20247,7 +20247,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Nuclear",
 		contestType: "Cool",
 	},
-	gemstoneglimmger: {
+	gemstoneglimmer: {
 		num: -28,
 		accuracy: 95,
 		basePower: 75,
