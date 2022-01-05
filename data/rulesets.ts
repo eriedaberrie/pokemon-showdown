@@ -1847,14 +1847,14 @@ export const Rulesets: {[k: string]: FormatData} = {
       this.add('rule', "Nuclear Clause Mod: Non-Nuclear Pokémon can't use Nuclear-type moves");
     },
     onTryMove(pokemon, target, move) {
-      if ((move.id === 'fallout') && !pokemon.hasType('Nuclear')) {
+      if ((move.id === 'fallout') && !(source.hasType('Nuclear') || this.dex.species.get(source.species).types.includes('Nuclear'))) {
         this.add('-message', 'Nuclear Clause Mod activated.');
         this.hint('No fun allowed.');
 				return null;
       }
     },
 		onTryHit(target, source, move) {
-			if ((move.type === 'Nuclear') && !source.hasType('Nuclear')) {
+			if ((move.type === 'Nuclear') && !(source.hasType('Nuclear') || this.dex.species.get(source.species).types.includes('Nuclear'))) {
         this.add('-message', 'Nuclear Clause Mod activated.');
 				return null;
 			}
