@@ -85028,7 +85028,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       toxicspikes: ["6T"],
       waterfall: ["6M"],
       waterpulse: ["6M"],
-      slackoff: ["8L1"], // no regrets
+      // ok maybe some regrets
     },
   },
   folerog: {

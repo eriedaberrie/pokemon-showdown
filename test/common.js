@@ -42,6 +42,7 @@ class TestTools {
 	}
 
 	getFormat(options) {
+    return Dex.formats.get('gen6customgame');
 		if (options.formatid) return Dex.formats.get(options.formatid);
 
 		const gameType = Dex.toID(options.gameType || 'singles');
