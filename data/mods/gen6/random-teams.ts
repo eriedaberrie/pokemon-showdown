@@ -74,6 +74,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			),
 			Aerilate: (movePool, moves, abilities, types, counter) => !counter.get('Normal'),
 			Pixilate: (movePool, moves, abilities, types, counter) => !counter.get('Normal'),
+			Pixilate: (movePool, moves, abilities, types, counter) => !counter.get('Normal'),
 			Refrigerate: (movePool, moves, abilities, types, counter) => !moves.has('blizzard') && !counter.get('Normal'),
 			Contrary: (movePool, moves, abilities, types, counter, species) => (
 				!counter.get('contrary') && species.name !== 'Shuckle'
@@ -123,7 +124,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		case 'storedpower':
 			return {cull: !counter.setupType};
 		case 'switcheroo': case 'trick':
-			return {cull: counter.get('Physical') + counter.get('Special') < 3 || !!counter.get('priority')};
+			return {cull: counter.get('Physical') + counter.get('Special') < 3 || !!counter.get('priority') || movePool.includes('naturalgift')};
 
 		// Set up once and only if we have the moves for it
 		case 'bellydrum': case 'bulkup': case 'coil': case 'curse': case 'dragondance': case 'honeclaws': case 'swordsdance':
@@ -399,6 +400,8 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			return {cull: moves.has('hydropump') || moves.has('scald')};
 		case 'scald':
 			return {cull: moves.has('waterfall') || moves.has('waterpulse')};
+		case 'naturalgift':
+			return {cull: moves.has('trick') || moves.has('switcheroo')};
 
 		// Status:
 		case 'glare': case 'headbutt':
@@ -466,7 +469,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			return true;
 		case 'Contrary': case 'Iron Fist': case 'Skill Link': case 'Strong Jaw':
 			return !counter.get(toID(ability));
-		case 'Aerilate': case 'Pixilate': case 'Refrigerate':
+		case 'Aerilate': case 'Pixilate': case 'Refrigerate': case 'Energizate': case 'Atomizate':
 			return !counter.get('Normal');
 		case 'Analytic': case 'Download': case 'Hyper Cutter':
 			return species.nfe;
@@ -559,6 +562,8 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			return (moves.has('raindance') || abilities.has('Drizzle') || abilities.has('Volt Absorb'));
 		case 'Weak Armor':
 			return counter.setupType !== 'Physical';
+    case 'Sharp Coral':
+      return counter.get('recovery');
 		}
 
 		return false;
@@ -580,7 +585,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		if (species.name === 'Marowak') return 'Thick Club';
 		if (species.name === 'Dedenne') return 'Petaya Berry';
 		if (species.name === 'Deoxys-Attack') return (isLead && moves.has('stealthrock')) ? 'Focus Sash' : 'Life Orb';
-		if (species.name === 'Farfetch\u2019d') return 'Stick';
+		if (species.name === 'Farfetch\u2019d' || species.name === 'Barand') return 'Stick';
 		if (species.name === 'Genesect' && moves.has('technoblast')) return 'Douse Drive';
 		if (species.baseSpecies === 'Pikachu') return 'Light Ball';
 		if (species.name === 'Shedinja' || species.name === 'Smeargle') return 'Focus Sash';
@@ -640,6 +645,8 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		if (moves.has('rest') && !moves.has('sleeptalk') && ability !== 'Natural Cure' && ability !== 'Shed Skin') {
 			return 'Chesto Berry';
 		}
+    
+		if (moves.has('naturalgift')) return 'Hafli Berry';
 	}
 
 	getMediumPriorityItem(
@@ -1048,7 +1055,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		}
 
 		const levelScale: {[k: string]: number} = {
-			uber: 76, ou: 80, uu: 82, ru: 84, nu: 86, pu: 88,
+			uber: 76, ou: 80, uu: 82, ru: 84, nu: 86, pu: 88, gamma: 80, beta: 83, alpha: 87,
 		};
 		const customScale: {[k: string]: number} = {
 			// Banned Ability

@@ -2,6 +2,12 @@ export const Formats: FormatList = [
   {
     section: 'Uranium Singles',
   },
+	{
+		name: "[Gen 6] Uranium Random Battle",
+		mod: 'gen6',
+		team: 'random',
+		ruleset: ['Obtainable', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
+	},
   {
     name: '[Gen 6] Gamma',
     mod: 'gen6',
@@ -31,6 +37,12 @@ export const Formats: FormatList = [
     ruleset: ['Standard', 'Nuclear Clause Mod', 'Soft Baton Pass Clause Mod'],
     banlist: ['CanonUber', 'Uber', 'Soul Dew', 'Shadow Tag'],
   },
+	{
+		name: "[Gen 6] NatDex Random Battle",
+		mod: 'gen6',
+		team: 'random',
+		ruleset: ['Obtainable', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
+	},
   {
     name: '[Gen 6] NatDex AG',
     mod: 'gen6',
