@@ -7189,7 +7189,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   raffiti: {
-		randomBattleMoves: ["atomicpunch", "fusionflare", "destinybond", "spore", "stealthrock", "stickyweb", "whirlwind"],
+		randomBattleMoves: ["atomicpunch", "searingshot", "destinybond", "spore", "stealthrock", "stickyweb", "whirlwind"],
     tier: "Beta",
 		doublesTier: "Uranium",
   },
@@ -7426,7 +7426,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   yatagaryu: {
-		randomBattleMoves: ["thunder", "voltswitch", "voltswitch", "dracometeor", "nastyplot", "focusblast"],
+		randomBattleMoves: ["thunder", "voltswitch", "dracometeor", "nastyplot", "focusblast"],
     tier: "Gamma",
 		doublesTier: "Uranium",
   },
