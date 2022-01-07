@@ -199,7 +199,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			return {cull: counter.damagingMoves.size > 1 || !!counter.setupType};
 		case 'protect':
 			const screens = moves.has('lightscreen') && moves.has('reflect');
-			return {cull: moves.has('rest') || screens || (!!counter.setupType && !moves.has('wish'))};
+			return {cull: (moves.has('rest') || screens || (!!counter.setupType && !moves.has('wish'))) && !abilities.has('rebuild')};
 		case 'pursuit':
 			return {cull: (
 				moves.has('nightslash') ||
@@ -402,6 +402,16 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			return {cull: moves.has('waterfall') || moves.has('waterpulse')};
 		case 'naturalgift':
 			return {cull: moves.has('trick') || moves.has('switcheroo')};
+		case 'skyfall':
+			return {cull: moves.has('glare')};
+    case 'ancientpower':
+      return {cull: !abilities.has('Technician') || moves.has('ancientpower')};
+    case 'powergem':
+      return {cull: moves.has('ancientpower') && abilities.has('Technician')};
+    case 'earthquake':
+      return {cull: moves.has('subduction')};
+    case 'subduction':
+      return {cull: moves.has('earthquake')};
 
 		// Status:
 		case 'glare': case 'headbutt':
@@ -562,8 +572,14 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			return (moves.has('raindance') || abilities.has('Drizzle') || abilities.has('Volt Absorb'));
 		case 'Weak Armor':
 			return counter.setupType !== 'Physical';
+    case 'Natural Cure':
+      return (species.id !== 'corsoreefnuclear');
     case 'Sharp Coral':
       return counter.get('recovery');
+    case 'Poison Heal':
+      return moves.has('naturalgift');
+    case 'Acceleration':
+      return !moves.has('flameimpact');
 		}
 
 		return false;
@@ -588,7 +604,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		if (species.name === 'Farfetch\u2019d' || species.name === 'Barand') return 'Stick';
 		if (species.name === 'Genesect' && moves.has('technoblast')) return 'Douse Drive';
 		if (species.baseSpecies === 'Pikachu') return 'Light Ball';
-		if (species.name === 'Shedinja' || species.name === 'Smeargle') return 'Focus Sash';
+		if (species.name === 'Shedinja' || species.name === 'Smeargle' || species.name === 'Raffiti') return 'Focus Sash';
 		if (species.name === 'Unfezant' && counter.get('Physical') >= 2) return 'Scope Lens';
 		if (species.name === 'Unown') return 'Choice Specs';
 		if (species.name === 'Wobbuffet') {
@@ -626,6 +642,9 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		) {
 			return 'Life Orb';
 		}
+    
+		if (moves.has('naturalgift')) return 'Hafli Berry';
+    
 		if (ability === 'Poison Heal') return 'Toxic Orb';
 		if (ability === 'Unburden') {
 			if (moves.has('fakeout')) {
@@ -638,15 +657,20 @@ export class RandomGen6Teams extends RandomGen7Teams {
 				return 'Red Card';
 			}
 		}
+    
+    if (species.name === 'Hazma' && this.randomChance(1, 2)) return 'Weakness Policy';
+    
+    if (species.types.includes('Nuclear')) {
+      return (species.baseStats.spe >= 70 && species.baseStats.spe <= 100 && !counter.get('Status')) ? 'Choice Scarf' : 'Focus Sash';
+    }
+    
 		if (moves.has('acrobatics')) return ''; // not undefined - we want "no item"
 		if (moves.has('raindance')) return (ability === 'Forecast') ? 'Damp Rock' : 'Life Orb';
 		if (moves.has('sunnyday')) return (ability === 'Forecast') ? 'Heat Rock' : 'Life Orb';
 		if (moves.has('lightscreen') && moves.has('reflect')) return 'Light Clay';
-		if (moves.has('rest') && !moves.has('sleeptalk') && ability !== 'Natural Cure' && ability !== 'Shed Skin') {
+		if ((moves.has('rest') || ability === 'Lazy') && !moves.has('sleeptalk') && ability !== 'Natural Cure' && ability !== 'Shed Skin') {
 			return 'Chesto Berry';
 		}
-    
-		if (moves.has('naturalgift')) return 'Hafli Berry';
 	}
 
 	getMediumPriorityItem(
@@ -707,7 +731,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		if (['endeavor', 'flail', 'reversal'].some(m => moves.has(m)) && ability !== 'Sturdy') {
 			return (ability === 'Defeatist') ? 'Expert Belt' : 'Focus Sash';
 		}
-		if (moves.has('outrage') && counter.setupType) return 'Lum Berry';
+		if ((moves.has('outrage') && counter.setupType) || moves.has('subduction')) return 'Lum Berry';
 		if (moves.has('substitute')) return counter.damagingMoves.size > 2 && !!counter.get('drain') ? 'Life Orb' : 'Leftovers';
 		if (this.dex.getEffectiveness('Ground', species) >= 2 && ability !== 'Levitate' && !moves.has('magnetrise')) {
 			return 'Air Balloon';
@@ -1062,6 +1086,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			Dugtrio: 82, Gothitelle: 82, Ninetales: 84, Politoed: 84, Wobbuffet: 82,
 			// Holistic judgement
 			Castform: 100, Delibird: 100, 'Genesect-Douse': 80, Spinda: 100, Unown: 100,
+      Duplicat: 100, Hazma: 100,
 		};
 		const tier = toID(species.tier).replace('bl', '');
 		let level = levelScale[tier] || (species.nfe ? 90 : 80);
@@ -1216,7 +1241,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 
 		const teamData: TeamData = {
 			typeCount: {}, typeComboCount: {}, baseFormes: {}, megaCount: 0, has: {}, forceResult,
-			weaknesses: {}, resistances: {},
+			weaknesses: {}, resistances: {}
 		};
 		const requiredMoveFamilies = ['hazardSet', 'hazardClear'];
 		const requiredMoves: {[k: string]: string} = {stealthrock: 'hazardSet', rapidspin: 'hazardClear', defog: 'hazardClear'};
@@ -1230,6 +1255,8 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			sapsipper: ['Grass'],
 			thickfat: ['Ice', 'Fire'],
 			levitate: ['Ground'],
+      disenchant: ['Fairy'],
+      leadskin: ['Nuclear'],
 		};
 
 		while (pokemonPool.length && pokemon.length < this.maxTeamSize) {
@@ -1244,9 +1271,6 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			// Limit the number of Megas to one
 			if (!teamData.megaCount) teamData.megaCount = 0;
 			if (teamData.megaCount >= 1 && speciesFlags.megaOnly) continue;
-
-			// Dynamically scale limits for different team sizes. The default and minimum value is 1.
-			const limitFactor = Math.round(this.maxTeamSize / 6) || 1;
 
 			// Limit 2 of any type
 			const types = species.types;

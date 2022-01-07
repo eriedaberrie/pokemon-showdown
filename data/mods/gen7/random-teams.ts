@@ -1463,8 +1463,9 @@ export class RandomGen7Teams extends RandomTeams {
 		const typePool = this.dex.types.names();
 		const type = this.forceMonotype || this.sample(typePool);
 
-		const baseFormes: {[k: string]: number} = {};
+		const baseFormes: {[k: number]: number} = {};
 		let hasMega = false;
+    let hasNuclear = false;
 
 		const tierCount: {[k: string]: number} = {};
 		const typeCount: {[k: string]: number} = {};
@@ -1488,10 +1489,11 @@ export class RandomGen7Teams extends RandomTeams {
 				if (!species.exists) continue;
 
 				// Limit to one of each species (Species Clause)
-				if (baseFormes[species.baseSpecies]) continue;
+				if (baseFormes[species.num]) continue;
 
 				// Limit one Mega per team
 				if (hasMega && species.isMega) continue;
+        if (hasNuclear && species.types.includes('Nuclear')) continue;
 
 				// Adjust rate for species with multiple sets
 				switch (species.baseSpecies) {
@@ -1574,7 +1576,7 @@ export class RandomGen7Teams extends RandomTeams {
 				if (pokemon.length === this.maxTeamSize) break;
 
 				// Now that our Pokemon has passed all checks, we can increment our counters
-				baseFormes[species.baseSpecies] = 1;
+				baseFormes[species.num] = 1;
 
 				// Increment tier counter
 				if (tierCount[tier]) {
@@ -1590,6 +1592,7 @@ export class RandomGen7Teams extends RandomTeams {
 					} else {
 						typeCount[typeName] = 1;
 					}
+          if (typeName === 'Nuclear') hasNuclear = true;
 				}
 				if (typeCombo in typeComboCount) {
 					typeComboCount[typeCombo]++;

@@ -31,18 +31,18 @@ export const Formats: FormatList = [
     mod: 'gen6',
     ruleset: ['Obtainable', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Uranium Pokedex'],
   },
-  {
-    name: '[Gen 6] NatDex OU',
-    mod: 'gen6',
-    ruleset: ['Standard', 'Nuclear Clause Mod', 'Soft Baton Pass Clause Mod'],
-    banlist: ['CanonUber', 'Uber', 'Soul Dew', 'Shadow Tag'],
-  },
 	{
 		name: "[Gen 6] NatDex Random Battle",
 		mod: 'gen6',
 		team: 'random',
 		ruleset: ['Obtainable', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
 	},
+  {
+    name: '[Gen 6] NatDex OU',
+    mod: 'gen6',
+    ruleset: ['Standard', 'Nuclear Clause Mod', 'Soft Baton Pass Clause Mod'],
+    banlist: ['CanonUber', 'Uber', 'Soul Dew', 'Shadow Tag'],
+  },
   {
     name: '[Gen 6] NatDex AG',
     mod: 'gen6',

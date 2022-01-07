@@ -130,7 +130,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	arbok: {
-		randomBattleMoves: ["aquatail", "coil", "earthquake", "gunkshot", "rest", "suckerpunch"],
+		randomBattleMoves: ["naturalgift", "aquatail", "coil", "earthquake", "gunkshot", "rest", "suckerpunch"],
 		randomDoubleBattleMoves: ["aquatail", "crunch", "earthquake", "gunkshot", "protect", "rest", "rockslide", "suckerpunch"],
     tier: "Alpha",
 		doublesTier: "Uranium",
@@ -321,7 +321,6 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	primeape: {
-		randomBattleMoves: ["closecombat", "earthquake", "encore", "gunkshot", "icepunch", "stoneedge", "uturn"],
 		randomDoubleBattleMoves: ["closecombat", "earthquake", "icepunch", "poisonjab", "protect", "punishment", "rockslide", "stoneedge", "taunt", "uturn"],
     tier: "Alpha",
 		doublesTier: "Uranium",
@@ -1208,7 +1207,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	gliscor: {
-		randomBattleMoves: ["earthquake", "knockoff", "protect", "roost", "stealthrock", "taunt", "toxic", "uturn"],
+		randomBattleMoves: ["naturalgift", "earthquake", "knockoff", "protect", "roost", "stealthrock", "taunt", "toxic", "uturn"],
 		randomDoubleBattleMoves: ["earthquake", "knockoff", "protect", "stoneedge", "substitute", "tailwind", "taunt"],
     tier: "Gamma",
 		doublesTier: "Uranium",
@@ -1288,7 +1287,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	corsola: {
-		randomBattleMoves: ["powergem", "recover", "scald", "stealthrock", "toxic"],
+		// randomBattleMoves: ["powergem", "recover", "scald", "stealthrock", "toxic"],
 		randomDoubleBattleMoves: ["earthpower", "icebeam", "icywind", "powergem", "protect", "scald", "stealthrock"],
     tier: "Alpha",
 		doublesTier: "Uranium",
@@ -1670,7 +1669,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	sableye: {
-		randomBattleMoves: ["foulplay", "knockoff", "recover", "taunt", "toxic", "willowisp"],
+		randomBattleMoves: ["naturalgift", "foulplay", "knockoff", "recover", "taunt", "toxic", "willowisp"],
 		randomDoubleBattleMoves: ["fakeout", "foulplay", "helpinghand", "knockoff", "protect", "recover", "snarl", "taunt", "willowisp"],
     tier: "Alpha",
 		doublesTier: "Uranium",

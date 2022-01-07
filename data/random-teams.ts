@@ -282,7 +282,7 @@ export class RandomTeams {
 		// These moves cannot be rejected in favor of a forced move in singles
 		return (move.category !== 'Status' || !move.flags.heal) && ![
 			'facade', 'leechseed', 'lightscreen', 'reflect', 'sleeptalk', 'spore', 'substitute', 'switcheroo',
-			'teleport', 'toxic', 'trick',
+			'teleport', 'toxic', 'trick', 'gammaray', 'radioacid', 'protonbeam', 'nuclearslash', 'atomicpunch',
 		].includes(move.id);
 	}
 
@@ -345,7 +345,7 @@ export class RandomTeams {
 
 			// Four random unique moves from the movepool
 			let pool = ['struggle'];
-			if (forme === 'Smeargle') {
+			if (forme === 'Smeargle' || forme === 'Raffiti') {
 				pool = this.dex.moves
 					.all()
 					.filter(move => !(move.isNonstandard || move.isZ || move.isMax || move.realMove))
@@ -1204,6 +1204,16 @@ export class RandomTeams {
 		case 'leechseed':
 			// Special case for Calyrex to prevent Leech Seed + Calm Mind
 			return {cull: !!counter.setupType};
+		case 'skyfall':
+			return {cull: moves.has('glare')};
+    case 'ancientpower':
+      return {cull: !abilities.has('Technician') || moves.has('ancientpower')};
+    case 'powergem':
+      return {cull: moves.has('ancientpower') && abilities.has('Technician')};
+    case 'earthquake':
+      return {cull: moves.has('subduction')};
+    case 'subduction':
+      return {cull: moves.has('earthquake')};
 		}
 
 		return {cull: false};
@@ -1398,6 +1408,10 @@ export class RandomTeams {
 				species.id === 'skarmory' ||
 				moves.has('shellsmash') || moves.has('rapidspin')
 			);
+    case 'Natural Cure':
+      return (species.id !== 'corsoreefnuclear');
+    case 'Poison Heal':
+      return moves.has('naturalgift');
 		}
 
 		return false;
@@ -1489,11 +1503,17 @@ export class RandomTeams {
 			}
 		}
 		if (moves.has('auroraveil') || moves.has('lightscreen') && moves.has('reflect')) return 'Light Clay';
-		if (moves.has('rest') && !moves.has('sleeptalk') && ability !== 'Shed Skin') return 'Chesto Berry';
+		if ((moves.has('rest') || ability === 'Lazy') && !moves.has('sleeptalk') && ability !== 'Shed Skin') return 'Chesto Berry';
 		if (moves.has('hypnosis') && ability === 'Beast Boost') return 'Blunder Policy';
 		if (moves.has('bellydrum')) return 'Sitrus Berry';
     
     if (moves.has('naturalgift')) return 'Hafli Berry';
+    
+    if (species.name === 'Hazma' && this.randomChance(1, 2)) return 'Weakness Policy';
+    
+    if (species.types.includes('Nuclear')) {
+      return (species.baseStats.spe >= 70 && species.baseStats.spe <= 100 && !counter.get('Status')) ? 'Choice Scarf' : 'Focus Sash';
+    }
 
 		if (this.dex.getEffectiveness('Rock', species) >= 2 && !isDoubles) return 'Heavy-Duty Boots';
 	}
@@ -1642,7 +1662,7 @@ export class RandomTeams {
 			isLead && !isDoubles &&
 			!['Disguise', 'Sturdy'].includes(ability) && !moves.has('substitute') &&
 			!counter.get('drain') && !counter.get('recoil') && !counter.get('recovery') &&
-			((defensiveStatTotal <= 250 && counter.get('hazards')) || defensiveStatTotal <= 210)
+			((defensiveStatTotal <= 250 && counter.get('hazards')) || defensiveStatTotal <= 210 || ability === 'Sharp Coral')
 		) return 'Focus Sash';
 		if (
 			moves.has('clangoroussoul') ||
@@ -2012,7 +2032,7 @@ export class RandomTeams {
 				wobbuffet: 86, scrafty: 86,
 				// These Pokemon are too weak and need a higher level
 				delibird: 100, vespiquen: 96, pikachu: 92, shedinja: 92, solrock: 90, arctozolt: 88, reuniclus: 87,
-				decidueye: 87, noivern: 85, magnezone: 82, slowking: 81,
+				decidueye: 87, noivern: 85, magnezone: 82, slowking: 81, duplicat: 100, hazma: 100,
 			};
 			level = customScale[species.id] || tierScale[tier] || 80;
 		// BDSP tier levelling
@@ -2109,10 +2129,10 @@ export class RandomTeams {
 	) {
 		const exclude = pokemonToExclude.map(p => toID(p.species));
 		const pokemonPool = [];
-		for (let species of this.dex.species.all()) {
+		const tandorDex = ["Orchynx", "Metalynx", "Raptorch", "Archilles", "Eletux", "Electruxo", "Chyinmunk", "Kinetmunk", "Birbie", "Aveden", "Splendifowl", "Cubbug", "Cubblfly", "Nimflora", "Barewl", "Dearewl", "Gararewl", "Grozard", "Terlard", "Tonemy", "Tofurang", "Dunsparce", "Dunseraph", "Fortog", "Folerog", "Blubelrog", "Magikarp", "Gyarados", "Feleng", "Felunge", "Feliger", "Mankey", "Primeape", "Empirilla", "Owten", "Eshouten", "Lotad", "Lombre", "Ludicolo", "Smore", "Firoke", "Brailip", "Brainoar", "Ekans", "Arbok", "Tancoon", "Tanscure", "Sponee", "Sponaree", "Pahar", "Palij", "Pajay", "Jerbolta", "Comite", "Cometeor", "Astronite", "Mareep", "Flaaffy", "Ampharos", "Baashaun", "Baaschaf", "Baariette", "Tricwe", "Harylect", "Costraw", "Trawpint", "Lunapup", "Herolune", "Minyan", "Vilucard", "Buizel", "Floatzel", "Modrille", "Drilgann", "Gligar", "Gliscor", "Sableye", "Cocaran", "Cararalm", "Cocancer", "Corsola", "Corsoreef", "Tubjaw", "Tubareel", "Cassnail", "Sableau", "Escartress", "Nupin", "Gellin", "Cottonee", "Whimsicott", "Misdreavus", "Mismagius", "Barand", "Glaslug", "Glavinug", "S51", "S51-A", "Paraudio", "Paraboom", "Flager", "Inflagetah", "Chimical", "Chimaconda", "Tikiki", "Frikitiki", "Unymph", "Harptera", "Chicoatl", "Quetzoral", "Coatlith", "Tracton", "Snopach", "Dermafrost", "Slothohm", "Theriamp", "Titanice", "Frynai", "Saidine", "Daikatuna", "Selkid", "Syrentide", "Spritzee", "Aromatisse", "Miasmedic", "Jackdeary", "Winotinger", "Duplicat", "Eevee", "Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon", "Leafeon", "Glaceon", "Sylveon", "Nucleon", "Ratsy", "Raffiti", "Gargryph", "Masking", "Dramsama", "Antarki", "Chupacho", "Luchabra", "Linkite", "Chainite", "Pufluff", "Alpico", "Anderind", "Colarva", "Frosulo", "Frosthra", "Fafurr", "Fafninter", "Shrimputy", "Krilvolver", "Lavent", "Swabone", "Skelerogue", "Navighast", "Stenowatt", "Jungore", "Majungold", "Hagoop", "Haagross", "Xenomite", "Xenogen", "Xenoqueen", "Hazma", "Geigeroach", "Minicorn", "Kiricorn", "Oblivicorn", "Luxi", "Luxor", "Luxelong", "Praseopunk", "Neopunk", "Sheebit", "Terrabbit", "Laissure", "Volchik", "Voltasu", "Yatagaryu", "Devimp", "Fallengel", "Beliaddon", "Seikamater", "Garlikid", "Baitatao", "Leviathao", "Krakanao", "Lanthan", "Actan", "Urayne", "Aotius", "Mutios", "Zephy"];
+    for (let species of this.dex.species.all()) {
 			if (species.gen > this.gen || exclude.includes(species.id)) continue;
-      const tandorDex = ["Orchynx", "Metalynx", "Raptorch", "Archilles", "Eletux", "Electruxo", "Chyinmunk", "Kinetmunk", "Birbie", "Aveden", "Splendifowl", "Cubbug", "Cubblfly", "Nimflora", "Barewl", "Dearewl", "Gararewl", "Grozard", "Terlard", "Tonemy", "Tofurang", "Dunsparce", "Dunseraph", "Fortog", "Folerog", "Blubelrog", "Magikarp", "Gyarados", "Feleng", "Felunge", "Feliger", "Mankey", "Primeape", "Empirilla", "Owten", "Eshouten", "Lotad", "Lombre", "Ludicolo", "Smore", "Firoke", "Brailip", "Brainoar", "Ekans", "Arbok", "Tancoon", "Tanscure", "Sponee", "Sponaree", "Pahar", "Palij", "Pajay", "Jerbolta", "Comite", "Cometeor", "Astronite", "Mareep", "Flaaffy", "Ampharos", "Baashaun", "Baaschaf", "Baariette", "Tricwe", "Harylect", "Costraw", "Trawpint", "Lunapup", "Herolune", "Minyan", "Vilucard", "Buizel", "Floatzel", "Modrille", "Drilgann", "Gligar", "Gliscor", "Sableye", "Cocaran", "Cararalm", "Cocancer", "Corsola", "Corsoreef", "Tubjaw", "Tubareel", "Cassnail", "Sableau", "Escartress", "Nupin", "Gellin", "Cottonee", "Whimsicott", "Misdreavus", "Mismagius", "Barand", "Glaslug", "Glavinug", "S51", "S51-A", "Paraudio", "Paraboom", "Flager", "Inflagetah", "Chimical", "Chimaconda", "Tikiki", "Frikitiki", "Unymph", "Harptera", "Chicoatl", "Quetzoral", "Coatlith", "Tracton", "Snopach", "Dermafrost", "Slothohm", "Theriamp", "Titanice", "Frynai", "Saidine", "Daikatuna", "Selkid", "Syrentide", "Spritzee", "Aromatisse", "Miasmedic", "Jackdeary", "Winotinger", "Duplicat", "Eevee", "Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon", "Leafeon", "Glaceon", "Sylveon", "Nucleon", "Ratsy", "Raffiti", "Gargryph", "Masking", "Dramsama", "Antarki", "Chupacho", "Luchabra", "Linkite", "Chainite", "Pufluff", "Alpico", "Anderind", "Colarva", "Frosulo", "Frosthra", "Fafurr", "Fafninter", "Shrimputy", "Krilvolver", "Lavent", "Swabone", "Skelerogue", "Navighast", "Stenowatt", "Jungore", "Majungold", "Hagoop", "Haagross", "Xenomite", "Xenogen", "Xenoqueen", "Hazma", "Geigeroach", "Minicorn", "Kiricorn", "Oblivicorn", "Luxi", "Luxor", "Luxelong", "Praseopunk", "Neopunk", "Sheebit", "Terrabbit", "Laissure", "Volchik", "Voltasu", "Yatagaryu", "Devimp", "Fallengel", "Beliaddon", "Seikamater", "Garlikid", "Baitatao", "Leviathao", "Krakanao", "Lanthan", "Actan", "Urayne", "Aotius", "Mutios", "Zephy"];
-			if (this.format.name.includes('uranium') && !(species.name.endsWith('-Nuclear') || tandorDex.includes(species.name))) continue;
+      if (this.format.name.includes('Uranium') && !(species.name.includes('-Nuclear') || tandorDex.includes(species.name))) continue;
 			if (this.dex.currentMod === 'gen8bdsp' && species.gen > 4) continue;
 			if (isMonotype) {
 				if (!species.types.includes(type)) continue;
@@ -2208,7 +2228,7 @@ export class RandomTeams {
 			// This limitation is not applied to BD/SP team generation, because tiering for BD/SP is not yet complete,
 			// meaning that most Pokémon are in OU.
 			if (
-				!this.format.name.includes('uranium') &&
+				!this.format.name.includes('Uranium') &&
 				this.dex.currentMod !== 'gen8bdsp' &&
 				(tierCount[tier] >= (this.forceMonotype || isMonotype ? 2 : 1) * limitFactor) &&
 				!this.randomChance(1, Math.pow(5, tierCount[tier]))
@@ -2427,6 +2447,8 @@ export class RandomTeams {
 			lightningrod: ['Electric'], voltabsorb: ['Electric'],
 			thickfat: ['Ice', 'Fire'],
 			levitate: ['Ground'],
+      disenchant: ['Fairy'],
+      leadskin: ['Nuclear'],
 		};
 
 		while (pokemonPool.length && pokemon.length < this.maxTeamSize) {
