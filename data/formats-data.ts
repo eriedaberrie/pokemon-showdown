@@ -7170,7 +7170,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   winotingermystery: {
-		randomBattleMoves: ["bulkup", "softboiled", "return", "highjumpkick"],
+		randomBattleMoves: ["bulkup", "softboiled", "return", "highjumpkick", "thunderpunch"],
     tier: "Beta",
 		doublesTier: "Uranium",
   },

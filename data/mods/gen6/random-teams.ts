@@ -658,7 +658,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			}
 		}
     
-    if (species.name === 'Hazma' && this.randomChance(1, 2)) return 'Weakness Policy';
+    if (species.name === 'Hazma' && this.randomChance(2, 3)) return 'Weakness Policy';
     
     if (species.types.includes('Nuclear')) {
       return (species.baseStats.spe >= 70 && species.baseStats.spe <= 100 && !counter.get('Status')) ? 'Choice Scarf' : 'Focus Sash';
