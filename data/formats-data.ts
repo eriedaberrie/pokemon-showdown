@@ -7466,7 +7466,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Unobtainable",
   },
   lanthan: {
-		randomBattleMoves: ["rockpolish", "subduction", "metalcruncher", "rockslide", "taunt"],
+		randomBattleMoves: ["rockpolish", "subduction", "metalcruncher", "rockslide", "stealthrock"],
     tier: "Uber",
 		doublesTier: "Uranium",
   },

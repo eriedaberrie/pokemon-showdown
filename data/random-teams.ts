@@ -2142,7 +2142,7 @@ export class RandomTeams {
 				}
 			}
       // uranium mons should be twice as common in natdex
-      if (!(species.name.includes('-Nuclear') || tandorDex.includes(species.name))) pokemonPool.push(species.id);
+      if (species.name.includes('-Nuclear') || tandorDex.includes(species.name)) pokemonPool.push(species.id);
       if (!this.format.name.includes('Uranium')) pokemonPool.push(species.id);
 		}
 		return pokemonPool;
