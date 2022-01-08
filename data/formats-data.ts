@@ -6555,7 +6555,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   archilles: {
-		randomBattleMoves: ["earthquake", "flareblitz", "stealthrock", "flameimpact", "stoneedge", "swordsdance", "bellydrum"],
+		randomBattleMoves: ["earthquake", "flareblitz", "stealthrock", "flameimpact", "stoneedge", "swordsdance", "bellydrum", "substitute"],
     tier: "Gamma",
 		doublesTier: "Uranium",
   },
@@ -6704,7 +6704,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   eshoutennuclear: {
-		randomBattleMoves: ["gammaray", "sing", "uturn", "nastyplot", "trick", "hiddenpowerfire", "hiddenpowerfighting"],
+		randomBattleMoves: ["gammaray", "sing", "nastyplot", "hiddenpowerfire", "hiddenpowerfighting"],
     tier: "Uber",
 		doublesTier: "Uranium",
   },
@@ -6785,7 +6785,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   jerboltanuclear: {
-		randomBattleMoves: ["radioacid", "earthpower", "voltswitch", "hiddenpowerfire", "uturn"],
+		randomBattleMoves: ["radioacid", "earthpower", "voltswitch", "hiddenpowerfire"],
     tier: "Uber",
 		doublesTier: "Uranium",
   },
@@ -7152,7 +7152,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   miasmedic: {
-		randomBattleMoves: ["reflect", "lightscreen", "poisonjab", "wish", "protect", "trickroom"], // wtf is this mon supposed to do
+		randomBattleMoves: ["reflect", "lightscreen", "poisonjab", "trickroom"], // wtf is this mon supposed to do
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
