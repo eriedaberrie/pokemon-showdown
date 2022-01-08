@@ -573,7 +573,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		case 'Weak Armor':
 			return counter.setupType !== 'Physical';
     case 'Natural Cure':
-      return (species.id !== 'corsoreefnuclear');
+      return (species.id === 'corsoreefnuclear');
     case 'Sharp Coral':
       return counter.get('recovery');
     case 'Poison Heal':

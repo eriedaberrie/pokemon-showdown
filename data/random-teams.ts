@@ -1409,7 +1409,7 @@ export class RandomTeams {
 				moves.has('shellsmash') || moves.has('rapidspin')
 			);
     case 'Natural Cure':
-      return (species.id !== 'corsoreefnuclear');
+      return (species.id === 'corsoreefnuclear');
     case 'Poison Heal':
       return moves.has('naturalgift');
 		}
