@@ -320,6 +320,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			return {cull: moves.has('shadowball') && !moves.has('willowisp')};
 		case 'gigadrain': case 'powerwhip':
 			return {cull: (
+        moves.has('bulletseed') ||
 				moves.has('seedbomb') ||
 				moves.has('petaldance') ||
 				(moves.has('sunnyday') && moves.has('solarbeam')) ||

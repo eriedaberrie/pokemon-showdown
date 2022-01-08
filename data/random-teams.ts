@@ -1017,7 +1017,7 @@ export class RandomTeams {
 			};
 		case 'powerwhip':
 			// Special case for Centiskorch, which doesn't want Assault Vest
-			return {cull: moves.has('leechlife')};
+			return {cull: moves.has('leechlife') || moves.has('bulletseed')};
 		case 'woodhammer':
 			return {cull: moves.has('hornleech') && counter.get('Physical') < 4};
 		case 'freezedry':
