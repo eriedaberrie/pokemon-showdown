@@ -1207,9 +1207,9 @@ export class RandomTeams {
 		case 'skyfall':
 			return {cull: moves.has('glare')};
     case 'ancientpower':
-      return {cull: !abilities.has('Technician') || moves.has('ancientpower')};
+      return {cull: !abilities.has('Technician')};
     case 'powergem':
-      return {cull: moves.has('ancientpower') && abilities.has('Technician')};
+      return {cull: abilities.has('Technician')};
     case 'earthquake':
       return {cull: moves.has('subduction')};
     case 'subduction':
