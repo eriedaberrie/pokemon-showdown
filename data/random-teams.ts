@@ -1205,7 +1205,7 @@ export class RandomTeams {
 			// Special case for Calyrex to prevent Leech Seed + Calm Mind
 			return {cull: !!counter.setupType};
 		case 'skyfall':
-			return {cull: moves.has('glare')};
+			return {cull: moves.has('glare') || (species.id === 'eshouten' && moves.has('airslash'))};
     case 'ancientpower':
       return {cull: !abilities.has('Technician')};
     case 'powergem':

@@ -404,7 +404,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		case 'naturalgift':
 			return {cull: moves.has('trick') || moves.has('switcheroo')};
 		case 'skyfall':
-			return {cull: moves.has('glare')};
+			return {cull: moves.has('glare') || (species.id === 'eshouten' && moves.has('airslash'))};
     case 'ancientpower':
       return {cull: !abilities.has('Technician')};
     case 'powergem':
@@ -568,7 +568,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		case 'Unaware':
 			return (!!counter.setupType || moves.has('stealthrock'));
 		case 'Unburden':
-			return (!!species.isMega || abilities.has('Prankster') || !counter.setupType && !moves.has('acrobatics'));
+			return (!!species.isMega || abilities.has('Prankster') || !counter.setupType);
 		case 'Water Absorb':
 			return (moves.has('raindance') || abilities.has('Drizzle') || abilities.has('Volt Absorb'));
 		case 'Weak Armor':

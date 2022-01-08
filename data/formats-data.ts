@@ -1162,12 +1162,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	gyaradosnuclear: {
-		randomBattleMoves: ["radioacid", "earthquake", "fireblast", "protects"],
+		randomBattleMoves: ["radioacid", "earthquake", "fireblast", "protect"],
     tier: "Uber",
 		doublesTier: "Uranium",
 	},
 	gyaradosnuclearmega: {
-		randomBattleMoves: ["radioacid", "earthquake", "fireblast", "protects"],
+		randomBattleMoves: ["radioacid", "earthquake", "fireblast", "protect"],
     tier: "Uber",
 		doublesTier: "Uranium",
 	},
@@ -6560,7 +6560,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   archillesmega: {
-		randomBattleMoves: ["earthpower", "fireblast", "stoneedge", "flameimpact", "hiddenpowerice", "hiddenpowergrass"],
+		randomBattleMoves: ["earthpower", "fireblast", "stoneedge", "flameimpact", "hiddenpowerice", "solarbeam"], // i think it will be funny
     tier: "Gamma",
 		doublesTier: "Uranium",
   },
@@ -6605,7 +6605,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   splendifowl: {
-		randomBattleMoves: ["hurricane", "hypervoice", "uturn", "flashcannon", "roost", "nastyplot", "hypnosis"],
+		randomBattleMoves: ["hurricane", "hypervoice", "roost", "nastyplot", "hypnosis"],
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
@@ -6992,7 +6992,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   barand: {
-		randomBattleMoves: ["dragondance", "outrage", "superpower", "icepunch", "poisonjab", "firepunch"],
+		randomBattleMoves: ["dragondance", "outrage", "extremespeed", "superpower", "icepunch", "poisonjab", "firepunch"],
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
@@ -7006,7 +7006,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   glavinug: {
-		randomBattleMoves: ["raindance", "hydropump", "icebeam", "blizzard", "sludgebomb", "dazzlinggleam"],
+		randomBattleMoves: ["hydropump", "blizzard", "sludgebomb", "dazzlinggleam", "recover"],
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
