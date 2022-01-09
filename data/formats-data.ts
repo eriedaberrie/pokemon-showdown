@@ -6785,7 +6785,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   jerboltanuclear: {
-		randomBattleMoves: ["radioacid", "earthpower", "voltswitch", "hiddenpowerfire"],
+		randomBattleMoves: ["radioacid", "earthpower", "thunderbolt", "hiddenpowerfire"],
     tier: "Uber",
 		doublesTier: "Uranium",
   },
