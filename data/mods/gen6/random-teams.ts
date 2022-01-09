@@ -1082,7 +1082,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		}
 
 		const levelScale: {[k: string]: number} = {
-			uber: 76, ou: 80, uu: 82, ru: 84, nu: 86, pu: 88, gamma: 80, beta: 83, alpha: 87,
+			uber: 75, ou: 80, uu: 82, ru: 84, nu: 86, pu: 88, gamma: 80, beta: 84, alpha: 88,
 		};
 		const customScale: {[k: string]: number} = {
 			// Banned Ability
@@ -1090,6 +1090,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			// Holistic judgement
 			Castform: 100, Delibird: 100, 'Genesect-Douse': 80, Spinda: 100, Unown: 100,
       Duplicat: 100, Hazma: 100,
+      'Kinetmunk-Nuclear': 86, 'Eshouten-Nuclear': 86, 'Corsoreef-Nuclear': 88,
 		};
 		const tier = toID(species.tier).replace('bl', '');
 		let level = levelScale[tier] || (species.nfe ? 90 : 80);

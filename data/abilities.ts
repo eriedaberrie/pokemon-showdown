@@ -4504,8 +4504,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
   
   // uranium abilities start here
   sharpcoral: {
-		onModifyAtkPriority: 5,
+		onBasePowerPriority: 5,
 		onBasePower(basePower) {
+      this.debug('Sharp Coral boost');
       return this.chainModify(2);
 		},
 		onSourceModifyDamage(damage) {
