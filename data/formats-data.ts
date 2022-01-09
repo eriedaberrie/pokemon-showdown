@@ -6969,7 +6969,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   escartress: {
-		randomBattleMoves: ["shellsmash", "recover", "earthpower", "hydropump", "icebeam", "stealthrock"],
+		randomBattleMoves: ["shellsmash", "recover", "earthpower", "surf", "icebeam", "stealthrock"],
     tier: "Gamma",
 		doublesTier: "Uranium",
   },
@@ -7290,7 +7290,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   lavent: {
-		randomBattleMoves: ["eruption", "fireblast", "dracometeor", "overheat", "magmastorm", "nastyplot"],
+		randomBattleMoves: ["eruption", "fireblast", "dracometeor", "overheat", "nastyplot"],
     tier: "Beta",
 		doublesTier: "Uranium",
   },

@@ -606,6 +606,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		if (species.name === 'Genesect' && moves.has('technoblast')) return 'Douse Drive';
 		if (species.baseSpecies === 'Pikachu') return 'Light Ball';
 		if (species.name === 'Shedinja' || species.name === 'Smeargle' || species.name === 'Raffiti') return 'Focus Sash';
+		if (species.name === 'Duplicat' && this.randomChance(2, 3)) return 'Red Card';
 		if (species.name === 'Unfezant' && counter.get('Physical') >= 2) return 'Scope Lens';
 		if (species.name === 'Unown') return 'Choice Specs';
 		if (species.name === 'Wobbuffet') {

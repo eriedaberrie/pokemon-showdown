@@ -94,6 +94,8 @@ export const Avatars = new class {
 	src(avatar: AvatarID) {
 		if (avatar.includes('.')) return '';
 		const avatarUrl = avatar.startsWith('#') ? `trainers-custom/${avatar.slice(1)}.png` : `trainers/${avatar}.png`;
+    // return `../showdown-sprites/play.pokemonshowdown.com/sprites/${avatarUrl}`;
+    return `https://raw.githubusercontent.com/eriedaberrie/showdown-sprites/main/play.pokemonshowdown.com/sprites/${avatarUrl}`;
 		return `https://${Config.routes.client}/sprites/${avatarUrl}`;
 	}
 	exists(avatar: string) {
@@ -218,6 +220,34 @@ export const Avatars = new class {
 function listUsers(users: string[]) {
 	return users.flatMap((userid, i) => [i ? ', ' : null, <username class="username">{userid}</username>]);
 }
+
+const URANIUM_AVATARS = new Set([
+  'actor',
+  'actress',
+  'cali',
+  'curie',
+  'davern',
+  'diver',
+  'garlikid',
+  'hinata',
+  'kaito',
+  'larkspur',
+  'maria',
+  'namininja',
+  'natalie',
+  'nuclearhorde',
+  'piratejack',
+  'piratesylvia',
+  'pluto',
+  'rosalind',
+  'sheldon',
+  'surfingninja', 'surfingninjas',
+  'theo', 'theo-2',
+  'tiko',
+  'tsukininja',
+  'vaeryn',
+  'vitor',
+])
 
 const OFFICIAL_AVATARS = new Set([
 	'aaron',
@@ -540,6 +570,7 @@ const OFFICIAL_AVATARS_GNOMOWLADNY = new Set([
 	'valerie', 'viola', 'wallace-gen6', 'wikstrom', 'winona-gen6', 'wulfric', 'xerosic', 'youngn', 'zinnia',
 ]);
 
+for (const avatar of URANIUM_AVATARS) OFFICIAL_AVATARS.add(avatar);
 for (const avatar of OFFICIAL_AVATARS_BELIOT419) OFFICIAL_AVATARS.add(avatar);
 for (const avatar of OFFICIAL_AVATARS_GNOMOWLADNY) OFFICIAL_AVATARS.add(avatar);
 

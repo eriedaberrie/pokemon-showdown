@@ -1461,6 +1461,7 @@ export class RandomTeams {
 			return noSash ? 'Heavy-Duty Boots' : 'Focus Sash';
 		}
 		if (species.name === 'Shuckle' && moves.has('stickyweb')) return 'Mental Herb';
+		if (species.name === 'Duplicat' && this.randomChance(2, 3)) return 'Red Card';
 		if (species.name === 'Unfezant' || moves.has('focusenergy')) return 'Scope Lens';
 		if (species.name === 'Pincurchin') return 'Shuca Berry';
 		if (species.name === 'Wobbuffet' && moves.has('destinybond')) return 'Custap Berry';
