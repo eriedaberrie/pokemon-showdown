@@ -7010,4 +7010,11 @@ export const MovesText: {[k: string]: MoveText} = {
 
 		start: "  [POKEMON] became trapped in the vortex!",
 	},
+	goldenfist: {
+		name: "Golden Fist",
+		desc: "No additional effect.",
+		shortDesc: "Scatters coins.",
+
+		activate: "#payday",
+	},
 };
