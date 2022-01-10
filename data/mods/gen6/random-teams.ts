@@ -568,7 +568,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		case 'Unaware':
 			return (!!counter.setupType || moves.has('stealthrock'));
 		case 'Unburden':
-			return (!!species.isMega || abilities.has('Prankster') || !counter.setupType);
+			return (!!species.isMega || abilities.has('Prankster') || !counter.setupType || abilities.has('Gale Wings'));
 		case 'Water Absorb':
 			return (moves.has('raindance') || abilities.has('Drizzle') || abilities.has('Volt Absorb'));
 		case 'Weak Armor':
@@ -580,7 +580,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
     case 'Poison Heal':
       return moves.has('naturalgift');
     case 'Acceleration':
-      return !moves.has('flameimpact');
+      return !counter.get('priority');
 		}
 
 		return false;

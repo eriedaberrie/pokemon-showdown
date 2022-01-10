@@ -1393,7 +1393,7 @@ export class RandomTeams {
 			// For Swoobat and Clefable
 			return (!!counter.setupType || moves.has('fireblast'));
 		case 'Unburden':
-			return (abilities.has('Prankster') || !counter.setupType && !isDoubles);
+			return (abilities.has('Gale Wings') || abilities.has('Prankster') || !counter.setupType && !isDoubles);
 		case 'Volt Absorb':
 			return (this.dex.getEffectiveness('Electric', species) < -1);
 		case 'Water Absorb':
