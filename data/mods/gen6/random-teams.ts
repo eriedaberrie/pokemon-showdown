@@ -1089,6 +1089,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			Dugtrio: 82, Gothitelle: 82, Ninetales: 84, Politoed: 84, Wobbuffet: 82,
 			// Holistic judgement
 			Castform: 100, Delibird: 100, 'Genesect-Douse': 80, Spinda: 100, Unown: 100,
+      'Magikarp-Nuclear': 200, // i think it will be funny
       Duplicat: 100, Hazma: 100,
       'Kinetmunk-Nuclear': 86, 'Eshouten-Nuclear': 86, 'Corsoreef-Nuclear': 88,
 		};
@@ -1133,7 +1134,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			species: forme,
 			gender: species.gender,
 			moves: Array.from(moves),
-			ability: ability,
+			ability: (species.id === 'magikarpnuclear') ? 'Damp' : ability, // i think it will be funny
 			evs: evs,
 			ivs: ivs,
 			item: item,
