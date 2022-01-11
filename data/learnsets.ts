@@ -2195,7 +2195,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		eventData: [
 			{generation: 3, level: 14, gender: "F", nature: "Docile", ivs: {hp: 26, atk: 28, def: 6, spa: 14, spd: 30, spe: 11}, abilities: ["shedskin"], moves: ["leer", "wrap", "poisonsting", "bite"], pokeball: "pokeball"},
 			{generation: 3, level: 10, gender: "M", moves: ["wrap", "leer", "poisonsting"], pokeball: "pokeball"},
-      {generation: 6, moves: ["radioacid", "nuclearwaste"]},
+      {generation: 6, shiny: 1, moves: ["radioacid", "nuclearwaste"]},
 		],
 		encounters: [
 			{generation: 1, level: 6},
@@ -18442,7 +18442,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		eventData: [
 			{generation: 6, level: 50, moves: ["waterfall", "earthquake", "icefang", "dragondance"], pokeball: "cherishball"},
 			{generation: 6, level: 20, shiny: true, moves: ["waterfall", "bite", "icefang", "ironhead"], pokeball: "cherishball"},
-      {generation: 6, moves: ["radioacid", "nuclearwaste"]},
+      {generation: 6, shiny: 1, moves: ["radioacid", "nuclearwaste"]},
 		],
 		encounters: [
 			{generation: 1, level: 15},
@@ -26297,7 +26297,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
     },
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["poisonsting", "sandattack"], pokeball: "pokeball"},
-			{generation: 6, moves: ["halflife", "nuclearslash"]},
+			{generation: 6, shiny: 1, moves: ["halflife", "nuclearslash"]},
 		],
 	},
 	gliscor: {
@@ -27980,7 +27980,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		eventData: [
 			{generation: 3, level: 5, shiny: 1, moves: ["tackle", "mudsport"], pokeball: "pokeball"},
 			{generation: 7, level: 50, gender: "F", nature: "Serious", abilities: ["hustle"], moves: ["tackle", "powergem"], pokeball: "ultraball"},
-			{generation: 6, moves: ["gammaray"]},
+			{generation: 6, shiny: 1, moves: ["gammaray"]},
 		],
 	},
 	corsolagalar: {
@@ -84018,7 +84018,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       gammaray: ["6S0"],
     },
     eventData: [
-			{generation: 6, moves: ["gammaray"]},
+			{generation: 6, shiny: 1, moves: ["gammaray"]},
     ],
   },
   kinetmunk: {
@@ -85548,7 +85548,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       gammaray: ["6S0"],
     },
     eventData: [
-			{generation: 6, moves: ["gammaray"]},
+			{generation: 6, shiny: 1, moves: ["gammaray"]},
     ],
   },
   eshouten: {
@@ -86010,7 +86010,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       gammaray: ["6S0"],
     },
     eventData: [
-			{generation: 6, moves: ["gammaray"]},
+			{generation: 6, shiny: 1, moves: ["gammaray"]},
     ],
   },
   tanscure: {
@@ -86133,7 +86133,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       nuclearslash: ["6S0"],
     },
 		eventData: [
-			{generation: 6, moves: ["halflife", "nuclearslash"]},
+			{generation: 6, shiny: 1, moves: ["halflife", "nuclearslash"]},
 		],
   },
   sponee: {
@@ -86348,7 +86348,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       nuclearwind: ["6S0"],
     },
     eventData: [
-			{generation: 6, level: 5, isHidden: true, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["quickattack", "halflife", "incinerate", "nuclearwind"], pokeball: "cherishball"},
+			{generation: 6, level: 5, shiny: 1, isHidden: true, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["quickattack", "halflife", "incinerate", "nuclearwind"], pokeball: "cherishball"},
     ],
 		eventOnly: true,
   },
@@ -86450,7 +86450,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       willowisp: ["6M"],
     },
     eventData: [
-			{generation: 6, level: 5, isHidden: true, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["quickattack", "halflife", "incinerate", "nuclearwind"], pokeball: "cherishball"},
+			{generation: 6, level: 5, shiny: 1, isHidden: true, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["quickattack", "halflife", "incinerate", "nuclearwind"], pokeball: "cherishball"},
     ],
 		eventOnly: true,
   },
@@ -86556,7 +86556,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       willowisp: ["6L1", "6M"],
     },
     eventData: [
-			{generation: 6, level: 5, isHidden: true, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["quickattack", "halflife", "incinerate", "nuclearwind"], pokeball: "cherishball"},
+			{generation: 6, level: 5, shiny: 1, isHidden: true, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["quickattack", "halflife", "incinerate", "nuclearwind"], pokeball: "cherishball"},
     ],
 		eventOnly: true,
   },
@@ -86744,7 +86744,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       nuclearwaste: ["6S0"],
     },
     eventData: [
-			{generation: 6, moves: ["radioacid", "nuclearwaste"]},
+			{generation: 6, shiny: 1, moves: ["radioacid", "nuclearwaste"]},
     ],
   },
   comite: {
@@ -87107,7 +87107,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       nuclearslash: ["6S0"],
     },
 		eventData: [
-			{generation: 6, moves: ["halflife", "nuclearslash"]},
+			{generation: 6, shiny: 1, moves: ["halflife", "nuclearslash"]},
 		],
   },
   baaschaf: {
@@ -87659,7 +87659,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       gammaray: ["6S0"],
     },
     eventData: [
-			{generation: 6, moves: ["gammaray"]},
+			{generation: 6, shiny: 1, moves: ["gammaray"]},
     ],
   },
   trawpint: {
@@ -87808,7 +87808,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       wonderroom: ["6T"],
       wrap: ["6L1"],
       zenheadbutt: ["6M"],
+      radioacid: ["6S0"],
+      nuclearwaste: ["6S0"],
     },
+    eventData: [
+			{generation: 6, shiny: 1, moves: ["radioacid", "nuclearwaste"]},
+    ],
   },
   lunapup: {
     learnset: {
@@ -89185,7 +89190,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       nuclearslash: ["6S0"],
     },
 		eventData: [
-			{generation: 6, moves: ["halflife", "nuclearslash"]},
+			{generation: 6, shiny: 1, moves: ["halflife", "nuclearslash"]},
 		],
   },
   tubareel: {
@@ -89630,7 +89635,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       nuclearwaste: ["6S0"],
     },
     eventData: [
-			{generation: 6, moves: ["radioacid", "nuclearwaste"]},
+			{generation: 6, shiny: 1, moves: ["radioacid", "nuclearwaste"]},
     ],
   },
   gellin: {
@@ -89884,7 +89889,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       nuclearslash: ["6S0"],
     },
 		eventData: [
-			{generation: 6, moves: ["halflife", "nuclearslash"]},
+			{generation: 6, shiny: 1, moves: ["halflife", "nuclearslash"]},
 		],
   },
   glaslug: {
@@ -90340,7 +90345,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       nuclearwaste: ["6S0"],
     },
     eventData: [
-			{generation: 6, moves: ["radioacid", "nuclearwaste"]},
+			{generation: 6, shiny: 1, moves: ["radioacid", "nuclearwaste"]},
     ],
   },
   paraboom: {
@@ -92862,7 +92867,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       nuclearslash: ["6S0"],
     },
 		eventData: [
-			{generation: 6, moves: ["halflife", "nuclearslash"]},
+			{generation: 6, shiny: 1, moves: ["halflife", "nuclearslash"]},
 		],
   },
   luchabra: {
@@ -94303,7 +94308,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
       nuclearwaste: ["6S0"],
     },
     eventData: [
-			{generation: 6, moves: ["radioacid", "nuclearwaste"]},
+			{generation: 6, shiny: 1, moves: ["radioacid", "nuclearwaste"]},
     ],
   },
   haagross: {

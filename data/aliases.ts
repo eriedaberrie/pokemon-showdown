@@ -113,7 +113,6 @@ export const Aliases: {[alias: string]: string} = {
 	monica: "Giant",
 	spirit: "Pokestar Spirit",
 	transport: "Pokestar Transport",
-	ufo: "Pokestar UFO",
 	ufo2: "Pokestar UFO-2",
 	whitedoor: "Pokestar White-Door",
 
@@ -1834,6 +1833,7 @@ export const Aliases: {[alias: string]: string} = {
   // misc uranium
   alpaca: "Alpico",
   cubbfly: "Cubblfly",
+  ufo: "S51-A",
   flimpact: "Flame Impact",
   
   // uranium megas

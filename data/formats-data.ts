@@ -7054,7 +7054,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
   },
   inflagetahmega: {
 		randomBattleMoves: ["swordsdance", "bellydrum", "flameimpact", "extremespeed", "earthquake", "flareblitz"],
-    tier: "Uber",
+    tier: "Gamma",
 		doublesTier: "Uranium",
   },
   chimical: {
