@@ -1752,9 +1752,15 @@ export const commands: Chat.ChatCommands = {
 				`- <a href="https://cantsay.github.io/">Battle Spot Damage Calculator</a>`
 			);
 		}
+    /*
 		this.sendReplyBox(
 			`Pok&eacute;mon Showdown! damage calculator. (Courtesy of Honko, Austin, &amp; Kris)<br />` +
 			`- <a href="https://calc.pokemonshowdown.com/index.html">Damage Calculator</a>`
+		);
+    */
+		this.sendReplyBox(
+			`Pok&eacute;mon Showdown! damage calculator for Uranium. (Courtesy of Honko, Austin, &amp; Kris, edited by eriedaberrie)<br />` +
+			`- <a href="https://combinatronics.com/eriedaberrie/damage-calc/master/dist/index.html">Damage Calculator</a>`
 		);
 	},
 	calchelp: [
