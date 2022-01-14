@@ -602,7 +602,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		if (species.name === 'Marowak') return 'Thick Club';
 		if (species.name === 'Dedenne') return 'Petaya Berry';
 		if (species.name === 'Deoxys-Attack') return (isLead && moves.has('stealthrock')) ? 'Focus Sash' : 'Life Orb';
-		if (species.name === 'Farfetch\u2019d' || species.name === 'Barand') return 'Stick';
+		if (species.name === 'Farfetch\u2019d' || (species.name === 'Barand' && this.randomChance(1, 2))) return 'Stick';
     if (species.name === 'Magikarp-Nuclear') return 'Choice Band';
 		if (species.name === 'Genesect' && moves.has('technoblast')) return 'Douse Drive';
 		if (species.baseSpecies === 'Pikachu') return 'Light Ball';

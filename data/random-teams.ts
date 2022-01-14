@@ -1448,7 +1448,7 @@ export class RandomTeams {
 			!isDoubles
 		) return 'Rocky Helmet';
 		if (species.name === 'Eternatus' && counter.get('Status') < 2) return 'Metronome';
-    if (species.name === 'Barand') return 'Stick';
+    if (species.name === 'Barand' && this.randomChance(1, 2)) return 'Stick';
     if (species.name === 'Magikarp-Nuclear') return 'Choice Band';
 		if (species.name === 'Farfetch\u2019d') return 'Leek';
 		if (species.name === 'Froslass' && !isDoubles) return 'Wide Lens';
