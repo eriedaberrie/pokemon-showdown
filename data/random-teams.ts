@@ -1449,6 +1449,7 @@ export class RandomTeams {
 		) return 'Rocky Helmet';
 		if (species.name === 'Eternatus' && counter.get('Status') < 2) return 'Metronome';
     if (species.name === 'Barand') return 'Stick';
+    if (species.name === 'Magikarp-Nuclear') return 'Choice Band';
 		if (species.name === 'Farfetch\u2019d') return 'Leek';
 		if (species.name === 'Froslass' && !isDoubles) return 'Wide Lens';
 		if (species.name === 'Latios' && counter.get('Special') === 2 && !isDoubles) return 'Soul Dew';
@@ -2035,7 +2036,7 @@ export class RandomTeams {
 				// These Pokemon are too weak and need a higher level
 				delibird: 100, vespiquen: 96, pikachu: 92, shedinja: 92, solrock: 90, arctozolt: 88, reuniclus: 87,
 				decidueye: 87, noivern: 85, magnezone: 82, slowking: 81,
-        'Magikarp-Nuclear': 200,
+        'Magikarp-Nuclear': 400,
         duplicat: 100, hazma: 100,
         'Kinetmunk-Nuclear': 86, 'Eshouten-Nuclear': 86, 'Corsoreef-Nuclear': 88,
 			};

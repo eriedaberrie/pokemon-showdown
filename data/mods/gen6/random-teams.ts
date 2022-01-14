@@ -603,6 +603,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		if (species.name === 'Dedenne') return 'Petaya Berry';
 		if (species.name === 'Deoxys-Attack') return (isLead && moves.has('stealthrock')) ? 'Focus Sash' : 'Life Orb';
 		if (species.name === 'Farfetch\u2019d' || species.name === 'Barand') return 'Stick';
+    if (species.name === 'Magikarp-Nuclear') return 'Choice Band';
 		if (species.name === 'Genesect' && moves.has('technoblast')) return 'Douse Drive';
 		if (species.baseSpecies === 'Pikachu') return 'Light Ball';
 		if (species.name === 'Shedinja' || species.name === 'Smeargle' || species.name === 'Raffiti') return 'Focus Sash';
@@ -1089,7 +1090,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			Dugtrio: 82, Gothitelle: 82, Ninetales: 84, Politoed: 84, Wobbuffet: 82,
 			// Holistic judgement
 			Castform: 100, Delibird: 100, 'Genesect-Douse': 80, Spinda: 100, Unown: 100,
-      'Magikarp-Nuclear': 200, // i think it will be funny
+      'Magikarp-Nuclear': 400, // i think it will be funny
       Duplicat: 100, Hazma: 100,
       'Kinetmunk-Nuclear': 86, 'Eshouten-Nuclear': 86, 'Corsoreef-Nuclear': 88,
 		};

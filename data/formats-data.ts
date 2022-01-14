@@ -1146,7 +1146,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	magikarpnuclear: {
-		randomBattleMoves: ["splash", "fissionburst"],
+		randomBattleMoves: ["fissionburst"],
     tier: "Uber",
 		doublesTier: "Uranium",
 	},
