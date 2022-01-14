@@ -65,7 +65,7 @@ export const Formats: FormatList = [
   },
   {
     name: '[Gen 6] Doubles Uranium',
-    mod: 'gen6',
+    mod: 'gen6uranium',
     gameType: 'doubles',
     ruleset: ['Standard Doubles', 'Uranium Pokedex'],
     banlist: ['DUber'],
