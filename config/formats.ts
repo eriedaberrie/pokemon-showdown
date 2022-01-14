@@ -10,25 +10,25 @@ export const Formats: FormatList = [
 	},
   {
     name: '[Gen 6] Gamma',
-    mod: 'gen6',
+    mod: 'gen6uranium',
     ruleset: ['Standard', 'Nuclear Clause Mod', 'Soft Baton Pass Clause Mod', 'Uranium Pokedex'],
     banlist: ['Uber', 'Shadow Tag', 'Belly Drum', 'Spore', 'Dark Void', 'Geomancy'],
   },
   {
     name: '[Gen 6] Beta',
-    mod: 'gen6',
+    mod: 'gen6uranium',
     ruleset: ['[Gen 6] Gamma'],
     banlist: ['Gamma', 'Arena Trap'],
   },
   {
     name: '[Gen 6] Alpha',
-    mod: 'gen6',
+    mod: 'gen6uranium',
     ruleset: ['[Gen 6] Beta'],
     banlist: ['Beta'],
   },
   {
     name: '[Gen 6] Ubers',
-    mod: 'gen6',
+    mod: 'gen6uranium',
     ruleset: ['Obtainable', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Uranium Pokedex'],
   },
 	{

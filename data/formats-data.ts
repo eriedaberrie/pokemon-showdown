@@ -6687,7 +6687,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   empirilla: {
-		randomBattleMoves: ["closecombat", "earthquake", "encore", "gunkshot", "icepunch", "stoneedge", "uturn"],
+		randomBattleMoves: ["closecombat", "earthquake", "encore", "poisonjab", "icepunch", "stoneedge", "uturn"],
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
