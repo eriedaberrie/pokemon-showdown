@@ -6890,7 +6890,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	skyfall: {
 		name: "Sky Fall",
     desc: "Has a 30% chance to paralyze the target.",
-    shortdesc: "30% chance to paralyze the target.",
+    shortDesc: "30% chance to paralyze the target.",
 	},
 	flameimpact: {
 		name: "Flame Impact",
