@@ -26112,6 +26112,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			yawn: ["8L28", "7L13", "6L16", "5L8", "4L9", "3L11"],
 			zapcannon: ["7V"],
 			zenheadbutt: ["8M", "7T", "6T", "5T", "4T"],
+      skyfall: ["6L42"],
 		},
 	},
 	gligar: {
