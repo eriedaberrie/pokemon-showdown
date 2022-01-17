@@ -19986,7 +19986,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				spd: -1,
 			},
 		},
-		target: "normal",
+		target: "allAdjacentFoes",
 		type: "Dragon",
 		contestType: "Cool",
 	},
