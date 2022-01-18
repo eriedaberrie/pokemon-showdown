@@ -19657,7 +19657,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
     eggGroups: ["Monster", "Dragon"],
   },
   jungore: {
-    num: -2131,
+    num: -2130,
     name: "Jungore",
     types: ["Fighting", "Rock"],
     genderRatio: {M: 0.875, F: 0.125},
