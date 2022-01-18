@@ -1795,8 +1795,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	leadskin: {
 		name: "Lead Skin",
-		desc: "This Pokemon is immune to Nuclear-type moves.",
-		shortDesc: "Nuclear immunity.",
+		desc: "This Pokemon is immune to damaging Nuclear-type moves and Toxic Fallout.",
+		shortDesc: "This Pokemon is immune to damaging Nuclear-type moves.",
 	},
 	deepfreeze: {
 		name: "Deep Freeze",
@@ -1817,8 +1817,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	disenchant: {
 		name: "Disenchant",
-		desc: "This Pokemon is immune to Fairy-type moves.",
-		shortDesc: "Fairy immunity.",
+		shortDesc: "This Pokemon is immune to damaging Fairy-type moves.",
 	},
 	geigersense: {
 		name: "Geiger Sense",
