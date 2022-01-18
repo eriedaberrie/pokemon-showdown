@@ -706,6 +706,30 @@ export class TeamValidator {
 			problems.push(`${name} must be at least level ${species.evoLevel} to be evolved.`);
 		}
 
+		let isFromUraniumEncounter = false;
+		if (format.mod === 'gen6uranium') {
+			let lowestEncounterLevel;
+			for (const encounter of learnsetSpecies.encounters || []) {
+				if (encounter.generation !== 6) continue;
+				if (!encounter.level) continue;
+				if (lowestEncounterLevel && encounter.level > lowestEncounterLevel) continue;
+
+				lowestEncounterLevel = encounter.level;
+			}
+
+			if (lowestEncounterLevel) {
+				if (set.level < lowestEncounterLevel) {
+					problems.push(`${name} is not obtainable at levels below ${lowestEncounterLevel} in Uranium.`);
+				}
+				isFromUraniumEncounter = true;
+			}
+		}
+		if (!isFromUraniumEncounter && ruleTable.has('obtainablemisc') && set.level < (species.evoLevel || 0)) {
+			// FIXME: Event pokemon given at a level under what it normally can be attained at gives a false positive
+			problems.push(`${name} must be at least level ${species.evoLevel} to be evolved.`);
+		}
+
+
 		if (ruleTable.has('obtainablemoves') && species.id === 'keldeo' && set.moves.includes('secretsword') &&
 			this.minSourceGen > 5 && dex.gen <= 7) {
 			problems.push(`${name} has Secret Sword, which is only compatible with Keldeo-Ordinary obtained from Gen 5.`);

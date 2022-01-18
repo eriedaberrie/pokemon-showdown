@@ -6952,7 +6952,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   tubareel: {
-		randomBattleMoves: ["waterfall", "aquajet", "crunch", "superpower", "bulkup", "raindance"],
+		randomBattleMoves: ["waterfall", "aquajet", "crunch", "superpower", "bulkup"],
     tier: "Gamma",
 		doublesTier: "Uranium",
   },
