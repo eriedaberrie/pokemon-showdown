@@ -7205,7 +7205,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
   },
   dramsama: {
 		randomBattleMoves: ["nastyplot", "psyshock", "shadowball", "focusblast", "hypnosis"],
-    tier: "Beta",
+    tier: "Alpha",
 		doublesTier: "Uranium",
   },
   dramsamamega: {
