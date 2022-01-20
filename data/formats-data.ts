@@ -6700,7 +6700,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   eshouten: {
-		randomBattleMoves: ["airslash", "skyfall", "sing", "uturn", "nastyplot", "trick", "thunderbolt"],
+		randomBattleMoves: ["airslash", "skyfall", "uturn", "nastyplot", "trick", "thunderbolt"],
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
