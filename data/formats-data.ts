@@ -7331,7 +7331,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   haagross: {
-		randomBattleMoves: ["stickyweb", "recover", "voltswitch", "paraboliccharge", "sludgebomb", "gigadrain", "toxicspikes", "thunderwave"],
+		randomBattleMoves: ["stickyweb", "recover", "voltswitch", "thunderbolt", "sludgebomb", "gigadrain", "toxicspikes", "thunderwave"],
     tier: "Beta",
 		doublesTier: "Uranium",
   },
