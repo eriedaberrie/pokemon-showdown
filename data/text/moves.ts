@@ -6963,7 +6963,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		shortDesc: "Lowers the user's Sp. Atk by 2.",
 	},
 	infernalblade: {
-		name: "Freeze-Dry",
+		name: "Infernal Blade",
 		desc: "Has a 10% chance to burn the target. This move's type effectiveness against Fairy is changed to be x4 super effective no matter what this move's type is.",
 		shortDesc: "10% chance to burn. Super effective on Fairy.",
 	},
