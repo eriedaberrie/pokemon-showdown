@@ -6965,7 +6965,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	infernalblade: {
 		name: "Infernal Blade",
 		desc: "Has a 10% chance to burn the target. This move's type effectiveness against Fairy is changed to be x4 super effective no matter what this move's type is.",
-		shortDesc: "10% chance to burn. x4 super effective on Fairy.",
+		shortDesc: "10% chance to burn. Super effective x4 on Fairy.",
 	},
 	quantumleap: {
 		name: "Quantum Leap",
