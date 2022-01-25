@@ -485,7 +485,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		case 'Analytic': case 'Download': case 'Hyper Cutter':
 			return species.nfe;
 		case 'Battle Armor': case 'Sturdy':
-			return (!!counter.get('recoil') && !counter.get('recovery'));
+			return ((!!counter.get('recoil') && !counter.get('recovery')) || moves.has('ancientpower'));
 		case 'Chlorophyll': case 'Leaf Guard':
 			return (
 				species.baseStats.spe > 100 ||

@@ -76,13 +76,14 @@ export const Formats: FormatList = [
 			for (const set of team) {
 				const item = this.dex.items.get(set.item);
 				if (!item.exists) continue;
-				if (itemTable.has(item.id) && (item.megaStone || item.onPrimal)) {
+        itemid = itemid.startsWith('nuclear') ? item.id.slice(0, 7) : item.id
+				if (itemTable.has(itemid) && (item.megaStone || item.onPrimal)) {
 					return [
 						`You are limited to one of each Mega Stone and Primal Orb.`,
-						`(You have more than one ${item.name}.)`,
+						`(You have more than one ${item.name.startsWith('Nuclear ') ? item.name.slice(0, 8) : item.name}.)`,
 					];
 				}
-				itemTable.add(item.id);
+				itemTable.add(itemid);
 			}
 		},
 		onValidateSet(set) {
