@@ -1091,7 +1091,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			// Holistic judgement
 			Castform: 100, Delibird: 100, 'Genesect-Douse': 80, Spinda: 100, Unown: 100,
       'Magikarp-Nuclear': 400, // i think it will be funny
-      Duplicat: 100, Hazma: 100,
+      Duplicat: 100, Hazma: 100, Firoke: 100,
       'Kinetmunk-Nuclear': 86, 'Eshouten-Nuclear': 86, 'Corsoreef-Nuclear': 88,
 		};
 		const tier = toID(species.tier).replace('bl', '');

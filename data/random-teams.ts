@@ -1346,7 +1346,7 @@ export class RandomTeams {
 		case 'Steely Spirit':
 			return (moves.has('fakeout') && !isDoubles);
 		case 'Sturdy':
-			return (moves.has('bulkup') || !!counter.get('recoil') || (!isNoDynamax && abilities.has('Solid Rock')));
+			return (moves.has('bulkup') || !!counter.get('recoil') || (!isNoDynamax && abilities.has('Solid Rock')) || moves.has('ancientpower'));
 		case 'Swarm':
 			return (!counter.get('Bug') || !!counter.get('recovery'));
 		case 'Sweet Veil':
@@ -2036,9 +2036,9 @@ export class RandomTeams {
 				// These Pokemon are too weak and need a higher level
 				delibird: 100, vespiquen: 96, pikachu: 92, shedinja: 92, solrock: 90, arctozolt: 88, reuniclus: 87,
 				decidueye: 87, noivern: 85, magnezone: 82, slowking: 81,
-        'Magikarp-Nuclear': 400,
-        duplicat: 100, hazma: 100,
-        'Kinetmunk-Nuclear': 86, 'Eshouten-Nuclear': 86, 'Corsoreef-Nuclear': 88,
+        magikarpnuclear: 400,
+        duplicat: 100, hazma: 100, firoke: 100,
+        kinetmunknuclear: 86, eshoutennuclear: 86, corsoreefnuclear: 88,
 			};
 			level = customScale[species.id] || tierScale[tier] || 80;
 		// BDSP tier levelling

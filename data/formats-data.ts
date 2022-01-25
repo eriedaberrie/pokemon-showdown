@@ -6714,7 +6714,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
   },
   firoke: {
-		randomBattleMoves: ["fireblast", "overheat", "signalbeam", "nastyplot", "trick", "thunderbolt"],
+		randomBattleMoves: ["fireblast", "overheat", "signalbeam", "uturn", "ominouswind"],
     tier: "Alpha",
 		doublesTier: "Uranium",
   },
