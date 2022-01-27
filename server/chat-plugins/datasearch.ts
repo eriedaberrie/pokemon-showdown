@@ -507,7 +507,7 @@ function runDexsearch(target: string, cmd: string, canAll: boolean, message: str
 		nfe: 'NFE',
 		lc: 'LC',
 		cap: 'CAP', caplc: 'CAP LC', capnfe: 'CAP NFE',
-    gamma: 'Gamma', beta: 'Beta', alpha: 'Alpha',
+		gamma: 'Gamma', beta: 'Beta', alpha: 'Alpha',
 	});
 	const allDoublesTiers: {[k: string]: TierTypes.Singles | TierTypes.Other} = Object.assign(Object.create(null), {
 		doublesubers: 'DUber', doublesuber: 'DUber', duber: 'DUber', dubers: 'DUber',
@@ -515,6 +515,7 @@ function runDexsearch(target: string, cmd: string, canAll: boolean, message: str
 		doublesbl: 'DBL', dbl: 'DBL',
 		doublesuu: 'DUU', duu: 'DUU',
 		doublesnu: '(DUU)', dnu: '(DUU)',
+		uranium: 'Uranium'
 	});
 	const allTypes = Object.create(null);
 	for (const type of mod.types.all()) {

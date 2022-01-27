@@ -1063,7 +1063,7 @@ export class RandomTeams {
 			// Turtonator wants Body Press when it doesn't have Shell Smash
 			const turtQuakeCull = species.id === 'turtonator' && movePool.includes('bodypress') && movePool.includes('shellsmash');
 			const subToxicPossible = moves.has('substitute') && movePool.includes('toxic');
-			return {cull: turtQuakeCull || (isDoubles && doublesCull) || subToxicPossible || moves.has('bonemerang')};
+			return {cull: turtQuakeCull || (isDoubles && doublesCull) || subToxicPossible || moves.has('bonemerang') || moves.has('subduction')};
 		case 'scorchingsands':
 			// Special cases for Ninetales and Palossand; prevents status redundancy
 			return {cull: (
@@ -1206,14 +1206,14 @@ export class RandomTeams {
 			return {cull: !!counter.setupType};
 		case 'skyfall':
 			return {cull: moves.has('glare') || (species.id === 'eshouten' && moves.has('airslash'))};
-	case 'ancientpower':
-	  return {cull: !abilities.has('Technician')};
-	case 'powergem':
-	  return {cull: abilities.has('Technician')};
-	case 'earthquake':
-	  return {cull: moves.has('subduction')};
-	case 'subduction':
-	  return {cull: moves.has('earthquake')};
+		case 'ancientpower':
+			return {cull: !abilities.has('Technician')};
+		case 'powergem':
+			return {cull: abilities.has('Technician')};
+		case 'subduction':
+			return {cull: moves.has('earthquake')};
+		case 'waterfall':
+			return {cull: species.id === 'tubareelnuclear' && !moves.has('nuclearslash')};
 		}
 
 		return {cull: false};
@@ -1408,10 +1408,10 @@ export class RandomTeams {
 				species.id === 'skarmory' ||
 				moves.has('shellsmash') || moves.has('rapidspin')
 			);
-	case 'Natural Cure':
-	  return (species.id === 'corsoreefnuclear');
-	case 'Poison Heal':
-	  return moves.has('naturalgift');
+		case 'Natural Cure':
+			return (species.id === 'corsoreefnuclear');
+		case 'Poison Heal':
+			return moves.has('naturalgift');
 		}
 
 		return false;

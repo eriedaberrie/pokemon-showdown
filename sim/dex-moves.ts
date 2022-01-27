@@ -324,6 +324,9 @@ export interface ActiveMove extends MutableMove {
 	willChangeForme?: boolean;
 	infiltrates?: boolean;
 
+	energizateBoosted?: boolean;
+	atomizateBoosted?: boolean;
+
 	/**
 	 * Has this move been boosted by a Z-crystal or used by a Dynamax Pokemon? Usually the same as
 	 * `isZ` or `isMax`, but hacked moves will have this be `false` and `isZ` / `isMax` be truthy.

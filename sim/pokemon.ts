@@ -1276,7 +1276,8 @@ export class Pokemon {
 
 		// The species the opponent sees
 		const apparentSpecies =
-			this.illusion ? this.illusion.species.name : species.baseSpecies;
+		//	this.illusion ? this.illusion.species.name : species.baseSpecies;
+			species.baseSpecies;
 		if (isPermanent) {
 			this.baseSpecies = rawSpecies;
 			this.details = species.name + (this.level === 100 ? '' : ', L' + this.level) +
@@ -1294,9 +1295,9 @@ export class Pokemon {
 						this.battle.add('-primal', this);
 					}
 				} else {
-          if (this.illusion) { // wasted 40 minutes debugging this just because i forgot to put "battle" in front of "dex" when i copypasted it
-            this.battle.singleEvent('End', this.battle.dex.abilities.get('Illusion'), this.abilityState, this); // for mega dramsama
-          }
+					if (this.illusion) { // wasted 40 minutes debugging this just because i forgot to put "battle" in front of "dex" when i copypasted it
+						this.battle.singleEvent('End', this.battle.dex.abilities.get('Illusion'), this.abilityState, this); // for mega dramsama
+					}
 					this.battle.add('-mega', this, apparentSpecies, species.requiredItem);
 					this.moveThisTurnResult = true; // Mega Evolution counts as an action for Truant
 				}

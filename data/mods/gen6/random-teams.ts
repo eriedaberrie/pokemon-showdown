@@ -74,7 +74,8 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			),
 			Aerilate: (movePool, moves, abilities, types, counter) => !counter.get('Normal'),
 			Pixilate: (movePool, moves, abilities, types, counter) => !counter.get('Normal'),
-			Pixilate: (movePool, moves, abilities, types, counter) => !counter.get('Normal'),
+			Atomizate: (movePool, moves, abilities, types, counter) => !counter.get('Normal'),
+			Energizate: (movePool, moves, abilities, types, counter) => !counter.get('Normal'),
 			Refrigerate: (movePool, moves, abilities, types, counter) => !moves.has('blizzard') && !counter.get('Normal'),
 			Contrary: (movePool, moves, abilities, types, counter, species) => (
 				!counter.get('contrary') && species.name !== 'Shuckle'
@@ -405,14 +406,16 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			return {cull: moves.has('trick') || moves.has('switcheroo')};
 		case 'skyfall':
 			return {cull: moves.has('glare') || (species.id === 'eshouten' && moves.has('airslash'))};
-    case 'ancientpower':
-      return {cull: !abilities.has('Technician')};
-    case 'powergem':
-      return {cull: abilities.has('Technician')};
-    case 'earthquake':
-      return {cull: moves.has('subduction')};
-    case 'subduction':
-      return {cull: moves.has('earthquake')};
+		case 'ancientpower':
+			return {cull: !abilities.has('Technician')};
+		case 'powergem':
+			return {cull: abilities.has('Technician')};
+		case 'earthquake':
+			return {cull: moves.has('subduction')};
+		case 'subduction':
+			return {cull: moves.has('earthquake')};
+		case 'waterfall':
+			return {cull: species.id === 'tubareelnuclear' && !moves.has('nuclearslash')};
 
 		// Status:
 		case 'glare': case 'headbutt':
@@ -573,14 +576,14 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			return (moves.has('raindance') || abilities.has('Drizzle') || abilities.has('Volt Absorb'));
 		case 'Weak Armor':
 			return counter.setupType !== 'Physical';
-    case 'Natural Cure':
-      return (species.id === 'corsoreefnuclear');
-    case 'Sharp Coral':
-      return counter.get('recovery');
-    case 'Poison Heal':
-      return moves.has('naturalgift');
-    case 'Acceleration':
-      return !counter.get('priority');
+		case 'Natural Cure':
+			return (species.id === 'corsoreefnuclear');
+		case 'Sharp Coral':
+			return !!counter.get('recovery');
+		case 'Poison Heal':
+			return moves.has('naturalgift');
+		case 'Acceleration':
+			return !counter.get('priority');
 		}
 
 		return false;
@@ -603,7 +606,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		if (species.name === 'Dedenne') return 'Petaya Berry';
 		if (species.name === 'Deoxys-Attack') return (isLead && moves.has('stealthrock')) ? 'Focus Sash' : 'Life Orb';
 		if (species.name === 'Farfetch\u2019d' || (species.name === 'Barand' && this.randomChance(1, 2))) return 'Stick';
-    if (species.name === 'Magikarp-Nuclear') return 'Choice Band';
+		if (species.name === 'Magikarp-Nuclear') return 'Choice Band';
 		if (species.name === 'Genesect' && moves.has('technoblast')) return 'Douse Drive';
 		if (species.baseSpecies === 'Pikachu') return 'Light Ball';
 		if (species.name === 'Shedinja' || species.name === 'Smeargle' || species.name === 'Raffiti') return 'Focus Sash';
@@ -661,20 +664,20 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			}
 		}
     
-    if (species.name === 'Hazma' && this.randomChance(2, 3)) return 'Weakness Policy';
-    
-    if (species.types.includes('Nuclear')) {
-      return (species.baseStats.spe >= 70 && species.baseStats.spe <= 100 &&
-              !(counter.get('Status') || (counter.get('priority') && this.randomChance(2, 3)))) ? 'Choice Scarf' : 'Focus Sash';
-    }
-    
-		if (moves.has('acrobatics')) return ''; // not undefined - we want "no item"
-		if (moves.has('raindance')) return (ability === 'Forecast') ? 'Damp Rock' : 'Life Orb';
-		if (moves.has('sunnyday')) return (ability === 'Forecast') ? 'Heat Rock' : 'Life Orb';
-		if (moves.has('lightscreen') && moves.has('reflect')) return 'Light Clay';
-		if ((moves.has('rest') || ability === 'Lazy') && !moves.has('sleeptalk') && ability !== 'Natural Cure' && ability !== 'Shed Skin') {
-			return 'Chesto Berry';
+		if (species.name === 'Hazma' && this.randomChance(2, 3)) return 'Weakness Policy';
+		
+		if (species.types.includes('Nuclear')) {
+			return (species.baseStats.spe >= 70 && species.baseStats.spe <= 100 &&
+				!(counter.get('Status') || (counter.get('priority') && this.randomChance(2, 3)))) ? 'Choice Scarf' : 'Focus Sash';
 		}
+		
+			if (moves.has('acrobatics')) return ''; // not undefined - we want "no item"
+			if (moves.has('raindance')) return (ability === 'Forecast') ? 'Damp Rock' : 'Life Orb';
+			if (moves.has('sunnyday')) return (ability === 'Forecast') ? 'Heat Rock' : 'Life Orb';
+			if (moves.has('lightscreen') && moves.has('reflect')) return 'Light Clay';
+			if ((moves.has('rest') || ability === 'Lazy') && !moves.has('sleeptalk') && ability !== 'Natural Cure' && ability !== 'Shed Skin') {
+				return 'Chesto Berry';
+			}
 	}
 
 	getMediumPriorityItem(
@@ -1261,8 +1264,8 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			sapsipper: ['Grass'],
 			thickfat: ['Ice', 'Fire'],
 			levitate: ['Ground'],
-      disenchant: ['Fairy'],
-      leadskin: ['Nuclear'],
+			disenchant: ['Fairy'],
+			leadskin: ['Nuclear'],
 		};
 
 		while (pokemonPool.length && pokemon.length < this.maxTeamSize) {
@@ -1277,6 +1280,9 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			// Limit the number of Megas to one
 			if (!teamData.megaCount) teamData.megaCount = 0;
 			if (teamData.megaCount >= 1 && speciesFlags.megaOnly) continue;
+
+			// Dynamically scale limits for different team sizes. The default and minimum value is 1.
+			const limitFactor = Math.round(this.maxTeamSize / 6) || 1;
 
 			// Limit 2 of any type
 			const types = species.types;

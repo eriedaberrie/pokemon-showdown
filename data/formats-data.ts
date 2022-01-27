@@ -161,20 +161,20 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	ekans: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	ekansnuclear: {
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
 	},
 	arbok: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	arboknuclear: {
 		randomBattleMoves: ["radioacid", "protect", "earthquake", "firefang", "glare"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
 	},
 	pichu: {
@@ -502,11 +502,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	mankey: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	primeape: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	growlithe: {
@@ -1142,12 +1142,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	magikarp: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	magikarpnuclear: {
-		randomBattleMoves: ["fissionburst"],
-    tier: "Uber",
+		// randomBattleMoves: ["fissionburst"],
+		tier: "Uber",
 		doublesTier: "Uranium",
 	},
 	gyarados: {
@@ -1155,21 +1155,21 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 76,
 		randomDoubleBattleMoves: ["bounce", "dragondance", "icefang", "powerwhip", "protect", "waterfall"],
 		randomDoubleBattleLevel: 81,
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	gyaradosmega: {
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	gyaradosnuclear: {
 		randomBattleMoves: ["radioacid", "earthquake", "fireblast", "protect"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
 	},
 	gyaradosnuclearmega: {
 		randomBattleMoves: ["radioacid", "earthquake", "fireblast", "protect"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
 	},
 	lapras: {
@@ -1194,7 +1194,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	eevee: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	eeveestarter: {
@@ -1211,7 +1211,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["healbell", "icywind", "protect", "scald", "toxic", "wish"],
 		randomDoubleBattleLevel: 88,
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	jolteon: {
@@ -1219,7 +1219,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 82,
 		randomDoubleBattleMoves: ["faketears", "protect", "shadowball", "thunderbolt", "thunderwave"],
 		randomDoubleBattleLevel: 86,
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	flareon: {
@@ -1227,7 +1227,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 86,
 		randomDoubleBattleMoves: ["facade", "flamecharge", "flareblitz", "protect", "quickattack", "superpower"],
 		randomDoubleBattleLevel: 88,
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	espeon: {
@@ -1235,7 +1235,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 82,
 		randomDoubleBattleMoves: ["calmmind", "dazzlinggleam", "morningsun", "protect", "psychic", "shadowball"],
 		randomDoubleBattleLevel: 84,
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	umbreon: {
@@ -1243,7 +1243,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 82,
 		randomDoubleBattleMoves: ["foulplay", "helpinghand", "moonlight", "protect", "snarl", "toxic"],
 		randomDoubleBattleLevel: 88,
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	leafeon: {
@@ -1259,7 +1259,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 88,
 		randomDoubleBattleMoves: ["blizzard", "freezedry", "helpinghand", "protect", "shadowball", "wish"],
 		randomDoubleBattleLevel: 88,
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	sylveon: {
@@ -1267,7 +1267,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["calmmind", "hypervoice", "mysticalfire", "protect", "psyshock"],
 		randomDoubleBattleLevel: 80,
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	porygon: {
@@ -1542,19 +1542,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	mareep: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	flaaffy: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	ampharos: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	ampharosmega: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	azurill: {
@@ -1638,11 +1638,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	misdreavus: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	mismagius: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	unown: {
@@ -1678,26 +1678,26 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 90,
 		randomDoubleBattleMoves: ["glare", "headbutt", "protect", "rockslide"],
 		randomDoubleBattleLevel: 90,
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	gligar: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
-  gligarnuclear: {
-    tier: "Uber",
+	gligarnuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
+	},
 	gliscor: {
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
-  gliscornuclear: {
+	gliscornuclear: {
 		randomBattleMoves: ["nuclearslash", "earthquake", "uturn", "firefang", "swordsdance", "stealthrock"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
+	},
 	snubbull: {
 		isNonstandard: "Past",
 		tier: "Illegal",
@@ -1780,13 +1780,13 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 93,
 		randomDoubleBattleMoves: ["icywind", "lifedew", "recover", "scald", "toxic"],
 		randomDoubleBattleLevel: 95,
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
-  corsolanuclear: {
-    tier: "Uber",
+	corsolanuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
+	},
 	corsolagalar: {
 		randomBattleMoves: ["haze", "nightshade", "stealthrock", "strengthsap", "willowisp"],
 		randomBattleLevel: 84,
@@ -2049,11 +2049,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	lotad: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	lombre: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	ludicolo: {
@@ -2061,7 +2061,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 86,
 		randomDoubleBattleMoves: ["energyball", "fakeout", "hydropump", "icebeam", "raindance"],
 		randomDoubleBattleLevel: 86,
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	seedot: {
@@ -2219,11 +2219,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomDoubleBattleMoves: ["disable", "encore", "fakeout", "foulplay", "knockoff", "quash", "recover", "willowisp"],
 		randomDoubleBattleLevel: 88,
 		randomBattleNoDynamaxMoves: ["encore", "knockoff", "recover", "taunt", "toxic", "willowisp"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	sableyemega: {
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	mawile: {
@@ -2914,11 +2914,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	buizel: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	floatzel: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	cherubi: {
@@ -3567,7 +3567,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	cottonee: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	whimsicott: {
@@ -3576,7 +3576,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomDoubleBattleMoves: ["encore", "energyball", "helpinghand", "moonblast", "tailwind", "taunt"],
 		randomDoubleBattleLevel: 82,
 		randomBattleNoDynamaxMoves: ["defog", "encore", "energyball", "leechseed", "moonblast", "stunspore", "taunt", "uturn"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	petilil: {
@@ -4444,7 +4444,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomDoubleBattleLevel: 84,
 	},
 	spritzee: {
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	aromatisse: {
@@ -4452,7 +4452,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 88,
 		randomDoubleBattleMoves: ["healpulse", "moonblast", "protect", "thunderbolt", "trickroom", "wish"],
 		randomDoubleBattleLevel: 86,
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	swirlix: {
@@ -6537,987 +6537,987 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
-  orchynx: {
-    tier: "Alpha",
+	orchynx: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  metalynx: {
+	},
+	metalynx: {
 		randomBattleMoves: ["leafblade", "meteormash", "swordsdance", "earthquake", "curse", "synthesis", "leechseed"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  metalynxmega: {
+	},
+	metalynxmega: {
 		randomBattleMoves: ["leafblade", "meteormash", "swordsdance", "earthquake", "leechseed"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  raptorch: {
-    tier: "Alpha",
+	},
+	raptorch: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  archilles: {
+	},
+	archilles: {
 		randomBattleMoves: ["earthquake", "flareblitz", "stealthrock", "flameimpact", "stoneedge", "swordsdance", "bellydrum", "substitute"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  archillesmega: {
+	},
+	archillesmega: {
 		randomBattleMoves: ["earthpower", "fireblast", "stoneedge", "flameimpact", "hiddenpowerice", "solarbeam"], // i think it will be funny
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  eletux: {
-    tier: "Alpha",
+	},
+	eletux: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  electruxo: {
+	},
+	electruxo: {
 		randomBattleMoves: ["thunderbolt", "icebeam", "scald", "haze", "yawn", "mirrorcoat", "thunderwave"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  electruxomega: {
+	},
+	electruxomega: {
 		randomBattleMoves: ["thunder", "hydropump", "scald", "icebeam"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  chyinmunk: {
-    tier: "Alpha",
+	},
+	chyinmunk: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  chyinmunknuclear: {
-    tier: "Uber",
+	},
+	chyinmunknuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  kinetmunk: {
+	},
+	kinetmunk: {
 		randomBattleMoves: ["uturn", "hypervoice", "thunderbolt", "grassknot", "hiddenpowerice", "nastyplot", "nuzzle"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  kinetmunknuclear: {
+	},
+	kinetmunknuclear: {
 		randomBattleMoves: ["gammaray", "uturn", "hiddenpowerfire", "nastyplot", "nuzzle"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  birbie: {
-    tier: "Alpha",
+	},
+	birbie: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  aveden: {
-    tier: "Alpha",
+	},
+	aveden: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  splendifowl: {
+	},
+	splendifowl: {
 		randomBattleMoves: ["hurricane", "hypervoice", "roost", "nastyplot", "hypnosis"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  cubbug: {
-    tier: "Alpha",
+	},
+	cubbug: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  cubblfly: {
+	},
+	cubblfly: {
 		randomBattleMoves: ["stickyweb", "uturn", "roost", "sleeppowder", "healbell", "tailwind"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  nimflora: {
+	},
+	nimflora: {
 		randomBattleMoves: ["naturalgift", "stickyweb", "uturn", "playrough", "knockoff", "endeavor", "sleeppowder", "zenheadbutt"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  barewl: {
-    tier: "Alpha",
+	},
+	barewl: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  dearewl: {
-    tier: "Alpha",
+	},
+	dearewl: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  gararewl: {
+	},
+	gararewl: {
 		randomBattleMoves: ["metalwhip", "stealthrock", "ironhead", "rapidspin", "headsmash", "rockslide", "earthquake", "toxic"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  grozard: {
-    tier: "Alpha",
+	},
+	grozard: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  terlard: {
+	},
+	terlard: {
 		randomBattleMoves: ["earthquake", "outrage", "ironhead", "stoneedge", "stealthrock", "spikes"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  tonemy: {
-    tier: "Alpha",
+	},
+	tonemy: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  tofurang: {
+	},
+	tofurang: {
 		randomBattleMoves: ["uturn", "roost", "toxic", "willowisp", "toxicspikes", "knockoff", "haze"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  dunseraph: {
+	},
+	dunseraph: {
 		randomBattleMoves: ["roost", "airslash", "skyfall", "glare", "flamethrower", "calmmind"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  fortog: {
-    tier: "Alpha",
+	},
+	fortog: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  folerog: {
-    tier: "Alpha",
+	},
+	folerog: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  blubelrog: {
+	},
+	blubelrog: {
 		randomBattleMoves: ["surf", "sludgebomb", "haze", "icebeam", "mirrorcoat", "taunt"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  feleng: {
-    tier: "Alpha",
+	},
+	feleng: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  felunge: {
-    tier: "Alpha",
+	},
+	felunge: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  feliger: {
+	},
+	feliger: {
 		randomBattleMoves: ["return", "slackoff", "rest", "sleeptalk", "bulkup", "knockoff"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  empirilla: {
+	},
+	empirilla: {
 		randomBattleMoves: ["closecombat", "earthquake", "encore", "poisonjab", "icepunch", "stoneedge", "uturn"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  owten: {
-    tier: "Alpha",
+	},
+	owten: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  owtennuclear: {
-    tier: "Uber",
+	},
+	owtennuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  eshouten: {
+	},
+	eshouten: {
 		randomBattleMoves: ["airslash", "skyfall", "uturn", "nastyplot", "trick", "thunderbolt"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  eshoutennuclear: {
+	},
+	eshoutennuclear: {
 		randomBattleMoves: ["gammaray", "sing", "nastyplot", "hiddenpowerfire", "hiddenpowerfighting"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  smore: {
-    tier: "Alpha",
+	},
+	smore: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  firoke: {
+	},
+	firoke: {
 		randomBattleMoves: ["fireblast", "overheat", "signalbeam", "uturn", "ominouswind"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  brailip: {
-    tier: "Alpha",
+	},
+	brailip: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  brainoar: {
+	},
+	brainoar: {
 		randomBattleMoves: ["hydropump", "psyshock", "icebeam", "focusblast", "trick", "thunderwave"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  tancoon: {
-    tier: "Alpha",
+	},
+	tancoon: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  tancoonnuclear: {
-    tier: "Uber",
+	},
+	tancoonnuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  tanscure: {
+	},
+	tanscure: {
 		randomBattleMoves: ["extremespeed", "suddenstrike", "knockoff", "return", "firefang", "uturn"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  tanscurenuclear: {
+	},
+	tanscurenuclear: {
 		randomBattleMoves: ["nuclearslash", "suddenstrike", "knockoff", "firefang", "uturn"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  sponee: {
-    tier: "Alpha",
+	},
+	sponee: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  sponaree: {
+	},
+	sponaree: {
 		randomBattleMoves: ["stickyweb", "uturn", "bugbuzz", "surf", "icebeam"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  pahar: {
-    tier: "Alpha",
+	},
+	pahar: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  paharnuclear: {
-    tier: "Uber",
+	},
+	paharnuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  palij: {
-    tier: "Alpha",
+	},
+	palij: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  palijnuclear: {
-    tier: "Uber",
+	},
+	palijnuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  pajay: {
+	},
+	pajay: {
 		randomBattleMoves: ["fireblast", "airslash", "defog", "roost", "uturn", "willowisp", "trick"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  pajaynuclear: {
+	},
+	pajaynuclear: {
 		randomBattleMoves: ["nuclearwind", "fireblast", "uturn", "trick", "tailwind"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  jerbolta: {
+	},
+	jerbolta: {
 		randomBattleMoves: ["naturalgift", "stealthrock", "rapidspin", "earthpower", "thunderbolt", "voltswitch", "hiddenpowerice"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  jerboltanuclear: {
+	},
+	jerboltanuclear: {
 		randomBattleMoves: ["radioacid", "earthpower", "thunderbolt", "hiddenpowerfire"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  comite: {
-    tier: "Alpha",
+	},
+	comite: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  cometeor: {
-    tier: "Alpha",
+	},
+	cometeor: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  astronite: {
+	},
+	astronite: {
 		randomBattleMoves: ["ancientpower", "nastyplot", "hiddenpowerice", "hiddenpowerfire", "psychic", "rockpolish", "powergem"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  baashaun: {
-    tier: "Alpha",
+	},
+	baashaun: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  baashaunnuclear: {
-    tier: "Uber",
+	},
+	baashaunnuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  baaschaf: {
-    tier: "Alpha",
+	},
+	baaschaf: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  baaschafnuclear: {
-    tier: "Uber",
+	},
+	baaschafnuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  baariette: {
+	},
+	baariette: {
 		randomBattleMoves: ["knockoff", "drainpunch", "superpower", "earthquake", "bulkup", "highjumpkick", "icepunch"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  baariettenuclear: {
+	},
+	baariettenuclear: {
 		randomBattleMoves: ["nuclearslash", "knockoff", "superpower", "highjumpkick", "firepunch"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  baariettemega: {
+	},
+	baariettemega: {
 		randomBattleMoves: ["knockoff", "drainpunch", "earthquake", "bulkup", "highjumpkick", "icepunch"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  baariettenuclearmega: {
+	},
+	baariettenuclearmega: {
 		randomBattleMoves: ["nuclearslash", "knockoff", "highjumpkick", "firepunch"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  tricwe: {
-    tier: "Alpha",
+	},
+	tricwe: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  harylect: {
+	},
+	harylect: {
 		randomBattleMoves: ["wildcharge", "uturn", "heatwave", "xscissor", "poisonjab"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  costraw: {
-    tier: "Alpha",
+	},
+	costraw: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  costrawnuclear: {
-    tier: "Uber",
+	},
+	costrawnuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  trawpint: {
+	},
+	trawpint: {
 		randomBattleMoves: ["sludgebomb", "psyshock", "flamethrower", "calmmind", "icebeam", "gigadrain", "trickroom"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  trawpintnuclear: {
+	},
+	trawpintnuclear: {
 		randomBattleMoves: ["radioacid", "flamethrower", "psyshock", "trick"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  lunapup: {
-    tier: "Alpha",
+	},
+	lunapup: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  herolune: {
+	},
+	herolune: {
 		randomBattleMoves: ["earthquake", "closecombat", "stealthrock", "poisonjab", "icepunch", "rockslide"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  minyan: {
-    tier: "Alpha",
+	},
+	minyan: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  minyanmystery: {
-    tier: "Alpha",
+	},
+	minyanmystery: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  vilucard: {
+	},
+	vilucard: {
 		randomBattleMoves: ["nastyplot", "fireblast", "darkpulse", "sludgebomb", "gigadrain"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  vilucardmystery: {
+	},
+	vilucardmystery: {
 		randomBattleMoves: ["bulkup", "knockoff", "drainlife", "suckerpunch", "gunkshot", "icepunch", "firepunch"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  modrille: {
-    tier: "Alpha",
+	},
+	modrille: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  drilgann: {
+	},
+	drilgann: {
 		randomBattleMoves: ["earthquake", "knockoff", "rapidspin", "stealthrock", "stoneedge", "zenheadbutt", "superpower"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  drilgannmega: {
+	},
+	drilgannmega: {
 		randomBattleMoves: ["sandstorm", "earthquake", "knockoff", "swordsdance", "stoneedge", "zenheadbutt", "superpower"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  cocaran: {
-    tier: "Alpha",
+	},
+	cocaran: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  cocaranmystery: {
-    tier: "Alpha",
+	},
+	cocaranmystery: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  cararalm: {
-    tier: "Alpha",
+	},
+	cararalm: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  cararalmmystery: {
-    tier: "Alpha",
+	},
+	cararalmmystery: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  cocancer: {
+	},
+	cocancer: {
 		randomBattleMoves: ["shellsmash", "leafblade", "earthquake", "stoneedge", "firepunch", "icepunch"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  cocancermystery: {
+	},
+	cocancermystery: {
 		randomBattleMoves: ["shellsmash", "leafblade", "earthquake", "stoneedge", "firepunch", "icepunch"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  corsoreef: {
+	},
+	corsoreef: {
 		randomBattleMoves: ["powergem", "recover", "scald", "stealthrock", "toxic"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  corsoreefnuclear: {
+	},
+	corsoreefnuclear: {
 		randomBattleMoves: ["gammaray", "earthpower", "scald", "hiddenpowerfire", "hiddenpowerfighting"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  tubjaw: {
-    tier: "Alpha",
+	},
+	tubjaw: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  tubjawnuclear: {
-    tier: "Uber",
+	},
+	tubjawnuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  tubareel: {
+	},
+	tubareel: {
 		randomBattleMoves: ["waterfall", "aquajet", "crunch", "superpower", "bulkup"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  tubareelnuclear: {
+	},
+	tubareelnuclear: {
 		randomBattleMoves: ["nuclearslash", "waterfall", "aquajet", "superpower", "raindance"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  cassnail: {
-    tier: "Alpha",
+	},
+	cassnail: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  sableau: {
-    tier: "Alpha",
+	},
+	sableau: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  escartress: {
+	},
+	escartress: {
 		randomBattleMoves: ["shellsmash", "recover", "earthpower", "surf", "icebeam", "stealthrock"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  nupin: {
-    tier: "Alpha",
+	},
+	nupin: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  nupinnuclear: {
-    tier: "Uber",
+	},
+	nupinnuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  gellin: {
+	},
+	gellin: {
 		randomBattleMoves: ["sunnyday", "solarbeam", "gigadrain", "thunderbolt", "growth", "hiddenpowerfire"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  gellinnuclear: {
+	},
+	gellinnuclear: {
 		randomBattleMoves: ["sunnyday", "radioacid", "solarbeam", "hiddenpowerfire"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  barand: {
+	},
+	barand: {
 		randomBattleMoves: ["dragondance", "outrage", "extremespeed", "superpower", "icepunch", "poisonjab", "firepunch"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  barandnuclear: {
+	},
+	barandnuclear: {
 		randomBattleMoves: ["dragondance", "nuclearslash", "superpower", "firepunch"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  glaslug: {
-    tier: "Alpha",
+	},
+	glaslug: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  glavinug: {
+	},
+	glavinug: {
 		randomBattleMoves: ["hydropump", "blizzard", "sludgebomb", "dazzlinggleam", "recover"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  s51: {
-    tier: "Beta",
+	},
+	s51: {
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  s51a: {
+	},
+	s51a: {
 		randomBattleMoves: ["uturn", "rapidspin", "roost", "flashcannon", "energyball", "heatwave"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  s51amega: {
+	},
+	s51amega: {
 		randomBattleMoves: ["nastyplot", "flashcannon", "psyshock", "laserpulse", "roost", "icywind", "darkpulse"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  paraudio: {
-    tier: "Alpha",
+	},
+	paraudio: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  paraudionuclear: {
-    tier: "Uber",
+	},
+	paraudionuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  paraboom: {
+	},
+	paraboom: {
 		randomBattleMoves: ["boomburst", "nastyplot", "calmmind", "psyshock", "snarl", "fireblast"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  paraboomnuclear: {
+	},
+	paraboomnuclear: {
 		randomBattleMoves: ["radioacid", "boomburst", "nastyplot", "calmmind", "snarl", "fireblast"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  flager: {
-    tier: "Alpha",
+	},
+	flager: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  inflagetah: {
+	},
+	inflagetah: {
 		randomBattleMoves: ["bellydrum", "substitute", "flameimpact", "extremespeed", "earthquake"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  inflagetahmega: {
+	},
+	inflagetahmega: {
 		randomBattleMoves: ["swordsdance", "bellydrum", "flameimpact", "extremespeed", "earthquake", "flareblitz"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  chimical: {
-    tier: "Alpha",
+	},
+	chimical: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  chimaconda: {
+	},
+	chimaconda: {
 		randomBattleMoves: ["overheat", "sludgebomb", "curse", "hiddenpowergrass"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  tikiki: {
-    tier: "Alpha",
+	},
+	tikiki: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  frikitiki: {
+	},
+	frikitiki: {
 		randomBattleMoves: ["naturalgift", "bulletseed", "flameimpact", "swordsdance", "uturn", "powerwhip", "rockslide", "ironhead"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  unymph: {
-    tier: "Alpha",
+	},
+	unymph: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  harptera: {
+	},
+	harptera: {
 		randomBattleMoves: ["acrobatics", "swordsdance", "uturn", "drillrun", "knockoff"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  chicoatl: {
-    tier: "Alpha",
+	},
+	chicoatl: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  quetzoral: {
-    tier: "Alpha",
+	},
+	quetzoral: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  coatlith: {
+	},
+	coatlith: {
 		randomBattleMoves: ["defog", "uturn", "roost", "sunnyday", "nastyplot", "gigadrain", "hiddenpowerfire", "solarbeam"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  tracton: {
+	},
+	tracton: {
 		randomBattleMoves: ["swordsdance", "ironhead", "outrage", "drillrun", "earthquake", "outrage", "icefang"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  snopach: {
-    tier: "Alpha",
+	},
+	snopach: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  dermafrost: {
+	},
+	dermafrost: {
 		randomBattleMoves: ["stealthrock", "rapidspin", "iceshard", "icepunch", "rockblast"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  slothohm: {
-    tier: "Alpha",
+	},
+	slothohm: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  theriamp: {
-		randomBattleMoves: ["volttackle", "headsmash", "return", "quickattack", "stoneedge", "earthquake", "uturn", "icepunch"],
-    tier: "Gamma",
+	},
+	theriamp: {
+		randomBattleMoves: ["return", "quickattack", "stoneedge", "earthquake", "uturn", "icepunch"],
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  titanice: {
+	},
+	titanice: {
 		randomBattleMoves: ["iciclecrash", "ironhead", "waterfall", "crunch", "toxic"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  frynai: {
-    tier: "Alpha",
+	},
+	frynai: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  saidine: {
-    tier: "Alpha",
+	},
+	saidine: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  daikatuna: {
+	},
+	daikatuna: {
 		randomBattleMoves: ["swordsdance", "waterfall", "ironhead", "rockpolish", "aquajet", "earthquake"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  selkid: {
-    tier: "Alpha",
+	},
+	selkid: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  syrentide: {
+	},
+	syrentide: {
 		randomBattleMoves: ["whirlpool", "perishsong", "protect", "rest", "moonblast"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  syrentidemega: {
+	},
+	syrentidemega: {
 		randomBattleMoves: ["calmmind", "rest", "sleeptalk", "hypervoice", "surf"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  miasmedic: {
+	},
+	miasmedic: {
 		randomBattleMoves: ["reflect", "lightscreen", "poisonjab", "trickroom"], // wtf is this mon supposed to do
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  jackdeary: {
-    tier: "Alpha",
+	},
+	jackdeary: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  jackdearymystery: {
-    tier: "Alpha",
+	},
+	jackdearymystery: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  winotinger: {
+	},
+	winotinger: {
 		randomBattleMoves: ["nastyplot", "aurasphere", "moonblast", "flamethrower", "thunderbolt"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  winotingermystery: {
+	},
+	winotingermystery: {
 		randomBattleMoves: ["bulkup", "softboiled", "return", "highjumpkick", "thunderpunch"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  duplicat: {
+	},
+	duplicat: {
 		randomBattleMoves: ["transform", "trickroom", "mirrorcoat", "toxic"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  nucleon: {
+	},
+	nucleon: {
 		randomBattleMoves: ["hypervoice", "quickattack", "hiddenpowerfire", "batonpass"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  ratsy: {
-    tier: "Alpha",
+	},
+	ratsy: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  raffiti: {
+	},
+	raffiti: {
 		randomBattleMoves: ["atomicpunch", "searingshot", "destinybond", "spore", "stealthrock", "stickyweb", "whirlwind"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  gargryph: {
+	},
+	gargryph: {
 		randomBattleMoves: ["protect", "toxic", "substitute", "storedpower", "cosmicpower", "powergem"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  masking: {
-    tier: "Alpha",
+	},
+	masking: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  dramsama: {
+	},
+	dramsama: {
 		randomBattleMoves: ["nastyplot", "psyshock", "shadowball", "focusblast", "hypnosis"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  dramsamamega: {
+	},
+	dramsamamega: {
 		randomBattleMoves: ["nastyplot", "psyshock", "shadowball", "focusblast", "hypnosis"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  antarki: {
+	},
+	antarki: {
 		randomBattleMoves: ["recover", "willowisp", "calmmind", "flamethrower", "shadowball", "energyball", "hiddenpowerice"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  chupacho: {
-    tier: "Alpha",
+	},
+	chupacho: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  chupachonuclear: {
-    tier: "Uber",
+	},
+	chupachonuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  luchabra: {
+	},
+	luchabra: {
 		randomBattleMoves: ["agility", "closecombat", "gunkshot", "knockoff"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  luchabranuclear: {
+	},
+	luchabranuclear: {
 		randomBattleMoves: ["nuclearslash", "agility", "closecombat", "knockoff", "reversal"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  linkite: {
-    tier: "Alpha",
+	},
+	linkite: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  chainite: {
+	},
+	chainite: {
 		randomBattleMoves: ["knockoff", "shadowsneak", "trickroom", "drainpunch", "gyroball", "swordsdance"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  pufluff: {
-    tier: "Alpha",
+	},
+	pufluff: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  alpico: {
+	},
+	alpico: {
 		randomBattleMoves: ["frostbreath", "moonblast", "hiddenpowerfire", "fakeout", "uturn"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  anderind: {
+	},
+	anderind: {
 		randomBattleMoves: ["earthquake", "iciclecrash", "fakeout", "uturn", "rockslide", "bulkup"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  colarva: {
-    tier: "Alpha",
+	},
+	colarva: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  frosulo: {
-    tier: "Alpha",
+	},
+	frosulo: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  frosthra: {
+	},
+	frosthra: {
 		randomBattleMoves: ["quiverdance", "freezedry", "icebeam", "bugbuzz", "taunt", "stickyweb", "hiddenpowerground"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  fafurr: {
-    tier: "Alpha",
+	},
+	fafurr: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  fafninter: {
+	},
+	fafninter: {
 		randomBattleMoves: ["dragondance", "iciclecrash", "outrage", "earthquake", "stoneedge"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  shrimputy: {
-    tier: "Alpha",
+	},
+	shrimputy: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  krilvolver: {
+	},
+	krilvolver: {
 		randomBattleMoves: ["overheat", "hydropump", "focusenergy", "hiddenpowergrass", "chargebeam", "nastyplot", "fireblast"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  lavent: {
+	},
+	lavent: {
 		randomBattleMoves: ["eruption", "fireblast", "dracometeor", "overheat", "nastyplot"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  swabone: {
-    tier: "Alpha",
+	},
+	swabone: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  skelerogue: {
-    tier: "Alpha",
+	},
+	skelerogue: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  navighast: {
+	},
+	navighast: {
 		randomBattleMoves: ["swordsdance", "drainpunch", "superpower", "shadowsneak", "shadowclaw"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  stenowatt: {
+	},
+	stenowatt: {
 		randomBattleMoves: ["tailglow", "protect", "electroball", "fireblast", "batonpass"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  jungore: {
-    tier: "Alpha",
+	},
+	jungore: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  majungold: {
+	},
+	majungold: {
 		randomBattleMoves: ["stoneedge", "drainpunch", "superpower", "icepunch", "stealthrock", "knockoff", "bulkup"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  hagoop: {
-    tier: "Alpha",
+	},
+	hagoop: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  hagoopnuclear: {
-    tier: "Uber",
+	},
+	hagoopnuclear: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  haagross: {
+	},
+	haagross: {
 		randomBattleMoves: ["stickyweb", "recover", "voltswitch", "thunderbolt", "sludgebomb", "gigadrain", "toxicspikes", "thunderwave"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  haagrossnuclear: {
+	},
+	haagrossnuclear: {
 		randomBattleMoves: ["radioacid", "voltswitch", "hiddenpowerfire", "hiddenpowerfighting", "stickyweb", "thunderbolt"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  xenomite: {
-    tier: "Alpha",
+	},
+	xenomite: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  xenogen: {
-    tier: "Beta",
+	},
+	xenogen: {
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  xenoqueen: {
+	},
+	xenoqueen: {
 		randomBattleMoves: ["radioacid", "protonbeam", "fireblast", "overheat", "fissionburst", "fallout"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  hazma: {
+	},
+	hazma: {
 		randomBattleMoves: ["expunge", "trickroom", "fireblast", "recover"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  geigeroach: {
+	},
+	geigeroach: {
 		randomBattleMoves: ["protonbeam", "gammaray", "stickyweb", "recover", "nastyplot", "flamethrower"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  minicorn: {
-    tier: "Alpha",
+	},
+	minicorn: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  kiricorn: {
+	},
+	kiricorn: {
 		randomBattleMoves: ["return", "playrough", "swordsdance", "earthquake", "uturn", "knockoff"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  kiricornmega: {
+	},
+	kiricornmega: {
 		randomBattleMoves: ["return", "playrough", "swordsdance", "earthquake", "uturn", "knockoff", "fireblast"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  oblivicorn: {
+	},
+	oblivicorn: {
 		randomBattleMoves: ["swordsdance", "knockoff", "playrough", "suddenstrike", "taunt", "earthquake", "trick"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  luxi: {
-    tier: "Alpha",
+	},
+	luxi: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  luxor: {
-    tier: "Alpha",
+	},
+	luxor: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  luxelong: {
+	},
+	luxelong: {
 		randomBattleMoves: ["wish", "moonblast", "protect", "calmmind", "flamethrower", "causticbreath", "thunderwave"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  praseopunk: {
+	},
+	praseopunk: {
 		randomBattleMoves: ["reflect", "lightscreen", "voltswitch", "instantcrush", "thunderbolt", "energyball"],
-    tier: "Alpha",
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  neopunk: {
+	},
+	neopunk: {
 		randomBattleMoves: ["getlucky", "voltswitch", "instantcrush", "thunderbolt", "energyball", "hiddenpowerice"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  sheebit: {
-    tier: "Alpha",
+	},
+	sheebit: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  terrabbit: {
-    tier: "Alpha",
+	},
+	terrabbit: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  laissure: {
+	},
+	laissure: {
 		randomBattleMoves: ["subduction", "earthquake", "stoneedge", "swordsdance", "rockpolish", "firefang", "stealthrock"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  volchik: {
-    tier: "Alpha",
+	},
+	volchik: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  voltasu: {
-    tier: "Alpha",
+	},
+	voltasu: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  yatagaryu: {
+	},
+	yatagaryu: {
 		randomBattleMoves: ["thunder", "voltswitch", "dracometeor", "nastyplot", "focusblast"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  devimp: {
-    tier: "Alpha",
+	},
+	devimp: {
+		tier: "Alpha",
 		doublesTier: "Uranium",
-  },
-  fallengel: {
-    tier: "Beta",
+	},
+	fallengel: {
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  beliaddon: {
+	},
+	beliaddon: {
 		randomBattleMoves: ["infernalblade", "knockoff", "earthquake", "drainpunch", "bulkup", "stealthrock"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  seikamater: {
+	},
+	seikamater: {
 		randomBattleMoves: ["stickyweb", "quiverdance", "surf", "flamethrower", "thunderbolt", "healorder"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  garlikid: {
+	},
+	garlikid: {
 		randomBattleMoves: ["naturalgift", "swordsdance", "seedbomb", "drainpunch", "stoneedge", "knockoff", "icepunch"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  baitatao: {
-    tier: "Illegal",
+	},
+	baitatao: {
+		tier: "Illegal",
 		isNonstandard: "Unobtainable",
-  },
-  leviathao: {
-    tier: "Illegal",
+	},
+	leviathao: {
+		tier: "Illegal",
 		isNonstandard: "Unobtainable",
-  },
-  krakanao: {
-    tier: "Illegal",
+	},
+	krakanao: {
+		tier: "Illegal",
 		isNonstandard: "Unobtainable",
-  },
-  lanthan: {
+	},
+	lanthan: {
 		randomBattleMoves: ["rockpolish", "subduction", "metalcruncher", "rockslide", "stealthrock"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  actan: {
+	},
+	actan: {
 		randomBattleMoves: ["stealthrock", "swordsdance", "metalcruncher", "knockoff", "suddenstrike", "earthquake"],
-    tier: "Gamma",
+		tier: "Gamma",
 		doublesTier: "Uranium",
-  },
-  actannuclear: {
-    tier: "Illegal",
+	},
+	actannuclear: {
+		tier: "Illegal",
 		isNonstandard: "Unobtainable",
-  },
-  urayne: {
+	},
+	urayne: {
 		randomBattleMoves: ["atomicpunch", "overheat", "fallout", "trick", "taunt", "fissionburst"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  uraynebeta: {
-    tier: "Uber",
+	},
+	uraynebeta: {
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
-  uraynegamma: {
-    tier: "Illegal",
+	},
+	uraynegamma: {
+		tier: "Illegal",
 		isNonstandard: "Unobtainable",
-  },
-  aotius: {
-    tier: "Illegal",
+	},
+	aotius: {
+		tier: "Illegal",
 		isNonstandard: "Unobtainable",
-  },
-  mutios: {
-    tier: "Illegal",
+	},
+	mutios: {
+		tier: "Illegal",
 		isNonstandard: "Unobtainable",
-  },
-  zephy: {
-    tier: "Illegal",
+	},
+	zephy: {
+		tier: "Illegal",
 		isNonstandard: "Unobtainable",
-  },
-  whimsicottmega: {
+	},
+	whimsicottmega: {
 		randomBattleMoves: ["uturn", "moonblast", "gigadrain", "encore", "leechseed", "toxic"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  arbokmega: {
+	},
+	arbokmega: {
 		randomBattleMoves: ["gunkshot", "protect", "suckerpunch", "crunch", "earthquake", "pursuit", "firefang"],
-    tier: "Beta",
+		tier: "Beta",
 		doublesTier: "Uranium",
-  },
-  arboknuclearmega: {
+	},
+	arboknuclearmega: {
 		randomBattleMoves: ["radioacid", "protect", "glare", "earthquake", "firefang"],
-    tier: "Uber",
+		tier: "Uber",
 		doublesTier: "Uranium",
-  },
+	},
 };

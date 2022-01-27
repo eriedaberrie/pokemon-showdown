@@ -4703,7 +4703,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (pokemon.activeMoveActions === 0) return priority + 4;
 		},
 		name: "Quick Charge",
-		rating: 4,
+		rating: 4.5,
 		num: -114,
 	},
 	soundboost: {
