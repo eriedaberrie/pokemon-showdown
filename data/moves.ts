@@ -19882,9 +19882,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 				spe: -2,
 			},
 		},
-    onHit(target, source) {
-      source.addVolatile('confusion'); // hardcoded in because stupid sheer force interaction
-    },
+		onHit(target, source) {
+			source.addVolatile('confusion'); // hardcoded in because stupid sheer force interaction
+		},
 		target: "allAdjacent",
 		type: "Ground",
 		contestType: "Cool",
