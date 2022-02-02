@@ -717,14 +717,14 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onFieldResidualOrder: 1,
 		onFieldResidual() {
-			this.add('-weather', 'Thunderstorm', '[upkeep]');
+			this.add('-weather', 'Thunderstorm', (this.effectState.duration % 2) ? '[noupkeepdamage]' : '[upkeep]');
 			if (this.field.isWeather('thunderstorm')) this.eachEvent('Weather');
 		},
 		onWeather(target) {
-      if (!(this.effectState.duration % 2)) {
-        const typeMod = target.runEffectiveness(this.dex.getActiveMove('Thundershock'));
-        this.damage(target.baseMaxhp * Math.pow(2, typeMod) / 8);
-      }
+			if (!(this.effectState.duration % 2)) {
+				const typeMod = target.runEffectiveness(this.dex.getActiveMove('Thundershock'));
+				this.damage(target.baseMaxhp * Math.pow(2, typeMod) / 8);
+			}
 		},
 		onFieldEnd() {
 			this.add('-weather', 'none');
@@ -755,14 +755,14 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onFieldResidualOrder: 1,
 		onFieldResidual() {
-			this.add('-weather', 'Fallout', '[upkeep]');
+			this.add('-weather', 'Fallout', (this.effectState.duration % 2) ? '[noupkeepdamage]' : '[upkeep]');
 			if (this.field.isWeather('fallout')) this.eachEvent('Weather');
 		},
 		onWeather(target) {
-      if (!(this.effectState.duration % 2)) {
-        const typeMod = target.runEffectiveness(this.dex.getActiveMove('Gamma Ray'));
-        this.damage(target.baseMaxhp * Math.pow(2, typeMod) / 8);
-      }
+			if (!(this.effectState.duration % 2)) {
+				const typeMod = target.runEffectiveness(this.dex.getActiveMove('Gamma Ray'));
+				this.damage(target.baseMaxhp * Math.pow(2, typeMod) / 8);
+			}
 		},
 		onFieldEnd() {
 			this.add('-weather', 'none');
