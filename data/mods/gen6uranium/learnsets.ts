@@ -151,7 +151,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
       uproar: ["6T"],
       waterfall: ["6M"],
       waterpulse: ["6M"],
-      crunch: ["7L39"],
+      crunch: ["6L39"],
     },
   },
   gyaradosnuclear: {
@@ -213,7 +213,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
       waterpulse: ["6M"],
       radioacid: ["6S0"],
       nuclearwaste: ["6S0"],
-      crunch: ["7L39"],
+      crunch: ["6L39"],
     },
 		eventData: [
       {generation: 6, shiny: 1, moves: ["radioacid", "nuclearwaste"]},
