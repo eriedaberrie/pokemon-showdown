@@ -2033,12 +2033,16 @@ export class RandomTeams {
 				zekrom: 74, marshadow: 75, glalie: 78, urshifurapidstrike: 79, haxorus: 80, inteleon: 80,
 				cresselia: 83, octillery: 84, jolteon: 84, swoobat: 84, dugtrio: 84, slurpuff: 84, polteageist: 84,
 				wobbuffet: 86, scrafty: 86,
+
+				tracton: 74,
+
 				// These Pokemon are too weak and need a higher level
 				delibird: 100, vespiquen: 96, pikachu: 92, shedinja: 92, solrock: 90, arctozolt: 88, reuniclus: 87,
 				decidueye: 87, noivern: 85, magnezone: 82, slowking: 81,
-		magikarpnuclear: 400,
-		duplicat: 100, hazma: 100, firoke: 100,
-		kinetmunknuclear: 86, eshoutennuclear: 86, corsoreefnuclear: 88,
+
+				magikarpnuclear: 400,
+				duplicat: 100, hazma: 100, firoke: 100,
+				kinetmunknuclear: 86, eshoutennuclear: 86, corsoreefnuclear: 88,
 			};
 			level = customScale[species.id] || tierScale[tier] || 80;
 		// BDSP tier levelling
