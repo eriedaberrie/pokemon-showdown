@@ -463,6 +463,8 @@ export class RandomGen6Teams extends RandomGen7Teams {
 				(moves.has('leafstorm') && !abilities.has('Contrary')) ||
 				movePool.includes('copycat')
 			)};
+		case 'slackoff':
+			return {cull: moves.has('rest')};
 		}
 
 		return {cull: false};

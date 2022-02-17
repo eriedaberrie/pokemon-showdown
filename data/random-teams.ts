@@ -1180,7 +1180,8 @@ export class RandomTeams {
 			return {cull: !!teamDetails.screens};
 		case 'slackoff':
 			// Special case to prevent Scaldless Slowking
-			return {cull: species.id === 'slowking' && !moves.has('scald')};
+			// also added stuff for feliger
+			return {cull: (species.id === 'slowking' && !moves.has('scald')) || moves.has('rest')};
 		case 'substitute':
 			const moveBasedCull = ['bulkup', 'nastyplot', 'painsplit', 'roost', 'swordsdance'].some(m => movePool.includes(m));
 			// Smaller formes of Gourgeist in Doubles don't want Poltergeist as their only attack
