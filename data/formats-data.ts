@@ -7054,7 +7054,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	inflagetahmega: {
 		randomBattleMoves: ["swordsdance", "bellydrum", "flameimpact", "extremespeed", "earthquake", "flareblitz"],
-		tier: "Gamma",
+		tier: "Uber",
 		doublesTier: "Uranium",
 	},
 	chimical: {
@@ -7428,7 +7428,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	yatagaryu: {
 		randomBattleMoves: ["thunder", "voltswitch", "dracometeor", "nastyplot", "focusblast"],
-		tier: "Gamma",
+		tier: "Uber",
 		doublesTier: "Uranium",
 	},
 	devimp: {
