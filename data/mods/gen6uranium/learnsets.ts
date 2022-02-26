@@ -1599,7 +1599,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
       toxic: ["6M"],
       waterfall: ["6M"],
       waterpulse: ["6M"],
-      gammaray: ["6S2"],
+      gammaray: ["6S0"],
 		},
 		eventData: [
 			{generation: 6, shiny: 1, moves: ["gammaray"]},
