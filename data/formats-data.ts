@@ -506,7 +506,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	primeape: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	growlithe: {
