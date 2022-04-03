@@ -24,7 +24,7 @@ export const Formats: FormatList = [
 		name: '[Gen 6] Alpha',
 		mod: 'gen6uranium',
 		ruleset: ['[Gen 6] Beta'],
-		banlist: ['Beta'],
+		banlist: ['Beta', 'S51'],
 	},
 	{
 		name: '[Gen 6] Uranium LC',

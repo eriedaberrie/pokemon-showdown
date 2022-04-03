@@ -1147,7 +1147,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	magikarpnuclear: {
 		// randomBattleMoves: ["fissionburst"],
-		tier: "Uber",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	gyarados: {
@@ -7011,7 +7011,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	s51: {
-		tier: "Beta",
+		tier: "ULC", // I don't know how to make teambuilder do the thing so a bit of hardcoding here
 		doublesTier: "Uranium",
 	},
 	s51a: {
