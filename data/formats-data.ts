@@ -161,7 +161,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	ekans: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	ekansnuclear: {
@@ -502,7 +502,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	mankey: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	primeape: {
@@ -1142,7 +1142,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	magikarp: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	magikarpnuclear: {
@@ -1194,7 +1194,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	eevee: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	eeveestarter: {
@@ -1542,11 +1542,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	mareep: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	flaaffy: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	ampharos: {
@@ -1638,7 +1638,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	misdreavus: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	mismagius: {
@@ -1678,11 +1678,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 90,
 		randomDoubleBattleMoves: ["glare", "headbutt", "protect", "rockslide"],
 		randomDoubleBattleLevel: 90,
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	gligar: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	gligarnuclear: {
@@ -1780,7 +1780,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 93,
 		randomDoubleBattleMoves: ["icywind", "lifedew", "recover", "scald", "toxic"],
 		randomDoubleBattleLevel: 95,
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	corsolanuclear: {
@@ -2049,11 +2049,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	lotad: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	lombre: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	ludicolo: {
@@ -2914,7 +2914,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	buizel: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	floatzel: {
@@ -3567,7 +3567,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	cottonee: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	whimsicott: {
@@ -4444,7 +4444,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomDoubleBattleLevel: 84,
 	},
 	spritzee: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	aromatisse: {
@@ -6079,7 +6079,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	eternatuseternamax: {
 		tier: "Illegal",
-		tier: "Illegal",
 	},
 	kubfu: {
 		tier: "NFE",
@@ -6538,7 +6537,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	orchynx: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	metalynx: {
@@ -6552,7 +6551,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	raptorch: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	archilles: {
@@ -6566,7 +6565,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	eletux: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	electruxo: {
@@ -6580,7 +6579,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	chyinmunk: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	chyinmunknuclear: {
@@ -6598,11 +6597,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	birbie: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	aveden: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	splendifowl: {
@@ -6611,7 +6610,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	cubbug: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	cubblfly: {
@@ -6625,7 +6624,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	barewl: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	dearewl: {
@@ -6638,7 +6637,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	grozard: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	terlard: {
@@ -6647,7 +6646,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	tonemy: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	tofurang: {
@@ -6661,7 +6660,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	fortog: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	folerog: {
@@ -6674,7 +6673,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	feleng: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	felunge: {
@@ -6692,7 +6691,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	owten: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	owtennuclear: {
@@ -6710,7 +6709,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	smore: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	firoke: {
@@ -6719,7 +6718,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	brailip: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	brainoar: {
@@ -6728,7 +6727,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	tancoon: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	tancoonnuclear: {
@@ -6746,7 +6745,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	sponee: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	sponaree: {
@@ -6755,7 +6754,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	pahar: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	paharnuclear: {
@@ -6763,7 +6762,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	palij: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	palijnuclear: {
@@ -6791,7 +6790,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	comite: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	cometeor: {
@@ -6804,7 +6803,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	baashaun: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	baashaunnuclear: {
@@ -6840,7 +6839,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	tricwe: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	harylect: {
@@ -6849,7 +6848,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	costraw: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	costrawnuclear: {
@@ -6867,7 +6866,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	lunapup: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	herolune: {
@@ -6876,11 +6875,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	minyan: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	minyanmystery: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	vilucard: {
@@ -6894,7 +6893,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	modrille: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	drilgann: {
@@ -6908,11 +6907,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	cocaran: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	cocaranmystery: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	cararalm: {
@@ -6944,7 +6943,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	tubjaw: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	tubjawnuclear: {
@@ -6962,7 +6961,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	cassnail: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	sableau: {
@@ -6975,7 +6974,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	nupin: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	nupinnuclear: {
@@ -7003,7 +7002,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	glaslug: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	glavinug: {
@@ -7026,7 +7025,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	paraudio: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	paraudionuclear: {
@@ -7044,7 +7043,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	flager: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	inflagetah: {
@@ -7058,7 +7057,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	chimical: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	chimaconda: {
@@ -7067,7 +7066,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	tikiki: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	frikitiki: {
@@ -7076,7 +7075,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	unymph: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	harptera: {
@@ -7085,7 +7084,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	chicoatl: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	quetzoral: {
@@ -7103,7 +7102,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	snopach: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	dermafrost: {
@@ -7112,7 +7111,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	slothohm: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	theriamp: {
@@ -7126,7 +7125,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	frynai: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	saidine: {
@@ -7139,7 +7138,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	selkid: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	syrentide: {
@@ -7158,11 +7157,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	jackdeary: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	jackdearymystery: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	winotinger: {
@@ -7186,7 +7185,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	ratsy: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	raffiti: {
@@ -7200,7 +7199,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	masking: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	dramsama: {
@@ -7219,7 +7218,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	chupacho: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	chupachonuclear: {
@@ -7237,7 +7236,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	linkite: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	chainite: {
@@ -7246,7 +7245,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	pufluff: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	alpico: {
@@ -7260,7 +7259,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	colarva: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	frosulo: {
@@ -7273,7 +7272,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	fafurr: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	fafninter: {
@@ -7282,7 +7281,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	shrimputy: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	krilvolver: {
@@ -7296,7 +7295,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	swabone: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	skelerogue: {
@@ -7314,7 +7313,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	jungore: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	majungold: {
@@ -7323,7 +7322,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	hagoop: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	hagoopnuclear: {
@@ -7341,7 +7340,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	xenomite: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	xenogen: {
@@ -7364,7 +7363,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	minicorn: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	kiricorn: {
@@ -7383,7 +7382,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	luxi: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	luxor: {
@@ -7406,7 +7405,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	sheebit: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	terrabbit: {
@@ -7419,7 +7418,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	volchik: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	voltasu: {
@@ -7432,7 +7431,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	devimp: {
-		tier: "Alpha",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	fallengel: {

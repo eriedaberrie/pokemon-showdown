@@ -41,7 +41,7 @@ type PokemonSet = import('./teams').PokemonSet;
  *
  * First character is a generation number, 1-7.
  * Second character is a source ID, one of:
- *
+//  *
  * - M = TM/HM
  * - T = tutor
  * - L = start or level-up, 3rd char+ is the level
@@ -61,10 +61,10 @@ type PokemonSet = import('./teams').PokemonSet;
 type MoveSource = string;
 
 namespace TierTypes {
-	export type Singles = "AG" | "Uber" | "(Uber)" | "OU" | "(OU)" | "UUBL" | "UU" | "RUBL" | "RU" | "NUBL" | "NU" |
+	export type Singles = "AG" | "CanonUber" | "(Uber)" | "OU" | "(OU)" | "UUBL" | "UU" | "RUBL" | "RU" | "NUBL" | "NU" |
 	"(NU)" | "PUBL" | "PU" | "(PU)" | "NFE" | "LC";
 	export type Doubles = "DUber" | "(DUber)" | "DOU" | "(DOU)" | "DBL" | "DUU" | "(DUU)" | "NFE" | "LC";
-	export type Other = "Unreleased" | "Illegal" | "Gamma" | "Beta" | "Alpha" | "CAP" | "CAP NFE" | "CAP LC" | "Uranium";
+	export type Other = "Unreleased" | "Illegal" | "Uber" | "Gamma" | "Beta" | "Alpha" | "(Alpha)" | "ULC" | "CAP" | "CAP NFE" | "CAP LC" | "Uranium";
 }
 
 interface EventInfo {

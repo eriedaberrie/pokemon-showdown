@@ -1837,44 +1837,44 @@ export const Rulesets: {[k: string]: FormatData} = {
 			}
 		},
 	},
-  
-  // ucc clauses
-  nuclearclausemod: {
-    effectType: 'Rule',
-    name: 'Nuclear Clause Mod',
-    desc: "Prevents Pok&eacute;mon without the Nuclear type from using Nuclear-type moves.",
-    onBegin() {
-      this.add('rule', "Nuclear Clause Mod: Non-Nuclear Pokémon can't use Nuclear-type moves");
-    },
-    onTryMove(pokemon, target, move) {
-      if ((move.id === 'fallout') && !(source.hasType('Nuclear') || this.dex.species.get(source.species).types.includes('Nuclear'))) {
-        this.add('-message', 'Nuclear Clause Mod activated.');
-        this.hint('No fun allowed.');
-				return null;
-      }
-    },
-		onTryHit(target, source, move) {
-			if ((move.type === 'Nuclear') && !(source.hasType('Nuclear') || this.dex.species.get(source.species).types.includes('Nuclear'))) {
-        this.add('-message', 'Nuclear Clause Mod activated.');
+	
+	// ucc clauses
+	nuclearclausemod: {
+		effectType: 'Rule',
+		name: 'Nuclear Clause Mod',
+		desc: "Prevents Pok&eacute;mon without the Nuclear type from using Nuclear-type moves.",
+		onBegin() {
+			this.add('rule', "Nuclear Clause Mod: Non-Nuclear Pokémon can't use Nuclear-type moves");
+		},
+		onTryMove(attacker, defender, move) {
+			if ((move.id === 'fallout') && !(attacker.hasType('Nuclear') || this.dex.species.get(attacker.species).types.includes('Nuclear'))) {
+				this.add('-message', 'Nuclear Clause Mod activated.');
+				this.hint('No fun allowed.');
 				return null;
 			}
 		},
-  },
-  softbatonpassclausemod: {
-    effectType: 'Rule',
-    name: 'Soft Baton Pass Clause Mod',
-    desc: 'Prevents Baton Pass from passing positive stat boosts.',
-    onBegin() {
-      this.add('rule', "Soft Baton Pass Mod: Baton Pass doesn't pass positive stat boosts")
-    },
-    onTryHit(target, source, move) {
-      if (move.id !== 'batonpass') return;
-      for (const stat in target.boosts) {
-        if (target.boosts[stat] > 0) {
-          this.add('-message', 'Soft Baton Pass Clause Mod activated.');
-          return null;
-        }
-      }
-    }
-  }
+		onTryHit(target, source, move) {
+			if ((move.type === 'Nuclear') && !(source.hasType('Nuclear') || this.dex.species.get(source.species).types.includes('Nuclear'))) {
+				this.add('-message', 'Nuclear Clause Mod activated.');
+				return null;
+			}
+		},
+	},
+	softbatonpassclausemod: {
+		effectType: 'Rule',
+		name: 'Soft Baton Pass Clause Mod',
+		desc: 'Prevents Baton Pass from passing positive stat boosts.',
+		onBegin() {
+			this.add('rule', "Soft Baton Pass Mod: Baton Pass doesn't pass positive stat boosts")
+		},
+		onTryHit(target, source, move) {
+			if (move.id !== 'batonpass') return;
+			for (const boost in target.boosts) {
+				if (target.boosts[boost as BoostID] > 0) {
+					this.add('-message', 'Soft Baton Pass Clause Mod activated.');
+					return null;
+				}
+			}
+		}
+	}
 };

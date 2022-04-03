@@ -126,7 +126,7 @@ export const Tags: {[id: string]: TagData} = {
 	// -----
 	gamma: {
 		name: "Gamma",
-		speciesFilter: species => species.tier === 'Gamma' || species.tier === '(Gamma)',
+		speciesFilter: species => species.tier === 'Gamma',
 	},
 	beta: {
 		name: "Beta",
@@ -134,7 +134,11 @@ export const Tags: {[id: string]: TagData} = {
 	},
 	alpha: {
 		name: "Alpha",
-		speciesFilter: species => species.tier === 'Alpha',
+		speciesFilter: species => species.tier === 'Alpha' || species.tier === '(Alpha)',
+	},
+	ulc: {
+		name: "ULC",
+		speciesFilter: species => species.tier === 'ULC',
 	},
 	uber: {
 		name: "Uber",
@@ -142,7 +146,7 @@ export const Tags: {[id: string]: TagData} = {
 	},
 	canonuber: {
 		name: "CanonUber",
-		speciesFilter: species => species.tier === 'CanonUber' || species.tier === '(CanonUber)' || species.tier === 'AG',
+		speciesFilter: species => species.tier === 'CanonUber',
 	},
 	ou: {
 		name: "OU",
@@ -219,10 +223,10 @@ export const Tags: {[id: string]: TagData} = {
 
 	// Doubles tiers
 	// -------------
-  uranium: {
-    name: "Uranium",
-    speciesFilter: species => species.doublesTier === 'Uranium',
-  },
+	uranium: {
+		name: "Uranium",
+		speciesFilter: species => species.doublesTier === 'Uranium',
+	},
 	duber: {
 		name: "DUber",
 		speciesFilter: species => species.doublesTier === 'DUber' || species.doublesTier === '(DUber)',

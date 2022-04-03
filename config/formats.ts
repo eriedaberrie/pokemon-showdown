@@ -27,6 +27,11 @@ export const Formats: FormatList = [
 		banlist: ['Beta'],
 	},
 	{
+		name: '[Gen 6] Uranium LC',
+		mod: 'gen6uranium',
+		ruleset: ['Little Cup', 'Standard', 'Nuclear Clause Mod', 'Uranium Pokedex'],
+	},
+	{
 		name: '[Gen 6] Ubers',
 		mod: 'gen6uranium',
 		ruleset: ['Obtainable', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Uranium Pokedex'],
