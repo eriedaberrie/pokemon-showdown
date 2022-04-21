@@ -30,6 +30,9 @@ export const Formats: FormatList = [
 		name: '[Gen 6] Uranium LC',
 		mod: 'gen6uranium',
 		ruleset: ['Little Cup', 'Standard', 'Nuclear Clause Mod', 'Uranium Pokedex'],
+		banlist: [
+			'Dragon Rage', 'Sonic Boom',
+		]
 	},
 	{
 		name: '[Gen 6] Ubers',
