@@ -165,7 +165,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	ekansnuclear: {
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	arbok: {
@@ -174,7 +174,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	arboknuclear: {
 		randomBattleMoves: ["radioacid", "protect", "earthquake", "firefang", "glare"],
-		tier: "Uber",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	pichu: {
@@ -1147,7 +1147,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	magikarpnuclear: {
 		// randomBattleMoves: ["fissionburst"],
-		tier: "ULC",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	gyarados: {
@@ -1164,7 +1164,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	gyaradosnuclear: {
 		randomBattleMoves: ["radioacid", "earthquake", "fireblast", "protect"],
-		tier: "Uber",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	gyaradosnuclearmega: {
@@ -1227,7 +1227,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 86,
 		randomDoubleBattleMoves: ["facade", "flamecharge", "flareblitz", "protect", "quickattack", "superpower"],
 		randomDoubleBattleLevel: 88,
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	espeon: {
@@ -1251,15 +1251,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 86,
 		randomDoubleBattleMoves: ["doubleedge", "knockoff", "leafblade", "protect", "swordsdance"],
 		randomDoubleBattleLevel: 86,
-		tier: "(PU)",
-		doublesTier: "(DUU)",
+		tier: "(Alpha)",
+		doublesTier: "Uranium",
 	},
 	glaceon: {
 		randomBattleMoves: ["freezedry", "protect", "shadowball", "toxic", "wish"],
 		randomBattleLevel: 88,
 		randomDoubleBattleMoves: ["blizzard", "freezedry", "helpinghand", "protect", "shadowball", "wish"],
 		randomDoubleBattleLevel: 88,
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	sylveon: {
@@ -1267,7 +1267,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["calmmind", "hypervoice", "mysticalfire", "protect", "psyshock"],
 		randomDoubleBattleLevel: 80,
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	porygon: {
@@ -1550,7 +1550,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	ampharos: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	ampharosmega: {
@@ -1686,7 +1686,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	gligarnuclear: {
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	gliscor: {
@@ -1784,7 +1784,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	corsolanuclear: {
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	corsolagalar: {
@@ -2223,7 +2223,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	sableyemega: {
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	mawile: {
@@ -2918,7 +2918,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	floatzel: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	cherubi: {
@@ -4452,7 +4452,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 88,
 		randomDoubleBattleMoves: ["healpulse", "moonblast", "protect", "thunderbolt", "trickroom", "wish"],
 		randomDoubleBattleLevel: 86,
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	swirlix: {
@@ -6575,7 +6575,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	electruxomega: {
 		randomBattleMoves: ["thunder", "hydropump", "scald", "icebeam"],
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	chyinmunk: {
@@ -6583,17 +6583,17 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	chyinmunknuclear: {
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	kinetmunk: {
 		randomBattleMoves: ["uturn", "hypervoice", "thunderbolt", "grassknot", "hiddenpowerice", "nastyplot", "nuzzle"],
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	kinetmunknuclear: {
 		randomBattleMoves: ["gammaray", "uturn", "hiddenpowerfire", "nastyplot", "nuzzle"],
-		tier: "Uber",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	birbie: {
@@ -6642,7 +6642,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	terlard: {
 		randomBattleMoves: ["earthquake", "outrage", "ironhead", "stoneedge", "stealthrock", "spikes"],
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	tonemy: {
@@ -6664,12 +6664,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	folerog: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	blubelrog: {
 		randomBattleMoves: ["surf", "sludgebomb", "haze", "icebeam", "mirrorcoat", "taunt"],
-		tier: "Beta",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	feleng: {
@@ -6677,7 +6677,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	felunge: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	feliger: {
@@ -6695,7 +6695,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	owtennuclear: {
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	eshouten: {
@@ -6705,7 +6705,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	eshoutennuclear: {
 		randomBattleMoves: ["gammaray", "sing", "nastyplot", "hiddenpowerfire", "hiddenpowerfighting"],
-		tier: "Uber",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	smore: {
@@ -6714,7 +6714,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	firoke: {
 		randomBattleMoves: ["fireblast", "overheat", "signalbeam", "uturn", "ominouswind"],
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	brailip: {
@@ -6731,7 +6731,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	tancoonnuclear: {
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	tanscure: {
@@ -6741,7 +6741,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	tanscurenuclear: {
 		randomBattleMoves: ["nuclearslash", "suddenstrike", "knockoff", "firefang", "uturn"],
-		tier: "Uber",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	sponee: {
@@ -6758,7 +6758,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	paharnuclear: {
-		tier: "Uber",
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	palij: {
@@ -6766,7 +6766,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	palijnuclear: {
-		tier: "Uber",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	pajay: {
@@ -6781,7 +6781,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	jerbolta: {
 		randomBattleMoves: ["naturalgift", "stealthrock", "rapidspin", "earthpower", "thunderbolt", "voltswitch", "hiddenpowerice"],
-		tier: "Alpha",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	jerboltanuclear: {
@@ -6794,7 +6794,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	cometeor: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	astronite: {
@@ -6807,15 +6807,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	baashaunnuclear: {
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	baaschaf: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	baaschafnuclear: {
-		tier: "Uber",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	baariette: {
@@ -6844,7 +6844,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	harylect: {
 		randomBattleMoves: ["wildcharge", "uturn", "heatwave", "xscissor", "poisonjab"],
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	costraw: {
@@ -6852,7 +6852,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	costrawnuclear: {
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	trawpint: {
@@ -6862,7 +6862,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	trawpintnuclear: {
 		randomBattleMoves: ["radioacid", "flamethrower", "psyshock", "trick"],
-		tier: "Uber",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	lunapup: {
@@ -6903,7 +6903,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	drilgannmega: {
 		randomBattleMoves: ["sandstorm", "earthquake", "knockoff", "swordsdance", "stoneedge", "zenheadbutt", "superpower"],
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	cocaran: {
@@ -6924,12 +6924,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	cocancer: {
 		randomBattleMoves: ["shellsmash", "leafblade", "earthquake", "stoneedge", "firepunch", "icepunch"],
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	cocancermystery: {
 		randomBattleMoves: ["shellsmash", "leafblade", "earthquake", "stoneedge", "firepunch", "icepunch"],
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	corsoreef: {
@@ -6939,7 +6939,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	corsoreefnuclear: {
 		randomBattleMoves: ["gammaray", "earthpower", "scald", "hiddenpowerfire", "hiddenpowerfighting"],
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	tubjaw: {
@@ -6947,7 +6947,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	tubjawnuclear: {
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	tubareel: {
@@ -6978,7 +6978,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	nupinnuclear: {
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	gellin: {
@@ -6998,7 +6998,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	barandnuclear: {
 		randomBattleMoves: ["dragondance", "nuclearslash", "superpower", "firepunch"],
-		tier: "Uber",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	glaslug: {
@@ -7011,7 +7011,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	s51: {
-		tier: "ULC", // I don't know how to make teambuilder do the thing so a bit of hardcoding here
+		tier: "ULC",
 		doublesTier: "Uranium",
 	},
 	s51a: {
@@ -7029,7 +7029,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	paraudionuclear: {
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	paraboom: {
@@ -7088,12 +7088,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	quetzoral: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	coatlith: {
 		randomBattleMoves: ["defog", "uturn", "roost", "sunnyday", "nastyplot", "gigadrain", "hiddenpowerfire", "solarbeam"],
-		tier: "Beta",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	tracton: {
@@ -7121,7 +7121,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	titanice: {
 		randomBattleMoves: ["iciclecrash", "ironhead", "waterfall", "crunch", "toxic"],
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	frynai: {
@@ -7129,12 +7129,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	saidine: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	daikatuna: {
 		randomBattleMoves: ["swordsdance", "waterfall", "ironhead", "rockpolish", "aquajet", "earthquake"],
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	selkid: {
@@ -7166,22 +7166,22 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	winotinger: {
 		randomBattleMoves: ["nastyplot", "aurasphere", "moonblast", "flamethrower", "thunderbolt"],
-		tier: "Beta",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	winotingermystery: {
 		randomBattleMoves: ["bulkup", "softboiled", "return", "highjumpkick", "thunderpunch"],
-		tier: "Beta",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	duplicat: {
 		randomBattleMoves: ["transform", "trickroom", "mirrorcoat", "toxic"],
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	nucleon: {
 		randomBattleMoves: ["hypervoice", "quickattack", "hiddenpowerfire", "batonpass"],
-		tier: "Uber",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	ratsy: {
@@ -7190,7 +7190,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	raffiti: {
 		randomBattleMoves: ["atomicpunch", "searingshot", "destinybond", "spore", "stealthrock", "stickyweb", "whirlwind"],
-		tier: "Beta",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	gargryph: {
@@ -7222,7 +7222,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	chupachonuclear: {
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	luchabra: {
@@ -7241,7 +7241,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	chainite: {
 		randomBattleMoves: ["knockoff", "shadowsneak", "trickroom", "drainpunch", "gyroball", "swordsdance"],
-		tier: "Beta",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	pufluff: {
@@ -7263,7 +7263,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	frosulo: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	frosthra: {
@@ -7286,7 +7286,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	krilvolver: {
 		randomBattleMoves: ["overheat", "hydropump", "focusenergy", "hiddenpowergrass", "chargebeam", "nastyplot", "fireblast"],
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	lavent: {
@@ -7326,7 +7326,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	hagoopnuclear: {
-		tier: "Uber",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	haagross: {
@@ -7336,7 +7336,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	haagrossnuclear: {
 		randomBattleMoves: ["radioacid", "voltswitch", "hiddenpowerfire", "hiddenpowerfighting", "stickyweb", "thunderbolt"],
-		tier: "Uber",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	xenomite: {
@@ -7359,7 +7359,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	geigeroach: {
 		randomBattleMoves: ["protonbeam", "gammaray", "stickyweb", "recover", "nastyplot", "flamethrower"],
-		tier: "Beta",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	minicorn: {
@@ -7378,7 +7378,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	oblivicorn: {
 		randomBattleMoves: ["swordsdance", "knockoff", "playrough", "suddenstrike", "taunt", "earthquake", "trick"],
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	luxi: {
@@ -7386,7 +7386,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	luxor: {
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	luxelong: {
@@ -7396,7 +7396,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	praseopunk: {
 		randomBattleMoves: ["reflect", "lightscreen", "voltswitch", "instantcrush", "thunderbolt", "energyball"],
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	neopunk: {
@@ -7516,7 +7516,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	arboknuclearmega: {
 		randomBattleMoves: ["radioacid", "protect", "glare", "earthquake", "firefang"],
-		tier: "Uber",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 };
