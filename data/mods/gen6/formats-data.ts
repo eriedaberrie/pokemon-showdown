@@ -824,7 +824,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	flareon: {
 		randomBattleMoves: ["facade", "flamecharge", "flareblitz", "quickattack", "superpower"],
 		randomDoubleBattleMoves: ["facade", "flamecharge", "flareblitz", "helpinghand", "protect", "superpower", "wish"],
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	espeon: {
@@ -842,13 +842,13 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	leafeon: {
 		randomBattleMoves: ["healbell", "knockoff", "leafblade", "swordsdance", "synthesis", "xscissor"],
 		randomDoubleBattleMoves: ["helpinghand", "knockoff", "leafblade", "protect", "substitute", "swordsdance", "xscissor"],
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	glaceon: {
 		randomBattleMoves: ["healbell", "hiddenpowerground", "icebeam", "protect", "shadowball", "toxic", "wish"],
 		randomDoubleBattleMoves: ["healbell", "helpinghand", "hiddenpowerground", "icebeam", "protect", "shadowball", "wish"],
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	porygon: {
@@ -1071,7 +1071,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	ampharos: {
 		randomBattleMoves: ["focusblast", "healbell", "hiddenpowerice", "lightscreen", "reflect", "thunderbolt", "toxic", "voltswitch"],
 		randomDoubleBattleMoves: ["discharge", "dragonpulse", "focusblast", "hiddenpowergrass", "hiddenpowerice", "protect", "thunderbolt"],
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	ampharosmega: {
@@ -1677,7 +1677,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	sableyemega: {
 		randomBattleMoves: ["calmmind", "darkpulse", "recover", "shadowball", "willowisp"],
 		randomDoubleBattleMoves: ["darkpulse", "fakeout", "knockoff", "protect", "shadowball", "willowisp"],
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	mawile: {
@@ -3702,7 +3702,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	aromatisse: {
 		randomBattleMoves: ["aromatherapy", "lightscreen", "moonblast", "protect", "reflect", "wish"],
 		randomDoubleBattleMoves: ["aromatherapy", "healpulse", "moonblast", "protect", "thunderbolt", "trickroom", "wish"],
-		tier: "Alpha",
+		tier: "(Alpha)",
 		doublesTier: "Uranium",
 	},
 	swirlix: {
@@ -3780,7 +3780,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	sylveon: {
 		randomBattleMoves: ["calmmind", "hiddenpowerfire", "hypervoice", "protect", "psyshock", "wish"],
 		randomDoubleBattleMoves: ["calmmind", "helpinghand", "hiddenpowerground", "hypervoice", "protect", "psyshock", "shadowball", "wish"],
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	hawlucha: {
