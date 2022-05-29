@@ -1742,7 +1742,8 @@ export class TeamValidator {
 		// Event-related ability restrictions only matter if we care about illegal abilities
 		const ruleTable = this.ruleTable;
 		if (ruleTable.has('obtainableabilities')) {
-			if ((dex.gen <= 5 || (dex.gen == 6 && !this.format.name.includes('NatDex'))) && eventData.abilities && eventData.abilities.length === 1 && !eventData.isHidden) {
+			if ((dex.gen <= 5 || (dex.gen === 6 && !this.format.name.includes('NatDex'))) &&
+					eventData.abilities && eventData.abilities.length === 1 && !eventData.isHidden) {
 				if (species.name === eventSpecies.name) {
 					// has not evolved, abilities must match
 					const requiredAbility = dex.abilities.get(eventData.abilities[0]).name;

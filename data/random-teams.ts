@@ -66,7 +66,7 @@ const NoStab = [
 	'fakeout', 'firstimpression', 'flamecharge', 'flipturn', 'iceshard', 'icywind', 'incinerate', 'machpunch',
 	'meteorbeam', 'pluck', 'pursuit', 'quickattack', 'reversal', 'selfdestruct', 'skydrop', 'snarl', 'suckerpunch', 'uturn', 'watershuriken',
 	'vacuumwave', 'voltswitch', 'waterspout',
-  'flameimpact', 'suddenstrike', 'instantcrush', 'metalwhip', 'fissionburst',
+	'flameimpact', 'suddenstrike', 'instantcrush', 'metalwhip', 'fissionburst',
 ];
 // Hazard-setting moves
 const Hazards = [
@@ -667,7 +667,8 @@ export class RandomTeams {
 					}
 				} else if (
 					// Less obvious forms of STAB
-					(moveType === 'Normal' && (['Aerilate', 'Galvanize', 'Pixilate', 'Refrigerate', 'Energizate', 'Atomizate'].some(abil => abilities.has(abil)))) ||
+					(moveType === 'Normal' && (['Aerilate', 'Galvanize', 'Pixilate', 'Refrigerate', 'Energizate',
+						'Atomizate'].some(abil => abilities.has(abil)))) ||
 					(move.priority === 0 && (abilities.has('Libero') || abilities.has('Protean')) && !this.noStab.includes(moveid)) ||
 					(moveType === 'Steel' && abilities.has('Steelworker'))
 				) {
@@ -821,7 +822,8 @@ export class RandomTeams {
 		case 'storedpower':
 			return {cull: !counter.setupType};
 		case 'switcheroo': case 'trick':
-			return {cull: counter.get('Physical') + counter.get('Special') < 3 || moves.has('rapidspin') || moves.has('naturalgift')};
+			return {cull: counter.get('Physical') + counter.get('Special') < 3 || moves.has('rapidspin') ||
+				moves.has('naturalgift')};
 		case 'trickroom':
 			const webs = !!teamDetails.stickyWeb;
 			return {cull:
@@ -1063,7 +1065,8 @@ export class RandomTeams {
 			// Turtonator wants Body Press when it doesn't have Shell Smash
 			const turtQuakeCull = species.id === 'turtonator' && movePool.includes('bodypress') && movePool.includes('shellsmash');
 			const subToxicPossible = moves.has('substitute') && movePool.includes('toxic');
-			return {cull: turtQuakeCull || (isDoubles && doublesCull) || subToxicPossible || moves.has('bonemerang') || moves.has('subduction')};
+			return {cull: turtQuakeCull || (isDoubles && doublesCull) || subToxicPossible || moves.has('bonemerang') ||
+				moves.has('subduction')};
 		case 'scorchingsands':
 			// Special cases for Ninetales and Palossand; prevents status redundancy
 			return {cull: (
@@ -1347,7 +1350,8 @@ export class RandomTeams {
 		case 'Steely Spirit':
 			return (moves.has('fakeout') && !isDoubles);
 		case 'Sturdy':
-			return (moves.has('bulkup') || !!counter.get('recoil') || (!isNoDynamax && abilities.has('Solid Rock')) || moves.has('ancientpower'));
+			return (moves.has('bulkup') || !!counter.get('recoil') || (!isNoDynamax && abilities.has('Solid Rock')) ||
+					  moves.has('ancientpower'));
 		case 'Swarm':
 			return (!counter.get('Bug') || !!counter.get('recovery'));
 		case 'Sweet Veil':
@@ -1449,8 +1453,8 @@ export class RandomTeams {
 			!isDoubles
 		) return 'Rocky Helmet';
 		if (species.name === 'Eternatus' && counter.get('Status') < 2) return 'Metronome';
-	if (species.name === 'Barand' && this.randomChance(1, 2)) return 'Stick';
-	if (species.name === 'Magikarp-Nuclear') return 'Choice Band';
+		if (species.name === 'Barand' && this.randomChance(1, 2)) return 'Stick';
+		if (species.name === 'Magikarp-Nuclear') return 'Choice Band';
 		if (species.name === 'Farfetch\u2019d') return 'Leek';
 		if (species.name === 'Froslass' && !isDoubles) return 'Wide Lens';
 		if (species.name === 'Latios' && counter.get('Special') === 2 && !isDoubles) return 'Soul Dew';
@@ -1506,18 +1510,20 @@ export class RandomTeams {
 			}
 		}
 		if (moves.has('auroraveil') || moves.has('lightscreen') && moves.has('reflect')) return 'Light Clay';
-		if ((moves.has('rest') || ability === 'Lazy') && !moves.has('sleeptalk') && ability !== 'Shed Skin') return 'Chesto Berry';
+		if ((moves.has('rest') || ability === 'Lazy') && !moves.has('sleeptalk') && ability !== 'Shed Skin') {
+			return 'Chesto Berry';
+		}
 		if (moves.has('hypnosis') && ability === 'Beast Boost') return 'Blunder Policy';
 		if (moves.has('bellydrum')) return 'Sitrus Berry';
-	
-	if (moves.has('naturalgift')) return 'Hafli Berry';
-	
-	if (species.name === 'Hazma' && this.randomChance(2, 3)) return 'Weakness Policy';
-	
-	if (species.types.includes('Nuclear')) {
+
+		if (moves.has('naturalgift')) return 'Hafli Berry';
+
+		if (species.name === 'Hazma' && this.randomChance(2, 3)) return 'Weakness Policy';
+
+		if (species.types.includes('Nuclear')) {
 	  return (species.baseStats.spe >= 70 && species.baseStats.spe <= 100 &&
 			  !(counter.get('Status') || (counter.get('priority') && this.randomChance(2, 3)))) ? 'Choice Scarf' : 'Focus Sash';
-	}
+		}
 
 		if (this.dex.getEffectiveness('Rock', species) >= 2 && !isDoubles) return 'Heavy-Duty Boots';
 	}
@@ -2024,9 +2030,9 @@ export class RandomTeams {
 				NU: 86,
 				PUBL: 87,
 				PU: 88, "(PU)": 88, NFE: 88,
-		Gamma: 80,
-		Beta: 83,
-		Alpha: 87,
+				Gamma: 80,
+				Beta: 83,
+				Alpha: 87,
 			};
 			const customScale: {[k: string]: number} = {
 				// These Pokemon are too strong and need a lower level
@@ -2140,7 +2146,9 @@ export class RandomTeams {
 	) {
 		const exclude = pokemonToExclude.map(p => toID(p.species));
 		const pokemonPool = [];
-		const tandorDex = ["Orchynx", "Metalynx", "Raptorch", "Archilles", "Eletux", "Electruxo", "Chyinmunk", "Kinetmunk", "Birbie", "Aveden", "Splendifowl", "Cubbug", "Cubblfly", "Nimflora", "Barewl", "Dearewl", "Gararewl", "Grozard", "Terlard", "Tonemy", "Tofurang", "Dunsparce", "Dunseraph", "Fortog", "Folerog", "Blubelrog", "Magikarp", "Gyarados", "Feleng", "Felunge", "Feliger", "Mankey", "Primeape", "Empirilla", "Owten", "Eshouten", "Lotad", "Lombre", "Ludicolo", "Smore", "Firoke", "Brailip", "Brainoar", "Ekans", "Arbok", "Tancoon", "Tanscure", "Sponee", "Sponaree", "Pahar", "Palij", "Pajay", "Jerbolta", "Comite", "Cometeor", "Astronite", "Mareep", "Flaaffy", "Ampharos", "Baashaun", "Baaschaf", "Baariette", "Tricwe", "Harylect", "Costraw", "Trawpint", "Lunapup", "Herolune", "Minyan", "Vilucard", "Buizel", "Floatzel", "Modrille", "Drilgann", "Gligar", "Gliscor", "Sableye", "Cocaran", "Cararalm", "Cocancer", "Corsola", "Corsoreef", "Tubjaw", "Tubareel", "Cassnail", "Sableau", "Escartress", "Nupin", "Gellin", "Cottonee", "Whimsicott", "Misdreavus", "Mismagius", "Barand", "Glaslug", "Glavinug", "S51", "S51-A", "Paraudio", "Paraboom", "Flager", "Inflagetah", "Chimical", "Chimaconda", "Tikiki", "Frikitiki", "Unymph", "Harptera", "Chicoatl", "Quetzoral", "Coatlith", "Tracton", "Snopach", "Dermafrost", "Slothohm", "Theriamp", "Titanice", "Frynai", "Saidine", "Daikatuna", "Selkid", "Syrentide", "Spritzee", "Aromatisse", "Miasmedic", "Jackdeary", "Winotinger", "Duplicat", "Eevee", "Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon", "Leafeon", "Glaceon", "Sylveon", "Nucleon", "Ratsy", "Raffiti", "Gargryph", "Masking", "Dramsama", "Antarki", "Chupacho", "Luchabra", "Linkite", "Chainite", "Pufluff", "Alpico", "Anderind", "Colarva", "Frosulo", "Frosthra", "Fafurr", "Fafninter", "Shrimputy", "Krilvolver", "Lavent", "Swabone", "Skelerogue", "Navighast", "Stenowatt", "Jungore", "Majungold", "Hagoop", "Haagross", "Xenomite", "Xenogen", "Xenoqueen", "Hazma", "Geigeroach", "Minicorn", "Kiricorn", "Oblivicorn", "Luxi", "Luxor", "Luxelong", "Praseopunk", "Neopunk", "Sheebit", "Terrabbit", "Laissure", "Volchik", "Voltasu", "Yatagaryu", "Devimp", "Fallengel", "Beliaddon", "Seikamater", "Garlikid", "Baitatao", "Leviathao", "Krakanao", "Lanthan", "Actan", "Urayne", "Aotius", "Mutios", "Zephy"];
+		const tandorDex = [
+			"Orchynx", "Metalynx", "Raptorch", "Archilles", "Eletux", "Electruxo", "Chyinmunk", "Kinetmunk", "Birbie", "Aveden", "Splendifowl", "Cubbug", "Cubblfly", "Nimflora", "Barewl", "Dearewl", "Gararewl", "Grozard", "Terlard", "Tonemy", "Tofurang", "Dunsparce", "Dunseraph", "Fortog", "Folerog", "Blubelrog", "Magikarp", "Gyarados", "Feleng", "Felunge", "Feliger", "Mankey", "Primeape", "Empirilla", "Owten", "Eshouten", "Lotad", "Lombre", "Ludicolo", "Smore", "Firoke", "Brailip", "Brainoar", "Ekans", "Arbok", "Tancoon", "Tanscure", "Sponee", "Sponaree", "Pahar", "Palij", "Pajay", "Jerbolta", "Comite", "Cometeor", "Astronite", "Mareep", "Flaaffy", "Ampharos", "Baashaun", "Baaschaf", "Baariette", "Tricwe", "Harylect", "Costraw", "Trawpint", "Lunapup", "Herolune", "Minyan", "Vilucard", "Buizel", "Floatzel", "Modrille", "Drilgann", "Gligar", "Gliscor", "Sableye", "Cocaran", "Cararalm", "Cocancer", "Corsola", "Corsoreef", "Tubjaw", "Tubareel", "Cassnail", "Sableau", "Escartress", "Nupin", "Gellin", "Cottonee", "Whimsicott", "Misdreavus", "Mismagius", "Barand", "Glaslug", "Glavinug", "S51", "S51-A", "Paraudio", "Paraboom", "Flager", "Inflagetah", "Chimical", "Chimaconda", "Tikiki", "Frikitiki", "Unymph", "Harptera", "Chicoatl", "Quetzoral", "Coatlith", "Tracton", "Snopach", "Dermafrost", "Slothohm", "Theriamp", "Titanice", "Frynai", "Saidine", "Daikatuna", "Selkid", "Syrentide", "Spritzee", "Aromatisse", "Miasmedic", "Jackdeary", "Winotinger", "Duplicat", "Eevee", "Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon", "Leafeon", "Glaceon", "Sylveon", "Nucleon", "Ratsy", "Raffiti", "Gargryph", "Masking", "Dramsama", "Antarki", "Chupacho", "Luchabra", "Linkite", "Chainite", "Pufluff", "Alpico", "Anderind", "Colarva", "Frosulo", "Frosthra", "Fafurr", "Fafninter", "Shrimputy", "Krilvolver", "Lavent", "Swabone", "Skelerogue", "Navighast", "Stenowatt", "Jungore", "Majungold", "Hagoop", "Haagross", "Xenomite", "Xenogen", "Xenoqueen", "Hazma", "Geigeroach", "Minicorn", "Kiricorn", "Oblivicorn", "Luxi", "Luxor", "Luxelong", "Praseopunk", "Neopunk", "Sheebit", "Terrabbit", "Laissure", "Volchik", "Voltasu", "Yatagaryu", "Devimp", "Fallengel", "Beliaddon", "Seikamater", "Garlikid", "Baitatao", "Leviathao", "Krakanao", "Lanthan", "Actan", "Urayne", "Aotius", "Mutios", "Zephy",
+		];
 		for (let species of this.dex.species.all()) {
 			if (species.gen > this.gen || exclude.includes(species.id)) continue;
 			if (this.dex.currentMod === 'gen8bdsp' && species.gen > 4) continue;
@@ -2151,7 +2159,7 @@ export class RandomTeams {
 					if (!species.types.includes(type)) continue;
 				}
 			}
-			 // uranium mons should be x5 times as common in natdex
+			// uranium mons should be x5 times as common in natdex
 			if (species.name.includes('-Nuclear') || tandorDex.includes(species.name)) pokemonPool.push(species.id);
 			if (!this.format.name.includes('Uranium') && this.randomChance(1, 4)) pokemonPool.push(species.id);
 		}
@@ -2221,7 +2229,9 @@ export class RandomTeams {
 			}
 
 			// Illusion shouldn't be on the last slot
-			if ((species.name === 'Zoroark' || species.name.startsWith('Dramsama')) && pokemon.length >= (this.maxTeamSize - 1)) continue;
+			if ((species.name === 'Zoroark' || species.name.startsWith('Dramsama')) && pokemon.length >= (this.maxTeamSize - 1)) {
+				continue;
+			}
 			// The sixth slot should not be Zacian/Zamazenta/Eternatus if a Zoroark is present
 			if (
 				pokemon.some(pkmn => (pkmn.species === 'Zoroark' || pkmn.species.startsWith('Dramsama'))) &&

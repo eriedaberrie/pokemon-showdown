@@ -17342,7 +17342,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		gen: 5,
 	},
-	
+
 	// uranium mons start here
 	orchynx: {
 		num: -2001,
@@ -18920,7 +18920,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 1.7,
 		weightkg: 52.2,
 		color: "Red",
-		eggGroups: ["Monster", "Field"],	
+		eggGroups: ["Monster", "Field"],
 		requiredItem: "Inflagetite",
 	},
 	chimical: {

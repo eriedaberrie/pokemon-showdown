@@ -1736,8 +1736,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
-  
-  // uranium
+
+	// uranium
 	sharpcoral: {
 		name: "Sharp Coral",
 		desc: "The power of this Pokemon's moves are doubled. This pokemon takes double damage from attacks.",
@@ -1755,7 +1755,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	petrify: {
 		name: "Petrify",
 		desc: "On switch-in, this Pokemon lowers the Speed of adjacent opposing Pokemon by 1 stage. Pokemon behind a substitute are immune.",
-    shortDesc: "On switch-in, this Pokemon lowers the Speed of adjacent opponents by 1 stage.",
+		shortDesc: "On switch-in, this Pokemon lowers the Speed of adjacent opponents by 1 stage.",
 	},
 	infuriate: {
 		name: "Infuriate",
@@ -1822,7 +1822,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	geigersense: {
 		name: "Geiger Sense",
 		desc: "On switch-in, this Pokemon's Attack and Special Attack are raised by 1 stage if another Nuclear-type Pokemon is on the field.",
-    shortDesc: "On switch-in, raises Attack and Sp. Atk if another Nuclear-type is on field.",
+		shortDesc: "On switch-in, raises Attack and Sp. Atk if another Nuclear-type is on field.",
 	},
 	chernobyl: {
 		name: "Chernobyl",

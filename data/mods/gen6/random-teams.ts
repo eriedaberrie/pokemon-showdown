@@ -125,7 +125,8 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		case 'storedpower':
 			return {cull: !counter.setupType};
 		case 'switcheroo': case 'trick':
-			return {cull: counter.get('Physical') + counter.get('Special') < 3 || !!counter.get('priority') || movePool.includes('naturalgift')};
+			return {cull: counter.get('Physical') + counter.get('Special') < 3 || !!counter.get('priority') ||
+				movePool.includes('naturalgift')};
 
 		// Set up once and only if we have the moves for it
 		case 'bellydrum': case 'bulkup': case 'coil': case 'curse': case 'dragondance': case 'honeclaws': case 'swordsdance':
@@ -200,7 +201,8 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			return {cull: counter.damagingMoves.size > 1 || !!counter.setupType};
 		case 'protect':
 			const screens = moves.has('lightscreen') && moves.has('reflect');
-			return {cull: (moves.has('rest') || screens || (!!counter.setupType && !moves.has('wish'))) && !abilities.has('rebuild')};
+			return {cull: (moves.has('rest') || screens || (!!counter.setupType && !moves.has('wish'))) &&
+				!abilities.has('rebuild')};
 		case 'pursuit':
 			return {cull: (
 				moves.has('nightslash') ||
@@ -321,7 +323,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			return {cull: moves.has('shadowball') && !moves.has('willowisp')};
 		case 'gigadrain': case 'powerwhip':
 			return {cull: (
-        moves.has('bulletseed') ||
+				moves.has('bulletseed') ||
 				moves.has('seedbomb') ||
 				moves.has('petaldance') ||
 				(moves.has('sunnyday') && moves.has('solarbeam')) ||
@@ -532,7 +534,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		case 'Overgrow':
 			return !counter.get('Grass');
 		case 'Poison Heal':
-			return (abilities.has('Technician') && !!counter.get('technician'));
+			return (abilities.has('Technician') && !!counter.get('technician')) || moves.has('naturalgift');
 		case 'Prankster':
 			return !counter.get('Status');
 		case 'Pressure': case 'Synchronize':
@@ -582,8 +584,6 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			return (species.id === 'corsoreefnuclear');
 		case 'Sharp Coral':
 			return !!counter.get('recovery');
-		case 'Poison Heal':
-			return moves.has('naturalgift');
 		case 'Acceleration':
 			return !counter.get('priority');
 		}
@@ -650,9 +650,9 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		) {
 			return 'Life Orb';
 		}
-    
+
 		if (moves.has('naturalgift')) return 'Hafli Berry';
-    
+
 		if (ability === 'Poison Heal') return 'Toxic Orb';
 		if (ability === 'Unburden') {
 			if (moves.has('fakeout')) {
@@ -665,21 +665,22 @@ export class RandomGen6Teams extends RandomGen7Teams {
 				return 'Red Card';
 			}
 		}
-    
+
 		if (species.name === 'Hazma' && this.randomChance(2, 3)) return 'Weakness Policy';
-		
+
 		if (species.types.includes('Nuclear')) {
 			return (species.baseStats.spe >= 70 && species.baseStats.spe <= 100 &&
 				!(counter.get('Status') || (counter.get('priority') && this.randomChance(2, 3)))) ? 'Choice Scarf' : 'Focus Sash';
 		}
-		
-			if (moves.has('acrobatics')) return ''; // not undefined - we want "no item"
-			if (moves.has('raindance')) return (ability === 'Forecast') ? 'Damp Rock' : 'Life Orb';
-			if (moves.has('sunnyday')) return (ability === 'Forecast') ? 'Heat Rock' : 'Life Orb';
-			if (moves.has('lightscreen') && moves.has('reflect')) return 'Light Clay';
-			if ((moves.has('rest') || ability === 'Lazy') && !moves.has('sleeptalk') && ability !== 'Natural Cure' && ability !== 'Shed Skin') {
-				return 'Chesto Berry';
-			}
+
+		if (moves.has('acrobatics')) return ''; // not undefined - we want "no item"
+		if (moves.has('raindance')) return (ability === 'Forecast') ? 'Damp Rock' : 'Life Orb';
+		if (moves.has('sunnyday')) return (ability === 'Forecast') ? 'Heat Rock' : 'Life Orb';
+		if (moves.has('lightscreen') && moves.has('reflect')) return 'Light Clay';
+		if ((moves.has('rest') || ability === 'Lazy') && !moves.has('sleeptalk') &&
+			ability !== 'Natural Cure' && ability !== 'Shed Skin') {
+			return 'Chesto Berry';
+		}
 	}
 
 	getMediumPriorityItem(
@@ -1099,7 +1100,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 			'Magikarp-Nuclear': 400, // i think it will be funny
 			Duplicat: 100, Hazma: 100, Firoke: 100,
 			'Kinetmunk-Nuclear': 86, 'Eshouten-Nuclear': 86, 'Corsoreef-Nuclear': 88,
-			
+
 			// needs nerf
 			Tracton: 74,
 		};
@@ -1256,7 +1257,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 
 		const teamData: TeamData = {
 			typeCount: {}, typeComboCount: {}, baseFormes: {}, megaCount: 0, has: {}, forceResult,
-			weaknesses: {}, resistances: {}
+			weaknesses: {}, resistances: {},
 		};
 		const requiredMoveFamilies = ['hazardSet', 'hazardClear'];
 		const requiredMoves: {[k: string]: string} = {stealthrock: 'hazardSet', rapidspin: 'hazardClear', defog: 'hazardClear'};

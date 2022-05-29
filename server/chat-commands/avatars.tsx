@@ -94,8 +94,8 @@ export const Avatars = new class {
 	src(avatar: AvatarID) {
 		if (avatar.includes('.')) return '';
 		const avatarUrl = avatar.startsWith('#') ? `trainers-custom/${avatar.slice(1)}.png` : `trainers/${avatar}.png`;
-    // return `../showdown-sprites/play.pokemonshowdown.com/sprites/${avatarUrl}`;
-    return `https://raw.githubusercontent.com/eriedaberrie/showdown-sprites/main/play.pokemonshowdown.com/sprites/${avatarUrl}`;
+		// return `../showdown-sprites/play.pokemonshowdown.com/sprites/${avatarUrl}`;
+		return `https://raw.githubusercontent.com/eriedaberrie/showdown-sprites/main/play.pokemonshowdown.com/sprites/${avatarUrl}`;
 		return `https://${Config.routes.client}/sprites/${avatarUrl}`;
 	}
 	exists(avatar: string) {
@@ -222,32 +222,32 @@ function listUsers(users: string[]) {
 }
 
 const URANIUM_AVATARS = new Set([
-  'actor',
-  'actress',
-  'cali',
-  'curie',
-  'davern',
-  'diver',
-  'garlikid',
-  'hinata',
-  'kaito',
-  'larkspur',
-  'maria',
-  'namininja',
-  'natalie',
-  'nuclearhorde',
-  'piratejack',
-  'piratesylvia',
-  'pluto',
-  'rosalind',
-  'sheldon',
-  'surfingninja', 'surfingninjas',
-  'theo', 'theo-2',
-  'tiko',
-  'tsukininja',
-  'vaeryn',
-  'vitor',
-])
+	'actor',
+	'actress',
+	'cali',
+	'curie',
+	'davern',
+	'diver',
+	'garlikid',
+	'hinata',
+	'kaito',
+	'larkspur',
+	'maria',
+	'namininja',
+	'natalie',
+	'nuclearhorde',
+	'piratejack',
+	'piratesylvia',
+	'pluto',
+	'rosalind',
+	'sheldon',
+	'surfingninja', 'surfingninjas',
+	'theo', 'theo-2',
+	'tiko',
+	'tsukininja',
+	'vaeryn',
+	'vitor',
+]);
 
 const OFFICIAL_AVATARS = new Set([
 	'aaron',

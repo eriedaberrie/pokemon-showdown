@@ -1829,16 +1829,16 @@ export const Aliases: {[alias: string]: string} = {
 	zugadoon: "Blacephalon",
 	merutan: "Meltan",
 	merumetaru: "Melmetal",
-  
-  // misc uranium
-  alpaca: "Alpico",
-  cubbfly: "Cubblfly",
-  ufo: "S51-A",
-  flimpact: "Flame Impact",
-  
-  // uranium megas
-  marchilles: "Archilles-Mega",
-  melectruxo: "Electruxo-Mega",
-  mmeta: "Metalynx-Mega",
-  minfla: "Inflagetah-Mega",
+
+	// misc uranium
+	alpaca: "Alpico",
+	cubbfly: "Cubblfly",
+	ufo: "S51-A",
+	flimpact: "Flame Impact",
+
+	// uranium megas
+	marchilles: "Archilles-Mega",
+	melectruxo: "Electruxo-Mega",
+	mmeta: "Metalynx-Mega",
+	minfla: "Inflagetah-Mega",
 };

@@ -1295,7 +1295,8 @@ export class Pokemon {
 						this.battle.add('-primal', this);
 					}
 				} else {
-					if (this.illusion) { // wasted 40 minutes debugging this just because i forgot to put "battle" in front of "dex" when i copypasted it
+					// wasted 40 minutes debugging this just because i forgot to put "battle" in front of "dex" when i copypasted it
+					if (this.illusion) {
 						this.battle.singleEvent('End', this.battle.dex.abilities.get('Illusion'), this.abilityState, this); // for mega dramsama
 					}
 					this.battle.add('-mega', this, apparentSpecies, species.requiredItem);

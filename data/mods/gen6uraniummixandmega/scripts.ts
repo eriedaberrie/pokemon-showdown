@@ -22,7 +22,7 @@ export const Scripts: ModdedBattleScriptsData = {
 		},
 		runMegaEvo(pokemon) {
 			if (pokemon.species.isMega || pokemon.species.isPrimal) return false;
-      
+
 			// @ts-ignore
 			const species: Species = this.getMixedSpecies(pokemon.m.originalSpecies, pokemon.canMegaEvo);
 

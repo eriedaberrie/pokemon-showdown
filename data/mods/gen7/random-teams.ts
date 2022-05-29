@@ -1465,7 +1465,7 @@ export class RandomGen7Teams extends RandomTeams {
 
 		const baseFormes: {[k: number]: number} = {};
 		let hasMega = false;
-    let hasNuclear = false;
+		let hasNuclear = false;
 
 		const tierCount: {[k: string]: number} = {};
 		const typeCount: {[k: string]: number} = {};
@@ -1493,7 +1493,7 @@ export class RandomGen7Teams extends RandomTeams {
 
 				// Limit one Mega per team
 				if (hasMega && species.isMega) continue;
-        if (hasNuclear && species.types.includes('Nuclear')) continue;
+				if (hasNuclear && species.types.includes('Nuclear')) continue;
 
 				// Adjust rate for species with multiple sets
 				switch (species.baseSpecies) {
@@ -1592,7 +1592,7 @@ export class RandomGen7Teams extends RandomTeams {
 					} else {
 						typeCount[typeName] = 1;
 					}
-          if (typeName === 'Nuclear') hasNuclear = true;
+					if (typeName === 'Nuclear') hasNuclear = true;
 				}
 				if (typeCombo in typeComboCount) {
 					typeComboCount[typeCombo]++;

@@ -2357,17 +2357,21 @@ export const Chat = new class {
 		let buf = '<li class="result">';
 		buf += '<span class="col numcol">' + (tier || species.tier) + '</span> ';
 		buf += `<span class="col iconcol"><psicon pokemon="${species.id}"/></span> `;
-    
-    const tandorDex = [
-      "Orchynx", "Metalynx", "Raptorch", "Archilles", "Eletux", "Electruxo", "Chyinmunk", "Kinetmunk", "Birbie", "Aveden", "Splendifowl", "Cubbug", "Cubblfly", "Nimflora", "Barewl", "Dearewl", "Gararewl", "Grozard", "Terlard", "Tonemy", "Tofurang", "Dunsparce", "Dunseraph", "Fortog", "Folerog", "Blubelrog", "Magikarp", "Gyarados", "Feleng", "Felunge", "Feliger", "Mankey", "Primeape", "Empirilla", "Owten", "Eshouten", "Lotad", "Lombre", "Ludicolo", "Smore", "Firoke", "Brailip", "Brainoar", "Ekans", "Arbok", "Tancoon", "Tanscure", "Sponee", "Sponaree", "Pahar", "Palij", "Pajay", "Jerbolta", "Comite", "Cometeor", "Astronite", "Mareep", "Flaaffy", "Ampharos", "Baashaun", "Baaschaf", "Baariette", "Tricwe", "Harylect", "Costraw", "Trawpint", "Lunapup", "Herolune", "Minyan", "Vilucard", "Buizel", "Floatzel", "Modrille", "Drilgann", "Gligar", "Gliscor", "Sableye", "Cocaran", "Cararalm", "Cocancer", "Corsola", "Corsoreef", "Tubjaw", "Tubareel", "Cassnail", "Sableau", "Escartress", "Nupin", "Gellin", "Cottonee", "Whimsicott", "Misdreavus", "Mismagius", "Barand", "Glaslug", "Glavinug", "S51", "S51-A", "Paraudio", "Paraboom", "Flager", "Inflagetah", "Chimical", "Chimaconda", "Tikiki", "Frikitiki", "Unymph", "Harptera", "Chicoatl", "Quetzoral", "Coatlith", "Tracton", "Snopach", "Dermafrost", "Slothohm", "Theriamp", "Titanice", "Frynai", "Saidine", "Daikatuna", "Selkid", "Syrentide", "Spritzee", "Aromatisse", "Miasmedic", "Jackdeary", "Winotinger", "Duplicat", "Eevee", "Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon", "Leafeon", "Glaceon", "Sylveon", "Nucleon", "Ratsy", "Raffiti", "Gargryph", "Masking", "Dramsama", "Antarki", "Chupacho", "Luchabra", "Linkite", "Chainite", "Pufluff", "Alpico", "Anderind", "Colarva", "Frosulo", "Frosthra", "Fafurr", "Fafninter", "Shrimputy", "Krilvolver", "Lavent", "Swabone", "Skelerogue", "Navighast", "Stenowatt", "Jungore", "Majungold", "Hagoop", "Haagross", "Xenomite", "Xenogen", "Xenoqueen", "Hazma", "Geigeroach", "Minicorn", "Kiricorn", "Oblivicorn", "Luxi", "Luxor", "Luxelong", "Praseopunk", "Neopunk", "Sheebit", "Terrabbit", "Laissure", "Volchik", "Voltasu", "Yatagaryu", "Devimp", "Fallengel", "Beliaddon", "Seikamater", "Garlikid", "Baitatao", "Leviathao", "Krakanao", "Lanthan", "Actan", "Urayne", "Aotius", "Mutios", "Zephy"
-    ];
-    let basespecies = species.baseSpecies
-    if (["-Nuclear", "-Mystery"].includes(basespecies.slice(-8))) {
-      basespecies = basespecies.slice(0, -8);
-    }
+
+		const tandorDex = [
+			"Orchynx", "Metalynx", "Raptorch", "Archilles", "Eletux", "Electruxo", "Chyinmunk", "Kinetmunk", "Birbie", "Aveden", "Splendifowl", "Cubbug", "Cubblfly", "Nimflora", "Barewl", "Dearewl", "Gararewl", "Grozard", "Terlard", "Tonemy", "Tofurang", "Dunsparce", "Dunseraph", "Fortog", "Folerog", "Blubelrog", "Magikarp", "Gyarados", "Feleng", "Felunge", "Feliger", "Mankey", "Primeape", "Empirilla", "Owten", "Eshouten", "Lotad", "Lombre", "Ludicolo", "Smore", "Firoke", "Brailip", "Brainoar", "Ekans", "Arbok", "Tancoon", "Tanscure", "Sponee", "Sponaree", "Pahar", "Palij", "Pajay", "Jerbolta", "Comite", "Cometeor", "Astronite", "Mareep", "Flaaffy", "Ampharos", "Baashaun", "Baaschaf", "Baariette", "Tricwe", "Harylect", "Costraw", "Trawpint", "Lunapup", "Herolune", "Minyan", "Vilucard", "Buizel", "Floatzel", "Modrille", "Drilgann", "Gligar", "Gliscor", "Sableye", "Cocaran", "Cararalm", "Cocancer", "Corsola", "Corsoreef", "Tubjaw", "Tubareel", "Cassnail", "Sableau", "Escartress", "Nupin", "Gellin", "Cottonee", "Whimsicott", "Misdreavus", "Mismagius", "Barand", "Glaslug", "Glavinug", "S51", "S51-A", "Paraudio", "Paraboom", "Flager", "Inflagetah", "Chimical", "Chimaconda", "Tikiki", "Frikitiki", "Unymph", "Harptera", "Chicoatl", "Quetzoral", "Coatlith", "Tracton", "Snopach", "Dermafrost", "Slothohm", "Theriamp", "Titanice", "Frynai", "Saidine", "Daikatuna", "Selkid", "Syrentide", "Spritzee", "Aromatisse", "Miasmedic", "Jackdeary", "Winotinger", "Duplicat", "Eevee", "Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon", "Leafeon", "Glaceon", "Sylveon", "Nucleon", "Ratsy", "Raffiti", "Gargryph", "Masking", "Dramsama", "Antarki", "Chupacho", "Luchabra", "Linkite", "Chainite", "Pufluff", "Alpico", "Anderind", "Colarva", "Frosulo", "Frosthra", "Fafurr", "Fafninter", "Shrimputy", "Krilvolver", "Lavent", "Swabone", "Skelerogue", "Navighast", "Stenowatt", "Jungore", "Majungold", "Hagoop", "Haagross", "Xenomite", "Xenogen", "Xenoqueen", "Hazma", "Geigeroach", "Minicorn", "Kiricorn", "Oblivicorn", "Luxi", "Luxor", "Luxelong", "Praseopunk", "Neopunk", "Sheebit", "Terrabbit", "Laissure", "Volchik", "Voltasu", "Yatagaryu", "Devimp", "Fallengel", "Beliaddon", "Seikamater", "Garlikid", "Baitatao", "Leviathao", "Krakanao", "Lanthan", "Actan", "Urayne", "Aotius", "Mutios", "Zephy",
+		];
+		let basespecies = species.baseSpecies;
+		if (["-Nuclear", "-Mystery"].includes(basespecies.slice(-8))) {
+			basespecies = basespecies.slice(0, -8);
+		}
 		buf += `<span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://`;
-    buf += tandorDex.includes(basespecies) ? `pokemon-uranium.fandom.com/${basespecies}` : `${Config.routes.dex}/pokemon/${species.id}`;
-    buf += `" target="_blank">${species.name}</a></span> `;
+		if (tandorDex.includes(basespecies)) {
+			buf += `pokemon-uranium.fandom.com/${basespecies}`;
+		} else {
+			buf += `${Config.routes.dex}/pokemon/${species.id}`;
+		}
+		buf += `" target="_blank">${species.name}</a></span> `;
 		buf += '<span class="col typecol">';
 		if (species.types) {
 			for (const type of species.types) {
@@ -2412,11 +2416,17 @@ export const Chat = new class {
 	}
 	getDataMoveHTML(move: Move) {
 		let buf = `<ul class="utilichart"><li class="result">`;
-    const uraniumMoves = ['coralbreak', 'atomicpunch', 'metalwhip', 'nuclearwaste', 'gammaray', 'radioacid', 'skyfall', 'flameimpact', 'subduction', 'instantcrush', 'getlucky', 'laserpulse', 'halflife', 'fissionburst', 'causticbreath', 'nuclearslash', 'thunderstorm', 'suddenstrike', 'expunge', 'fallout', 'protonbeam', 'infernalblade', 'quantumleap', 'metalcruncher', 'drainlife', 'stickyterrain', 'nuclearwind', 'gemstoneglimmer', 'oceanswrath'];
+		const uraniumMoves = [
+			'coralbreak', 'atomicpunch', 'metalwhip', 'nuclearwaste', 'gammaray', 'radioacid', 'skyfall', 'flameimpact', 'subduction', 'instantcrush', 'getlucky', 'laserpulse', 'halflife', 'fissionburst', 'causticbreath', 'nuclearslash', 'thunderstorm', 'suddenstrike', 'expunge', 'fallout', 'protonbeam', 'infernalblade', 'quantumleap', 'metalcruncher', 'drainlife', 'stickyterrain', 'nuclearwind', 'gemstoneglimmer', 'oceanswrath',
+		];
 		buf += `<span class="col movenamecol"><a href="https://`;
-    const spaceregexp = / /;
-    buf += uraniumMoves.includes(move.id) ? `pokemon-uranium.fandom.com/${move.name.replace(spaceregexp, '_')}_(move)` : `${Config.routes.dex}/moves/${move.id}`;
-    buf += `">${move.name}</a></span> `;
+		const spaceregexp = / /;
+		if (uraniumMoves.includes(move.id)) {
+			buf += `pokemon-uranium.fandom.com/${move.name.replace(spaceregexp, '_')}_(move)`;
+		} else {
+			buf += `${Config.routes.dex}/moves/${move.id}`;
+		}
+		buf += `">${move.name}</a></span> `;
 		// encoding is important for the ??? type icon
 		const encodedMoveType = encodeURIComponent(move.type);
 		buf += `<span class="col typecol"><img src="//raw.githubusercontent.com/eriedaberrie/showdown-sprites/main/play.pokemonshowdown.com/sprites/types/${encodedMoveType}.png" alt="${move.type}" width="32" height="14">`;
@@ -2434,11 +2444,17 @@ export const Chat = new class {
 	}
 	getDataAbilityHTML(ability: Ability) {
 		let buf = `<ul class="utilichart"><li class="result">`;
-    const uraniumAbilities = ['sharpcoral', 'lazy', 'rebuild', 'petrify', 'infuriate', 'elementalist', 'energizate', 'acceleration', 'bloodlust', 'atomizate', 'leadskin', 'deepfreeze', 'stormbringer', 'quickcharge', 'disenchant', 'geigersense', 'chernobyl'];
-    buf += `<span class="col namecol"><a href="https://`;
-    const spaceregexp = / /;
-    buf += uraniumAbilities.includes(ability.id) ? `pokemon-uranium.fandom.com/${ability.name.replace(spaceregexp, '_')}_(ability)` : `${Config.routes.dex}/abilities/${ability.id}`;
-    buf += `">${ability.name}</a></span> `;
+		const uraniumAbilities = [
+			'sharpcoral', 'lazy', 'rebuild', 'petrify', 'infuriate', 'elementalist', 'energizate', 'acceleration', 'bloodlust', 'atomizate', 'leadskin', 'deepfreeze', 'stormbringer', 'quickcharge', 'disenchant', 'geigersense', 'chernobyl',
+		];
+		buf += `<span class="col namecol"><a href="https://`;
+		const spaceregexp = / /;
+		if (uraniumAbilities.includes(ability.id)) {
+			buf += `pokemon-uranium.fandom.com/${ability.name.replace(spaceregexp, '_')}_(ability)`;
+		} else {
+			buf += `${Config.routes.dex}/abilities/${ability.id}`;
+		}
+		buf += `">${ability.name}</a></span> `;
 		buf += `<span class="col abilitydesccol">${ability.shortDesc || ability.desc}</span> `;
 		buf += `</li><li style="clear:both"></li></ul>`;
 		return buf;

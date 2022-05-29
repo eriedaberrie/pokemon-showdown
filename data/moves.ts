@@ -11535,8 +11535,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			case 'primordialsea':
 			case 'sandstorm':
 			case 'hail':
-      case 'thunderstorm':
-      case 'fallout':
+			case 'thunderstorm':
+			case 'fallout':
 				factor = 0.25;
 				break;
 			}
@@ -11568,8 +11568,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			case 'primordialsea':
 			case 'sandstorm':
 			case 'hail':
-      case 'thunderstorm':
-      case 'fallout':
+			case 'thunderstorm':
+			case 'fallout':
 				factor = 0.25;
 				break;
 			}
@@ -16141,7 +16141,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			return null;
 		},
 		onBasePower(basePower, pokemon, target) {
-			if (['raindance', 'primordialsea', 'sandstorm', 'hail', 'thunderstorm', 'fallout'].includes(pokemon.effectiveWeather())) {
+			if (['raindance', 'primordialsea', 'sandstorm', 'hail', 'thunderstorm',
+				'fallout'].includes(pokemon.effectiveWeather())) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
 			}
@@ -16177,7 +16178,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			return null;
 		},
 		onBasePower(basePower, pokemon, target) {
-			if (['raindance', 'primordialsea', 'sandstorm', 'hail', 'thunderstorm', 'fallout'].includes(pokemon.effectiveWeather())) {
+			if (['raindance', 'primordialsea', 'sandstorm', 'hail', 'thunderstorm',
+				'fallout'].includes(pokemon.effectiveWeather())) {
 				this.debug('weakened by weather'); // custom weather lowers power for consistency
 				return this.chainModify(0.5);
 			}
@@ -17582,8 +17584,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			case 'primordialsea':
 			case 'sandstorm':
 			case 'hail':
-      case 'thunderstorm':
-      case 'fallout':
+			case 'thunderstorm':
+			case 'fallout':
 				factor = 0.25;
 				break;
 			}
@@ -18154,7 +18156,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			switch (target?.effectiveWeather()) {
 			case 'raindance':
 			case 'primordialsea':
-      case 'thunderstorm':
+			case 'thunderstorm':
 				move.accuracy = true;
 				break;
 			case 'sunnyday':
@@ -19241,12 +19243,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 			case 'hail':
 				move.type = 'Ice';
 				break;
-      case 'thunderstorm':
-        move.type = 'Electric';
-        break;
-      case 'fallout':
-        move.type = 'Nuclear';
-        break;
+			case 'thunderstorm':
+				move.type = 'Electric';
+				break;
+			case 'fallout':
+				move.type = 'Nuclear';
+				break;
 			}
 		},
 		onModifyMove(move, pokemon) {
@@ -19265,12 +19267,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 			case 'hail':
 				move.basePower *= 2;
 				break;
-      case 'thunderstorm':
-        move.basePower *= 2;
-        break;
-      case 'fallout':
-        move.basePower *= 2;
-        break;
+			case 'thunderstorm':
+				move.basePower *= 2;
+				break;
+			case 'fallout':
+				move.basePower *= 2;
+				break;
 			}
 		},
 		secondary: null,
@@ -19741,8 +19743,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Electric",
 		contestType: "Cool",
 	},
-  
-  // uranium moves start here
+
+	// uranium moves start here
 	coralbreak: {
 		num: -1,
 		accuracy: 95,
@@ -19912,9 +19914,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-    self: {
-      volatileStatus: 'focusenergy',
-    },
+		self: {
+			volatileStatus: 'focusenergy',
+		},
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
@@ -19929,7 +19931,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 20,
 		flags: {protect: 1, pulse: 1, mirror: 1},
 		onModifyMove(move) {
-      const laserPulseTypes = ["Fire", "Electric", "Ice"]; // stupid mechanic btw
+			const laserPulseTypes = ["Fire", "Electric", "Ice"]; // stupid mechanic btw
 			move.type = this.sample(laserPulseTypes);
 		},
 		priority: 0,
@@ -20098,8 +20100,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, defrost: 1},
 		onEffectiveness(typeMod, target, type) {
-      if (type === 'Fairy') return 2; // stupid
-      /*
+			if (type === 'Fairy') return 2; // stupid
+			/*
 			if (type === 'Fairy') {
         return 1; // not quite what it does ingame but its bugged ingame and this is what everone *thinks* it does so...
       } else if (target.hasType('Fairy')) {
@@ -20210,12 +20212,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 					}
 					return;
 				}
-        if (!target.isGrounded()) {
-          const baseMove = this.dex.moves.get(effect.id);
-          if (baseMove.priority > 0) {
-            this.hint("Unlike Psychic Terrain, Sticky Terrain protects non-grounded targets.")
-          }
-        }
+				if (!target.isGrounded()) {
+					const baseMove = this.dex.moves.get(effect.id);
+					if (baseMove.priority > 0) {
+						this.hint("Unlike Psychic Terrain, Sticky Terrain protects non-grounded targets.");
+					}
+				}
 				this.add('-activate', target, 'move: Sticky Terrain');
 				return null;
 			},

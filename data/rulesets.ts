@@ -378,10 +378,11 @@ export const Rulesets: {[k: string]: FormatData} = {
 		desc: "Only allows Pok&eacute;mon native to the Tandor region (Uranium)",
 		onValidateSet(set, format) {
 			const tandorDex = [
-        "Orchynx", "Metalynx", "Raptorch", "Archilles", "Eletux", "Electruxo", "Chyinmunk", "Kinetmunk", "Birbie", "Aveden", "Splendifowl", "Cubbug", "Cubblfly", "Nimflora", "Barewl", "Dearewl", "Gararewl", "Grozard", "Terlard", "Tonemy", "Tofurang", "Dunsparce", "Dunseraph", "Fortog", "Folerog", "Blubelrog", "Magikarp", "Gyarados", "Feleng", "Felunge", "Feliger", "Mankey", "Primeape", "Empirilla", "Owten", "Eshouten", "Lotad", "Lombre", "Ludicolo", "Smore", "Firoke", "Brailip", "Brainoar", "Ekans", "Arbok", "Tancoon", "Tanscure", "Sponee", "Sponaree", "Pahar", "Palij", "Pajay", "Jerbolta", "Comite", "Cometeor", "Astronite", "Mareep", "Flaaffy", "Ampharos", "Baashaun", "Baaschaf", "Baariette", "Tricwe", "Harylect", "Costraw", "Trawpint", "Lunapup", "Herolune", "Minyan", "Vilucard", "Buizel", "Floatzel", "Modrille", "Drilgann", "Gligar", "Gliscor", "Sableye", "Cocaran", "Cararalm", "Cocancer", "Corsola", "Corsoreef", "Tubjaw", "Tubareel", "Cassnail", "Sableau", "Escartress", "Nupin", "Gellin", "Cottonee", "Whimsicott", "Misdreavus", "Mismagius", "Barand", "Glaslug", "Glavinug", "S51", "S51-A", "Paraudio", "Paraboom", "Flager", "Inflagetah", "Chimical", "Chimaconda", "Tikiki", "Frikitiki", "Unymph", "Harptera", "Chicoatl", "Quetzoral", "Coatlith", "Tracton", "Snopach", "Dermafrost", "Slothohm", "Theriamp", "Titanice", "Frynai", "Saidine", "Daikatuna", "Selkid", "Syrentide", "Spritzee", "Aromatisse", "Miasmedic", "Jackdeary", "Winotinger", "Duplicat", "Eevee", "Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon", "Leafeon", "Glaceon", "Sylveon", "Nucleon", "Ratsy", "Raffiti", "Gargryph", "Masking", "Dramsama", "Antarki", "Chupacho", "Luchabra", "Linkite", "Chainite", "Pufluff", "Alpico", "Anderind", "Colarva", "Frosulo", "Frosthra", "Fafurr", "Fafninter", "Shrimputy", "Krilvolver", "Lavent", "Swabone", "Skelerogue", "Navighast", "Stenowatt", "Jungore", "Majungold", "Hagoop", "Haagross", "Xenomite", "Xenogen", "Xenoqueen", "Hazma", "Geigeroach", "Minicorn", "Kiricorn", "Oblivicorn", "Luxi", "Luxor", "Luxelong", "Praseopunk", "Neopunk", "Sheebit", "Terrabbit", "Laissure", "Volchik", "Voltasu", "Yatagaryu", "Devimp", "Fallengel", "Beliaddon", "Seikamater", "Garlikid", "Baitatao", "Leviathao", "Krakanao", "Lanthan", "Actan", "Urayne", "Aotius", "Mutios", "Zephy"
+				"Orchynx", "Metalynx", "Raptorch", "Archilles", "Eletux", "Electruxo", "Chyinmunk", "Kinetmunk", "Birbie", "Aveden", "Splendifowl", "Cubbug", "Cubblfly", "Nimflora", "Barewl", "Dearewl", "Gararewl", "Grozard", "Terlard", "Tonemy", "Tofurang", "Dunsparce", "Dunseraph", "Fortog", "Folerog", "Blubelrog", "Magikarp", "Gyarados", "Feleng", "Felunge", "Feliger", "Mankey", "Primeape", "Empirilla", "Owten", "Eshouten", "Lotad", "Lombre", "Ludicolo", "Smore", "Firoke", "Brailip", "Brainoar", "Ekans", "Arbok", "Tancoon", "Tanscure", "Sponee", "Sponaree", "Pahar", "Palij", "Pajay", "Jerbolta", "Comite", "Cometeor", "Astronite", "Mareep", "Flaaffy", "Ampharos", "Baashaun", "Baaschaf", "Baariette", "Tricwe", "Harylect", "Costraw", "Trawpint", "Lunapup", "Herolune", "Minyan", "Vilucard", "Buizel", "Floatzel", "Modrille", "Drilgann", "Gligar", "Gliscor", "Sableye", "Cocaran", "Cararalm", "Cocancer", "Corsola", "Corsoreef", "Tubjaw", "Tubareel", "Cassnail", "Sableau", "Escartress", "Nupin", "Gellin", "Cottonee", "Whimsicott", "Misdreavus", "Mismagius", "Barand", "Glaslug", "Glavinug", "S51", "S51-A", "Paraudio", "Paraboom", "Flager", "Inflagetah", "Chimical", "Chimaconda", "Tikiki", "Frikitiki", "Unymph", "Harptera", "Chicoatl", "Quetzoral", "Coatlith", "Tracton", "Snopach", "Dermafrost", "Slothohm", "Theriamp", "Titanice", "Frynai", "Saidine", "Daikatuna", "Selkid", "Syrentide", "Spritzee", "Aromatisse", "Miasmedic", "Jackdeary", "Winotinger", "Duplicat", "Eevee", "Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon", "Leafeon", "Glaceon", "Sylveon", "Nucleon", "Ratsy", "Raffiti", "Gargryph", "Masking", "Dramsama", "Antarki", "Chupacho", "Luchabra", "Linkite", "Chainite", "Pufluff", "Alpico", "Anderind", "Colarva", "Frosulo", "Frosthra", "Fafurr", "Fafninter", "Shrimputy", "Krilvolver", "Lavent", "Swabone", "Skelerogue", "Navighast", "Stenowatt", "Jungore", "Majungold", "Hagoop", "Haagross", "Xenomite", "Xenogen", "Xenoqueen", "Hazma", "Geigeroach", "Minicorn", "Kiricorn", "Oblivicorn", "Luxi", "Luxor", "Luxelong", "Praseopunk", "Neopunk", "Sheebit", "Terrabbit", "Laissure", "Volchik", "Voltasu", "Yatagaryu", "Devimp", "Fallengel", "Beliaddon", "Seikamater", "Garlikid", "Baitatao", "Leviathao", "Krakanao", "Lanthan", "Actan", "Urayne", "Aotius", "Mutios", "Zephy",
 			];
 			const species = this.dex.species.get(set.species || set.name);
-    if ((!(tandorDex.includes(species.baseSpecies) || ["-Nuclear", "-Mystery"].includes(species.baseSpecies.slice(-8))) || species.gen > 6) && !this.ruleTable.has('+' + species.id)) {
+			if ((!(tandorDex.includes(species.baseSpecies) || ["-Nuclear", "-Mystery"].includes(species.baseSpecies.slice(-8))) ||
+				  species.gen > 6) && !this.ruleTable.has('+' + species.id)) {
 				return [`${species.name} is not in the Tandor Pokédex.`];
 			}
 		},
@@ -525,7 +526,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 				const species = this.dex.species.get(set.species);
 				if (speciesTable.has(species.num)) {
 					return [`You are limited to one of each Pokémon by Species Clause.`,
-            `(You have more than one ${['-Nuclear', '-Mystery'].includes(species.baseSpecies.slice(-8)) ? species.baseSpecies.slice(0, -8) : species.baseSpecies})`];
+						`(You have more than one ${['-Nuclear', '-Mystery'].includes(species.baseSpecies.slice(-8)) ? species.baseSpecies.slice(0, -8) : species.baseSpecies})`];
 				}
 				speciesTable.add(species.num);
 			}
@@ -1837,7 +1838,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 			}
 		},
 	},
-	
+
 	// ucc clauses
 	nuclearclausemod: {
 		effectType: 'Rule',
@@ -1847,14 +1848,16 @@ export const Rulesets: {[k: string]: FormatData} = {
 			this.add('rule', "Nuclear Clause Mod: Non-Nuclear Pokémon can't use Nuclear-type moves");
 		},
 		onTryMove(attacker, defender, move) {
-			if ((move.id === 'fallout') && !(attacker.hasType('Nuclear') || this.dex.species.get(attacker.species).types.includes('Nuclear'))) {
+			if ((move.id === 'fallout') && !(attacker.hasType('Nuclear') ||
+				this.dex.species.get(attacker.species).types.includes('Nuclear'))) {
 				this.add('-message', 'Nuclear Clause Mod activated.');
 				this.hint('No fun allowed.');
 				return null;
 			}
 		},
 		onTryHit(target, source, move) {
-			if ((move.type === 'Nuclear') && !(source.hasType('Nuclear') || this.dex.species.get(source.species).types.includes('Nuclear'))) {
+			if ((move.type === 'Nuclear') && !(source.hasType('Nuclear') ||
+				this.dex.species.get(source.species).types.includes('Nuclear'))) {
 				this.add('-message', 'Nuclear Clause Mod activated.');
 				return null;
 			}
@@ -1865,7 +1868,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 		name: 'Soft Baton Pass Clause Mod',
 		desc: 'Prevents Baton Pass from passing positive stat boosts.',
 		onBegin() {
-			this.add('rule', "Soft Baton Pass Mod: Baton Pass doesn't pass positive stat boosts")
+			this.add('rule', "Soft Baton Pass Mod: Baton Pass doesn't pass positive stat boosts");
 		},
 		onTryHit(target, source, move) {
 			if (move.id !== 'batonpass') return;
@@ -1875,6 +1878,6 @@ export const Rulesets: {[k: string]: FormatData} = {
 					return null;
 				}
 			}
-		}
-	}
+		},
+	},
 };

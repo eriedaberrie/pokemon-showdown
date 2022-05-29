@@ -6852,13 +6852,13 @@ export const MovesText: {[k: string]: MoveText} = {
 			shortDesc: "Nearly always goes first. Always crits.",
 		},
 	},
-  
-  // uranium
-  coralbreak: {
-    name: "Coral Break",
-    desc: "Deals damage to the target based on its Defense instead of Special Defense.",
-    shortDesc: "Damages target based on Defense, not Sp. Def."
-  },
+
+	// uranium
+	coralbreak: {
+		name: "Coral Break",
+		desc: "Deals damage to the target based on its Defense instead of Special Defense.",
+		shortDesc: "Damages target based on Defense, not Sp. Def.",
+	},
 	atomicpunch: {
 		name: "Atomic Punch",
 		desc: "Has a 15% chance to paralyze the target.",
@@ -6876,7 +6876,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	nuclearwaste: {
 		name: "Nuclear Waste",
-    shortDesc: "Badly poisons the target.",
+		shortDesc: "Badly poisons the target.",
 	},
 	gammaray: {
 		name: "Gamma Ray",
@@ -6889,12 +6889,12 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	skyfall: {
 		name: "Sky Fall",
-    desc: "Has a 30% chance to paralyze the target.",
-    shortDesc: "30% chance to paralyze the target.",
+		desc: "Has a 30% chance to paralyze the target.",
+		shortDesc: "30% chance to paralyze the target.",
 	},
 	flameimpact: {
 		name: "Flame Impact",
-    desc: "Thaws user.",
+		desc: "Thaws user.",
 		shortDesc: "Nearly always goes first. Thaws user.",
 	},
 	subduction: {
@@ -6951,7 +6951,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Expunge",
 		desc: "This move's type effectiveness against Nuclear is changed to be super effective no matter what this move's type is. If the weather is Toxic Fallout, this move does not check accuracy.",
 		shortDesc: "Super effective on Nuclear. Can't miss in fallout.",
-  },
+	},
 	fallout: {
 		name: "Fallout",
 		desc: "For 5 turns, the weather becomes Toxic Fallout, which reduces the weaknesses of the Nuclear type for Nuclear-type Pokemon from x2 to x1.5. At the end of every other turn except the last, all active Pokemon lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Nuclear type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively, unless they are a Steel or Nuclear type, or have the Magic Guard Ability. Fails if the current weather is Fallout.",

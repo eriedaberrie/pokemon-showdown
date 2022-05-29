@@ -611,9 +611,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (['explosion', 'mindblown', 'mistyexplosion', 'selfdestruct', 'fissionburst'].includes(effect.id)) {
 				this.attrLastMove('[still]');
 				this.add('cant', this.effectState.target, 'ability: Damp', effect, '[of] ' + target);
-        if (target.species.id == 'magikarpnuclear') { // why tf is it target
-          this.hint('skill issue');
-        }
+				if (target.species.id === 'magikarpnuclear') { // why tf is it target
+					this.hint('skill issue');
+				}
 				return false;
 			}
 		},
@@ -4504,29 +4504,29 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -4,
 	},
-  
-  // uranium abilities start here
-  sharpcoral: {
+
+	// uranium abilities start here
+	sharpcoral: {
 		onBasePowerPriority: 5,
 		onBasePower(basePower) {
-      this.debug('Sharp Coral boost');
-      return this.chainModify(2);
+			this.debug('Sharp Coral boost');
+			return this.chainModify(2);
 		},
 		onSourceModifyDamage(damage) {
-      this.debug('Sharp Coral boost');
+			this.debug('Sharp Coral boost');
 			return this.chainModify(2);
 		},
 		isBreakable: true,
-    name: "Sharp Coral",
-    rating: 1,
-    num: -101,
-  },
+		name: "Sharp Coral",
+		rating: 1,
+		num: -101,
+	},
 	lazy: {
 		onStart(pokemon) {
-      if (!pokemon.status && pokemon.setStatus('slp', pokemon)) {
-        pokemon.statusState.time = 3;
+			if (!pokemon.status && pokemon.setStatus('slp', pokemon)) {
+				pokemon.statusState.time = 3;
 			  pokemon.statusState.startTime = 3;
-      }
+			}
 		},
 		name: "Lazy",
 		rating: -1,
@@ -4536,22 +4536,22 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onStart(pokemon) {
 			pokemon.addVolatile('rebuild');
 		},
-    condition: {
+		condition: {
 			onHit(pokemon, source, move) {
 				if (move.category !== 'Status') {
 					pokemon.volatiles['rebuild'].lostFocus = true;
-          this.debug('Rebuild lost focus');
+					this.debug('Rebuild lost focus');
 				}
 			},
-    },
+		},
 		onResidualOrder: 5,
 		onResidualSubOrder: 5,
 		onResidual(pokemon) {
-      if (pokemon.volatiles['rebuild'] && !pokemon.volatiles['rebuild'].lostFocus) {
-        this.heal(pokemon.baseMaxhp / 8);
-      }
-      pokemon.volatiles['rebuild'].lostFocus = false;
-    },
+			if (pokemon.volatiles['rebuild'] && !pokemon.volatiles['rebuild'].lostFocus) {
+				this.heal(pokemon.baseMaxhp / 8);
+			}
+			pokemon.volatiles['rebuild'].lostFocus = false;
+		},
 		name: "Rebuild",
 		rating: 3,
 		num: -103,
@@ -4636,9 +4636,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	bloodlust: {
 		onAfterMoveSecondarySelf(source, target, move) {
-      if (move.totalDamage) {
-        this.heal(move.totalDamage / 8, source);
-      }
+			if (move.totalDamage) {
+				this.heal(move.totalDamage / 8, source);
+			}
 		},
 		name: "Blood Lust",
 		rating: 3.5,
@@ -4734,11 +4734,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onStart(pokemon) {
 			for (const target of this.getAllActive()) {
 				if (target !== pokemon && target.hasType('Nuclear')) {
-          this.boost({atk: 1, spa: 1});
-          break;
-        }
+					this.boost({atk: 1, spa: 1});
+					break;
+				}
 			}
-    },
+		},
 		name: "Geiger Sense",
 		rating: 1,
 		num: -117,

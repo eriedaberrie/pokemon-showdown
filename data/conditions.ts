@@ -747,7 +747,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		},
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			// if (defender.hasItem('utilityumbrella')) return;
-      
+
 			if (this.dex.getEffectiveness(move, defender) > 0 && defender.hasType('Nuclear')) {
 				this.debug('fallout SE on nuclear nerf');
 				return this.chainModify(0.75);

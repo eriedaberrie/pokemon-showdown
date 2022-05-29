@@ -30,7 +30,7 @@ export const Formats: FormatList = [
 		name: '[Gen 6] Uranium LC',
 		mod: 'gen6uranium',
 		ruleset: ['Little Cup', 'Standard', 'Nuclear Clause Mod', 'Soft Baton Pass Clause Mod', 'Uranium Pokedex'],
-		banlist: ['Dragon Rage', 'Sonic Boom', 'Belly Drum', 'Gligar']
+		banlist: ['Dragon Rage', 'Sonic Boom', 'Belly Drum', 'Gligar'],
 	},
 	{
 		name: '[Gen 6] Ubers',
@@ -82,7 +82,7 @@ export const Formats: FormatList = [
 			for (const set of team) {
 				const item = this.dex.items.get(set.item);
 				if (!item.exists) continue;
-						const itemid = (item.id.startsWith('nuclear') ? item.id.slice(0, 7) : item.id) as ID
+				const itemid = (item.id.startsWith('nuclear') ? item.id.slice(0, 7) : item.id) as ID;
 				if (itemTable.has(itemid) && (item.megaStone || item.onPrimal)) {
 					return [
 						`You are limited to one of each Mega Stone and Primal Orb.`,
@@ -157,7 +157,7 @@ export const Formats: FormatList = [
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
 	},
-	
+
 	{
 		section: 'Cursed',
 		column: 2,

@@ -420,11 +420,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["scratch", "growl", "ember"], pokeball: "pokeball"},
-			{generation: 4, level: 40, gender: "M", nature: "Mild", moves: [return, "hiddenpower", "quickattack", "howl"], pokeball: "cherishball"},
-			{generation: 4, level: 40, gender: "M", nature: "Naive", moves: [return, "hiddenpower", "quickattack", "howl"], pokeball: "cherishball"},
-			{generation: 4, level: 40, gender: "M", nature: "Naughty", moves: [return, "hiddenpower", "quickattack", "howl"], pokeball: "cherishball"},
+			{generation: 4, level: 40, gender: "M", nature: "Mild", moves: ["return", "hiddenpower", "quickattack", "howl"], pokeball: "cherishball"},
+			{generation: 4, level: 40, gender: "M", nature: "Naive", moves: ["return", "hiddenpower", "quickattack", "howl"], pokeball: "cherishball"},
+			{generation: 4, level: 40, gender: "M", nature: "Naughty", moves: ["return", "hiddenpower", "quickattack", "howl"], pokeball: "cherishball"},
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["scratch", "growl", "ember", "smokescreen"]},
-			{generation: 4, level: 40, gender: "M", nature: "Hardy", moves: [return, "hiddenpower", "quickattack", "howl"], pokeball: "cherishball"},
+			{generation: 4, level: 40, gender: "M", nature: "Hardy", moves: ["return", "hiddenpower", "quickattack", "howl"], pokeball: "cherishball"},
 			{generation: 5, level: 1, shiny: 1, ivs: {spe: 31}, moves: ["falseswipe", "block", "blastburn", "acrobatics"], pokeball: "pokeball"},
 			{generation: 6, level: 5, moves: ["growl", "ember", "smokescreen", "dragonrage"], pokeball: "cherishball"},
 			{generation: 6, level: 5, isHidden: true, moves: ["scratch", "growl", "celebrate"], pokeball: "cherishball"},
@@ -2483,7 +2483,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 3, level: 5, shiny: 1, moves: ["thundershock", "charm", "wish"], pokeball: "pokeball"},
 			{generation: 3, level: 5, shiny: 1, moves: ["thundershock", "charm", "teeterdance"], pokeball: "pokeball"},
 			{generation: 3, level: 5, shiny: 1, moves: ["thundershock", "charm", "followme"], pokeball: "pokeball"},
-			{generation: 4, level: 1, moves: ["volttackle", "thunderbolt", "grassknot", return], pokeball: "pokeball"},
+			{generation: 4, level: 1, moves: ["volttackle", "thunderbolt", "grassknot", "return"], pokeball: "pokeball"},
 			{generation: 4, level: 30, shiny: true, gender: "M", nature: "Jolly", moves: ["charge", "volttackle", "endeavor", "endure"], pokeball: "cherishball"},
 		],
 	},
@@ -2697,9 +2697,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 6, level: 10, perfectIVs: 2, isHidden: true, moves: ["fakeout", "encore", "volttackle", "endeavor"], pokeball: "cherishball"},
 			{generation: 6, level: 99, moves: ["happyhour", "playnice", "holdhands", "flash"], pokeball: "cherishball"},
 			{generation: 6, level: 10, moves: ["fly", "surf", "agility", "celebrate"], pokeball: "cherishball"},
-			{generation: 6, level: 10, moves: ["bestow", "holdhands", return, "playnice"], pokeball: "healball"},
+			{generation: 6, level: 10, moves: ["bestow", "holdhands", "return", "playnice"], pokeball: "healball"},
 			{generation: 7, level: 10, nature: "Jolly", moves: ["celebrate", "growl", "playnice", "quickattack"], pokeball: "cherishball"},
-			{generation: 7, level: 10, moves: ["bestow", "holdhands", return, "playnice"], pokeball: "cherishball"},
+			{generation: 7, level: 10, moves: ["bestow", "holdhands", "return", "playnice"], pokeball: "cherishball"},
 			{generation: 7, level: 10, moves: ["holdhands", "playnice", "teeterdance", "happyhour"], pokeball: "cherishball"},
 			{generation: 7, level: 10, moves: ["growl", "quickattack", "thundershock", "happyhour"], pokeball: "cherishball"},
 			{generation: 7, level: 40, shiny: 1, perfectIVs: 3, moves: ["nuzzle", "discharge", "slam", "surf"], pokeball: "pokeball"},
@@ -15992,7 +15992,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 3, level: 5, shiny: 1, abilities: ["earlybird"], moves: ["yawn", "wish"], pokeball: "pokeball"},
 			{generation: 3, level: 10, abilities: ["earlybird"], moves: ["cometpunch", "leer", "bite"], pokeball: "pokeball"},
 			{generation: 3, level: 35, abilities: ["earlybird"], moves: ["sing", "earthquake", "tailwhip", "dizzypunch"]},
-			{generation: 6, level: 50, abilities: ["scrappy"], moves: ["fakeout", return, "earthquake", "suckerpunch"], pokeball: "cherishball"},
+			{generation: 6, level: 50, abilities: ["scrappy"], moves: ["fakeout", "return", "earthquake", "suckerpunch"], pokeball: "cherishball"},
 		],
 		encounters: [
 			{generation: 1, level: 25},
@@ -18068,7 +18068,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		},
 		eventData: [
 			{generation: 3, level: 35, abilities: ["hypercutter"], moves: ["helpinghand", "guillotine", "falseswipe", "submission"]},
-			{generation: 6, level: 50, gender: "F", nature: "Adamant", moves: ["xscissor", "earthquake", "stoneedge", return], pokeball: "cherishball"},
+			{generation: 6, level: 50, gender: "F", nature: "Adamant", moves: ["xscissor", "earthquake", "stoneedge", "return"], pokeball: "cherishball"},
 			{generation: 6, level: 50, nature: "Jolly", isHidden: true, moves: ["earthquake", "swordsdance", "feint", "quickattack"], pokeball: "cherishball"},
 		],
 		encounters: [
@@ -18658,7 +18658,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		eventData: [
 			{generation: 4, level: 10, gender: "F", nature: "Lonely", abilities: ["adaptability"], moves: ["covet", "bite", "helpinghand", "attract"], pokeball: "cherishball"},
 			{generation: 4, level: 50, shiny: true, gender: "M", nature: "Hardy", abilities: ["adaptability"], moves: ["irontail", "trumpcard", "flail", "quickattack"], pokeball: "cherishball"},
-			{generation: 5, level: 50, gender: "F", nature: "Hardy", abilities: ["adaptability"], moves: ["sing", return, "echoedvoice", "attract"], pokeball: "cherishball"},
+			{generation: 5, level: 50, gender: "F", nature: "Hardy", abilities: ["adaptability"], moves: ["sing", "return", "echoedvoice", "attract"], pokeball: "cherishball"},
 			{generation: 6, level: 10, moves: ["celebrate", "sandattack", "babydolleyes", "swift"], pokeball: "cherishball"},
 			{generation: 6, level: 15, shiny: true, isHidden: true, moves: ["swift", "quickattack", "babydolleyes", "helpinghand"], pokeball: "cherishball"},
 			{generation: 7, level: 10, nature: "Jolly", moves: ["celebrate", "sandattack", "babydolleyes"], pokeball: "cherishball"},
@@ -21697,7 +21697,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 4, level: 50, moves: ["amnesia", "metronome", "teleport", "aurasphere"], pokeball: "cherishball"},
 			{generation: 4, level: 50, moves: ["transform", "metronome", "teleport", "aurasphere"], pokeball: "cherishball"},
 			{generation: 4, level: 50, moves: ["psychic", "metronome", "teleport", "aurasphere"], pokeball: "cherishball"},
-			{generation: 4, level: 50, moves: ["synthesis", return, "hypnosis", "teleport"], pokeball: "cherishball"},
+			{generation: 4, level: 50, moves: ["synthesis", "return", "hypnosis", "teleport"], pokeball: "cherishball"},
 			{generation: 4, level: 5, moves: ["pound"], pokeball: "cherishball"},
 			{generation: 6, level: 100, moves: ["pound"], pokeball: "cherishball"},
 			{generation: 7, level: 5, perfectIVs: 5, moves: ["pound"], pokeball: "pokeball"},
@@ -27282,7 +27282,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", abilities: ["pickup"], moves: ["scratch", "leer", "lick"], pokeball: "pokeball"},
-			{generation: 3, level: 11, abilities: ["pickup"], moves: ["refresh", "metalclaw", "lick", return]},
+			{generation: 3, level: 11, abilities: ["pickup"], moves: ["refresh", "metalclaw", "lick", "return"]},
 		],
 		encounters: [
 			{generation: 2, level: 2},
@@ -33645,7 +33645,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			yawn: ["7L1", "6L1", "5L1", "4L1", "3L1"],
 		},
 		eventData: [
-			{generation: 4, level: 50, gender: "M", nature: "Adamant", moves: ["gigaimpact", return, "shadowclaw", "aerialace"], pokeball: "cherishball"},
+			{generation: 4, level: 50, gender: "M", nature: "Adamant", moves: ["gigaimpact", "return", "shadowclaw", "aerialace"], pokeball: "cherishball"},
 		],
 	},
 	nincada: {
@@ -42355,9 +42355,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 5, level: 50, moves: ["healingwish", "psychic", "swift", "meteormash"], pokeball: "cherishball"},
 			{generation: 5, level: 50, moves: ["dracometeor", "meteormash", "wish", "followme"], pokeball: "cherishball"},
 			{generation: 5, level: 50, moves: ["wish", "healingwish", "cosmicpower", "meteormash"], pokeball: "cherishball"},
-			{generation: 5, level: 50, moves: ["wish", "healingwish", "swift", return], pokeball: "cherishball"},
+			{generation: 5, level: 50, moves: ["wish", "healingwish", "swift", "return"], pokeball: "cherishball"},
 			{generation: 6, level: 10, shiny: true, moves: ["wish", "swift", "healingwish", "moonblast"], pokeball: "cherishball"},
-			{generation: 6, level: 15, shiny: true, moves: ["wish", "confusion", "helpinghand", return], pokeball: "cherishball"},
+			{generation: 6, level: 15, shiny: true, moves: ["wish", "confusion", "helpinghand", "return"], pokeball: "cherishball"},
 			{generation: 6, level: 100, moves: ["heartstamp", "playrough", "wish", "cosmicpower"], pokeball: "cherishball"},
 			{generation: 6, level: 25, shiny: true, moves: ["wish", "confusion", "swift", "happyhour"], pokeball: "cherishball"},
 			{generation: 6, level: 100, moves: ["wish", "confusion", "rest"], pokeball: "cherishball"},
@@ -43079,7 +43079,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 5, level: 15, shiny: 1, moves: ["hydropump", "featherdance", "watersport", "peck"], pokeball: "cherishball"},
 			{generation: 5, level: 15, gender: "M", moves: ["sing", "round", "featherdance", "peck"], pokeball: "cherishball"},
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["pound", "growl", "bubble", "featherdance"]},
-			{generation: 6, level: 7, moves: ["pound", "growl", return], pokeball: "cherishball"},
+			{generation: 6, level: 7, moves: ["pound", "growl", "return"], pokeball: "cherishball"},
 			{generation: 7, level: 30, gender: "M", nature: "Hardy", moves: ["hydropump", "bubblebeam", "whirlpool", "drillpeck"], pokeball: "pokeball"},
 		],
 	},
@@ -48754,7 +48754,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 5, level: 50, moves: ["seedflare", "leechseed", "synthesis", "sweetscent"], pokeball: "cherishball"},
 			{generation: 6, level: 15, moves: ["growth", "magicalleaf", "seedflare", "airslash"], pokeball: "cherishball"},
 			{generation: 6, level: 100, moves: ["seedflare", "aromatherapy", "substitute", "energyball"], pokeball: "cherishball"},
-			{generation: 7, level: 20, moves: [return, "growth", "seedflare", "celebrate"], pokeball: "cherishball"},
+			{generation: 7, level: 20, moves: ["return", "growth", "seedflare", "celebrate"], pokeball: "cherishball"},
 		],
 		eventOnly: true,
 	},
@@ -57595,7 +57595,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		},
 		eventData: [
 			{generation: 5, level: 1, shiny: 1, gender: "M", nature: "Naive", ivs: {spe: 31}, abilities: ["moldbreaker"], moves: ["scratch", "dragonrage"], pokeball: "pokeball"},
-			{generation: 5, level: 10, gender: "F", abilities: ["moldbreaker"], moves: ["dragonrage", return, "endure", "dragonclaw"], pokeball: "cherishball"},
+			{generation: 5, level: 10, gender: "F", abilities: ["moldbreaker"], moves: ["dragonrage", "return", "endure", "dragonclaw"], pokeball: "cherishball"},
 			{generation: 5, level: 30, gender: "M", nature: "Naive", abilities: ["rivalry"], moves: ["dragonrage", "scratch", "outrage", "gigaimpact"], pokeball: "cherishball"},
 		],
 	},
@@ -61602,7 +61602,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			workup: ["7M"],
 		},
 		eventData: [
-			{generation: 6, level: 7, moves: ["pound", "growl", "bubble", return], pokeball: "cherishball"},
+			{generation: 6, level: 7, moves: ["pound", "growl", "bubble", "return"], pokeball: "cherishball"},
 		],
 	},
 	frogadier: {
@@ -66483,8 +66483,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			wonderroom: ["8M", "7T", "6T"],
 		},
 		eventData: [
-			{generation: 6, level: 50, moves: ["diamondstorm", "reflect", return, "moonblast"], pokeball: "cherishball"},
-			{generation: 6, level: 50, shiny: true, moves: ["diamondstorm", "moonblast", "reflect", return], pokeball: "cherishball"},
+			{generation: 6, level: 50, moves: ["diamondstorm", "reflect", "return", "moonblast"], pokeball: "cherishball"},
+			{generation: 6, level: 50, shiny: true, moves: ["diamondstorm", "moonblast", "reflect", "return"], pokeball: "cherishball"},
 		],
 		eventOnly: true,
 	},
@@ -85207,7 +85207,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			present: ["6S0"],
 		},
 		eventData: [
-			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["cutecharm"], moves: ["bestow", "wrap", "present", return], pokeball: "cherishball"},
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["cutecharm"], moves: ["bestow", "wrap", "present", "return"], pokeball: "cherishball"},
 		],
 	},
 	felunge: {
@@ -96140,7 +96140,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		},
 		eventData: [
 			// {generation: 6, level: 45, moves: ["aquatail", "bounce", "bubblebeam", "bugbite", "bugbuzz", "covet", "crunch", "discharge", "ember", "firefang", "flash", "foulplay", "gastroacid", "icefang", "icywind", "incinerate", "ironhead", "knockoff", "ominouswind", "painsplit", "poisonsting", "scaryface", "shadowball", "signalbeam", "snatch", "spiderweb", "stickyweb", "stringshot", "strugglebug", "swordsdance", "tailglow", "taunt", "thief", "thunderfang", "thundershock", "torment", "twineedle", "watergun", "wildcharge", "willowisp"]},
-			
+
 			// smore
 			{generation: 6, level: 45, shiny: 1, moves: ["bugbite", "covet", "ember", "firefang", "foulplay", "gastroacid", "incinerate", "knockoff", "ominouswind", "poisonsting", "scaryface", "shadowball", "signalbeam", "snatch", "spiderweb", "stringshot", "taunt", "torment", "willowisp"]},
 			// sponee
@@ -96568,7 +96568,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			uproar: ["6T"],
 			nuclearslash: ["6L1"],
 			inferno: ["6L1"],
-		}
+		},
 	},
 	urayne: {
 		learnset: {

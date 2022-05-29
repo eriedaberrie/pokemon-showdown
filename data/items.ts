@@ -7143,8 +7143,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 8,
 		isNonstandard: "CAP",
 	},
-  
-  // uranium items start here
+
+	// uranium items start here
 	hafliberry: {
 		name: "Hafli Berry",
 		spritenum: 768,

@@ -515,7 +515,7 @@ function runDexsearch(target: string, cmd: string, canAll: boolean, message: str
 		doublesbl: 'DBL', dbl: 'DBL',
 		doublesuu: 'DUU', duu: 'DUU',
 		doublesnu: '(DUU)', dnu: '(DUU)',
-		uranium: 'Uranium'
+		uranium: 'Uranium',
 	});
 	const allTypes = Object.create(null);
 	for (const type of mod.types.all()) {

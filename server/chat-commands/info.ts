@@ -1150,6 +1150,7 @@ export const commands: Chat.ChatCommands = {
 			let buffer = '<div class="scrollable"><table cellpadding="1" width="100%"><tr><th></th>';
 			const icon: {[k: string]: string} = {};
 			for (const type of dex.types.names()) {
+				// eslint-disable-next-line max-len
 				icon[type] = `<img src="https://raw.githubusercontent.com/eriedaberrie/showdown-sprites/main/play.pokemonshowdown.com/sprites/types/${type}.png" width="32" height="14">`;
 				// row of icons at top
 				buffer += `<th>${icon[type]}</th>`;
@@ -1752,7 +1753,7 @@ export const commands: Chat.ChatCommands = {
 				`- <a href="https://cantsay.github.io/">Battle Spot Damage Calculator</a>`
 			);
 		}
-    /*
+		/*
 		this.sendReplyBox(
 			`Pok&eacute;mon Showdown! damage calculator. (Courtesy of Honko, Austin, &amp; Kris)<br />` +
 			`- <a href="https://calc.pokemonshowdown.com/index.html">Damage Calculator</a>`

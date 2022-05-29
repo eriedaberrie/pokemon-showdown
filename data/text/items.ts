@@ -2344,12 +2344,12 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Vile Vial",
 		desc: "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.",
 	},
-  
-  // uranium items start here
-  hafliberry: {
-    name: "Hafli Berry",
-    desc: "Halves damage taken from a supereffective Nuclear-type attack. Single use.",
-  },
+
+	// uranium items start here
+	hafliberry: {
+		name: "Hafli Berry",
+		desc: "Halves damage taken from a supereffective Nuclear-type attack. Single use.",
+	},
 	coconutmilk: {
 		name: "Coconut Milk",
 		desc: "Evolves Cararalm into Cocancer when used.",
