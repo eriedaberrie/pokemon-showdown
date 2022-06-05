@@ -1686,7 +1686,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	gligarnuclear: {
-		tier: "(Alpha)",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	gliscor: {
@@ -6741,7 +6741,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	tanscurenuclear: {
 		randomBattleMoves: ["nuclearslash", "suddenstrike", "knockoff", "firefang", "uturn"],
-		tier: "Gamma",
+		tier: "Uber",
 		doublesTier: "Uranium",
 	},
 	sponee: {
@@ -6766,7 +6766,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	palijnuclear: {
-		tier: "Alpha",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	pajay: {
@@ -7336,7 +7336,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	haagrossnuclear: {
 		randomBattleMoves: ["radioacid", "voltswitch", "hiddenpowerfire", "hiddenpowerfighting", "stickyweb", "thunderbolt"],
-		tier: "Alpha",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	xenomite: {
