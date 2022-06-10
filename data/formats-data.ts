@@ -1682,7 +1682,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	gligar: {
-		tier: "(Alpha)",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	gligarnuclear: {

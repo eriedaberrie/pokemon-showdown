@@ -1203,7 +1203,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	gligar: {
 		randomBattleMoves: ["defog", "earthquake", "knockoff", "roost", "stealthrock", "toxic", "uturn"],
-		tier: "(Alpha)",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	gliscor: {
