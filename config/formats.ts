@@ -151,7 +151,6 @@ export const Formats: FormatList = [
 		mod: 'gen6',
 		gameType: 'doubles',
 		ruleset: ['Standard Doubles'],
-		banlist: [],
 	},
 	{
 		name: "[Gen 6] Doubles Custom Game",
@@ -168,6 +167,11 @@ export const Formats: FormatList = [
 	{
 		section: 'Cursed',
 		column: 2,
+	},
+	{
+		name: '[Gen 8] National Dex AG',
+		mod: 'gen8',
+		ruleset: ['Standard NatDex'],
 	},
 	{
 		name: '[Gen 8] National Dex',
