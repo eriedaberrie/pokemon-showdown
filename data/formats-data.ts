@@ -7427,7 +7427,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	yatagaryu: {
 		randomBattleMoves: ["thunder", "voltswitch", "dracometeor", "nastyplot", "focusblast"],
-		tier: "Uber",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	devimp: {
