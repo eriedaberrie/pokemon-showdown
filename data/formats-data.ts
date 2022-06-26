@@ -6575,7 +6575,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	electruxomega: {
 		randomBattleMoves: ["thunder", "hydropump", "scald", "icebeam"],
-		tier: "Beta",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	chyinmunk: {
