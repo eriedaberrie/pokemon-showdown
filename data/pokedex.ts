@@ -19527,7 +19527,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 1.1,
 		weightkg: 28.8,
 		color: "White",
-		prevo: "Corlava",
+		prevo: "Colarva",
 		evoLevel: 41,
 		evos: ["Frosthra"],
 		eggGroups: ["Bug"],
