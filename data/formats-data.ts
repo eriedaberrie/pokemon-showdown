@@ -7133,7 +7133,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	daikatuna: {
-		randomBattleMoves: ["swordsdance", "waterfall", "ironhead", "rockpolish", "aquajet", "earthquake"],
+		randomBattleMoves: ["swordsdance", "waterfall", "ironhead", "aquajet", "earthquake"],
 		tier: "Beta",
 		doublesTier: "Uranium",
 	},
