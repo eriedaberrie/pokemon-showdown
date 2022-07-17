@@ -1761,7 +1761,7 @@ export const commands: Chat.ChatCommands = {
     */
 		this.sendReplyBox(
 			`Pok&eacute;mon Showdown! damage calculator for Uranium. (Courtesy of Honko, Austin, &amp; Kris, edited by eriedaberrie)<br />` +
-			`- <a href="https://eriedaberrie.github.io/damage-calc/dist/">Damage Calculator</a>`
+			`- <a href="https://eriedaberrie.github.io/damage-calc/">Damage Calculator</a>`
 		);
 	},
 	calchelp: [
