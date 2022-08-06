@@ -90836,7 +90836,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			naturalgift: ["6M"],
 			overheat: ["6M"],
 			payback: ["6M"],
-			petaldance: ["6E"],
+			petaldance: ["6E", "6S0"],
 			powerwhip: ["6L55"],
 			protect: ["6M"],
 			quickattack: ["6L9"],
@@ -90867,7 +90867,13 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			uturn: ["6M", "6E"],
 			willowisp: ["6M"],
 			worryseed: ["6T"],
+			teeterdance: ["6S0"],
+			switcheroo: ["6S0"],
+			fierydance: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["teeterdance", "switcheroo", "fierydance", "petaldance"], pokeball: "cherishball"},
+		],
 	},
 	frikitiki: {
 		learnset: {
