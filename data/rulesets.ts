@@ -1866,17 +1866,27 @@ export const Rulesets: {[k: string]: FormatData} = {
 	softbatonpassclausemod: {
 		effectType: 'Rule',
 		name: 'Soft Baton Pass Clause Mod',
-		desc: 'Prevents Baton Pass from passing positive stat boosts.',
+		desc: 'Prevents Baton Pass from passing positive stat boosts or Substitute.',
 		onBegin() {
-			this.add('rule', "Soft Baton Pass Mod: Baton Pass doesn't pass positive stat boosts");
+			this.add('rule', "Soft Baton Pass Mod: Baton Pass doesn't pass positive stat boosts or Substitute");
 		},
 		onTryHit(target, source, move) {
 			if (move.id !== 'batonpass') return;
-			for (const boost in target.boosts) {
-				if (target.boosts[boost as BoostID] > 0) {
-					this.add('-message', 'Soft Baton Pass Clause Mod activated.');
-					return null;
+
+			let activated = false;
+			if (target.volatiles['substitute']) {
+				activated = true;
+			} else {
+				for (const boost in target.boosts) {
+					if (target.boosts[boost as BoostID] > 0) {
+						activated = true;
+						break;
+					}
 				}
+			}
+			if (activated) {
+				this.add('-message', 'Soft Baton Pass Clause Mod activated.');
+				return null;
 			}
 		},
 	},

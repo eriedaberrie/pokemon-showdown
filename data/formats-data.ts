@@ -1169,7 +1169,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	gyaradosnuclearmega: {
 		randomBattleMoves: ["radioacid", "earthquake", "fireblast", "protect"],
-		tier: "Uber",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	lapras: {
@@ -6556,7 +6556,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	archilles: {
 		randomBattleMoves: ["earthquake", "flareblitz", "stealthrock", "flameimpact", "stoneedge", "swordsdance", "bellydrum", "substitute"],
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	archillesmega: {
