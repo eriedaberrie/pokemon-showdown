@@ -830,7 +830,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	espeon: {
 		randomBattleMoves: ["calmmind", "dazzlinggleam", "morningsun", "psychic", "psyshock", "shadowball", "substitute"],
 		randomDoubleBattleMoves: ["dazzlinggleam", "helpinghand", "hiddenpowerfighting", "protect", "psychic", "psyshock", "shadowball", "substitute", "wish"],
-		tier: "Beta",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	umbreon: {
@@ -1677,7 +1677,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	sableyemega: {
 		randomBattleMoves: ["calmmind", "darkpulse", "recover", "shadowball", "willowisp"],
 		randomDoubleBattleMoves: ["darkpulse", "fakeout", "knockoff", "protect", "shadowball", "willowisp"],
-		tier: "Beta",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	mawile: {
@@ -3780,7 +3780,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	sylveon: {
 		randomBattleMoves: ["calmmind", "hiddenpowerfire", "hypervoice", "protect", "psyshock", "wish"],
 		randomDoubleBattleMoves: ["calmmind", "helpinghand", "hiddenpowerground", "hypervoice", "protect", "psyshock", "shadowball", "wish"],
-		tier: "Beta",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	hawlucha: {

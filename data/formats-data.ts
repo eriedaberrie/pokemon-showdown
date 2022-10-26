@@ -1235,7 +1235,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 82,
 		randomDoubleBattleMoves: ["calmmind", "dazzlinggleam", "morningsun", "protect", "psychic", "shadowball"],
 		randomDoubleBattleLevel: 84,
-		tier: "Beta",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	umbreon: {
@@ -1267,7 +1267,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["calmmind", "hypervoice", "mysticalfire", "protect", "psyshock"],
 		randomDoubleBattleLevel: 80,
-		tier: "Beta",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	porygon: {
@@ -2223,7 +2223,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	sableyemega: {
-		tier: "Beta",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	mawile: {
@@ -6781,7 +6781,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	jerbolta: {
 		randomBattleMoves: ["naturalgift", "stealthrock", "rapidspin", "earthpower", "thunderbolt", "voltswitch", "hiddenpowerice"],
-		tier: "Beta",
+		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
 	jerboltanuclear: {
@@ -7401,7 +7401,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	neopunk: {
 		randomBattleMoves: ["getlucky", "voltswitch", "instantcrush", "thunderbolt", "energyball", "hiddenpowerice"],
-		tier: "Beta",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	sheebit: {
