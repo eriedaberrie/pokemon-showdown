@@ -2079,6 +2079,8 @@ export class TeamValidator {
 							moveSources.add('1ET' + learned.slice(2));
 						}
 						moveSources.add(learned, limitedEggMove);
+						// Uranium mons can infinitely relearn egg moves
+						if (learnedGen === 6) limit1 = false;
 					} else if (learned.charAt(1) === 'S') {
 						// event moves:
 						//   only if that was the source
