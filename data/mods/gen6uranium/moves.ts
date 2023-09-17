@@ -63,10 +63,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		noSketch: true,
 	},
-	vcreate: {
-		inherit: true,
-		noSketch: true,
-	},
 	blueflare: {
 		inherit: true,
 		noSketch: true,
@@ -75,15 +71,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		noSketch: true,
 	},
-	sacredfire: {
-		inherit: true,
-		noSketch: true,
-	},
 	searingshot: {
-		inherit: true,
-		noSketch: true,
-	},
-	fierydance: {
 		inherit: true,
 		noSketch: true,
 	},
@@ -128,10 +116,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		noSketch: true,
 	},
 	grasspledge: {
-		inherit: true,
-		noSketch: true,
-	},
-	spore: {
 		inherit: true,
 		noSketch: true,
 	},
@@ -236,10 +220,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		noSketch: true,
 	},
 	psychoboost: {
-		inherit: true,
-		noSketch: true,
-	},
-	psystrike: {
 		inherit: true,
 		noSketch: true,
 	},
@@ -416,10 +396,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		noSketch: true,
 	},
 	craftyshield: {
-		inherit: true,
-		noSketch: true,
-	},
-	gemstoneglimmer: {
 		inherit: true,
 		noSketch: true,
 	},
