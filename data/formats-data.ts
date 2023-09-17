@@ -7097,7 +7097,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	tracton: {
-		randomBattleMoves: ["swordsdance", "ironhead", "outrage", "drillrun", "earthquake", "outrage", "icefang"],
+		randomBattleMoves: ["swordsdance", "ironhead", "outrage", "drillrun", "outrage", "icefang"],
 		tier: "Beta",
 		doublesTier: "Uranium",
 	},
@@ -7317,7 +7317,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	majungold: {
-		randomBattleMoves: ["stoneedge", "drainpunch", "superpower", "icepunch", "stealthrock", "knockoff", "bulkup"],
+		randomBattleMoves: ["stoneedge", "drainpunch", "superpower", "icepunch", "knockoff", "bulkup"],
 		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
@@ -7471,7 +7471,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "Uranium",
 	},
 	actan: {
-		randomBattleMoves: ["stealthrock", "swordsdance", "metalcruncher", "knockoff", "suddenstrike", "earthquake"],
+		randomBattleMoves: ["stealthrock", "metalcruncher", "taunt", "knockoff", "suddenstrike", "earthquake"],
 		tier: "Gamma",
 		doublesTier: "Uranium",
 	},
