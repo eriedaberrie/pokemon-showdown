@@ -399,6 +399,46 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		noSketch: true,
 	},
+	celebrate: {
+		inherit: true,
+		noSketch: true,
+	},
+	dragonascent: {
+		inherit: true,
+		noSketch: true,
+	},
+	happyhour: {
+		inherit: true,
+		noSketch: true,
+	},
+	holdback: {
+		inherit: true,
+		noSketch: true,
+	},
+	holdhands: {
+		inherit: true,
+		noSketch: true,
+	},
+	hyperspacefury: {
+		inherit: true,
+		noSketch: true,
+	},
+	hyperspacehole: {
+		inherit: true,
+		noSketch: true,
+	},
+	originpulse: {
+		inherit: true,
+		noSketch: true,
+	},
+	precipiceblades: {
+		inherit: true,
+		noSketch: true,
+	},
+	steameruption: {
+		inherit: true,
+		noSketch: true,
+	},
 	oceanswrath: {
 		inherit: true,
 		noSketch: true,
