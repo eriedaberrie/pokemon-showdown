@@ -1449,7 +1449,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	corsola: {
 		learnset: {
-			amnesia: ["6E"],
+			amnesia: ["6E", "6S0"],
 			ancientpower: ["6L17"],
 			aquaring: ["6L38", "6E"],
 			attract: ["6M"],
@@ -1480,10 +1480,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			frustration: ["6M"],
 			hail: ["6M"],
 			harden: ["6L1"],
-			headsmash: ["6E"],
+			headsmash: ["6E", "6S0"],
 			hiddenpower: ["6M"],
 			icebeam: ["6M"],
-			iciclespear: ["6E"],
+			iciclespear: ["6E", "6S0"],
 			icywind: ["6T"],
 			ingrain: ["6E"],
 			irondefense: ["6L29", "6T"],
@@ -1529,7 +1529,11 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			toxic: ["6M"],
 			waterfall: ["6M"],
 			waterpulse: ["6M", "6E"],
+			trickroom: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["amnesia", "headsmash", "iciclespear", "trickroom"], pokeball: "cherishball"},
+		],
 	},
 	corsolanuclear: {
 		learnset: {

@@ -27785,7 +27785,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	corsola: {
 		learnset: {
-			amnesia: ["8M", "7E", "7V", "6E", "5E", "4E", "3E"],
+			amnesia: ["8M", "7E", "7V", "6E", "5E", "4E", "3E", "6S2"],
 			ancientpower: ["8L20", "7L17", "7V", "6L17", "5L32", "4T", "4L32", "3L45"],
 			aquaring: ["8L10", "7L38", "7E", "6L38", "6E", "5L37", "5E", "4L37", "4E"],
 			attract: ["8M", "7M", "7V", "6M", "5M", "4M", "3M"],
@@ -27819,11 +27819,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			hail: ["8M", "7M", "6M", "5M", "4M", "3M"],
 			harden: ["8L1", "7L1", "7V", "6L1", "5L4", "4L4", "3L6"],
 			headbutt: ["7V", "4T"],
-			headsmash: ["8E", "7E", "6E", "5E"],
+			headsmash: ["8E", "7E", "6E", "5E", "6S2"],
 			hiddenpower: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			hydropump: ["8M"],
 			icebeam: ["8M", "7M", "6M", "5M", "4M", "3M"],
-			iciclespear: ["8M", "7E", "6E", "5E", "4E", "3E"],
+			iciclespear: ["8M", "7E", "6E", "5E", "4E", "3E", "6S2"],
 			icywind: ["8M", "7T", "6T", "5T", "4T"],
 			ingrain: ["7E", "6E", "5E", "4E", "3E"],
 			irondefense: ["8M", "7T", "7L29", "6T", "6L29", "5T", "5L29"],
@@ -27881,10 +27881,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			watergun: ["8L5"],
 			waterpulse: ["8E", "7T", "7E", "6T", "6E", "5E", "4M", "3M"],
 			whirlpool: ["8M", "7V", "4M"],
+			trickroom: ["6S2"],
 		},
 		eventData: [
 			{generation: 3, level: 5, shiny: 1, moves: ["tackle", "mudsport"], pokeball: "pokeball"},
 			{generation: 7, level: 50, gender: "F", nature: "Serious", abilities: ["hustle"], moves: ["tackle", "powergem"], pokeball: "ultraball"},
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["amnesia", "headsmash", "iciclespear", "trickroom"], pokeball: "cherishball"},
 		],
 	},
 	corsolanuclear: {
@@ -86771,7 +86773,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			focusblast: ["6M"],
 			frustration: ["6M"],
 			gravity: ["6L28", "6T"],
-			guardswap: ["6E"],
+			guardswap: ["6E", "6S0"],
 			gyroball: ["6M"],
 			harden: ["6L1"],
 			hiddenpower: ["6M"],
@@ -86789,10 +86791,10 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			painsplit: ["6T", "6E"],
 			payback: ["6M"],
 			powergem: ["6L42"],
-			powerswap: ["6E"],
+			powerswap: ["6E", "6S0"],
 			protect: ["6M"],
 			psychic: ["6L42", "6M"],
-			psychocut: ["6E"],
+			psychocut: ["6E", "6S0"],
 			psychoshift: ["6L37"],
 			psychup: ["6M"],
 			psyshock: ["6L48", "6T"],
@@ -86832,7 +86834,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			wideguard: ["6L19"],
 			wonderroom: ["6T"],
 			zenheadbutt: ["6M"],
+			gemstoneglimmer: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, isHidden: true, moves: ["gemstoneglimmer", "psychocut", "powerswap", "guardswap"], pokeball: "cherishball"},
+		],
 	},
 	cometeor: {
 		learnset: {
@@ -89550,7 +89556,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			magiccoat: ["6T"],
 			megadrain: ["6L17"],
 			painsplit: ["6T"],
-			powergem: ["6E"],
+			powergem: ["6E", "6S0"],
 			protect: ["6M"],
 			psychic: ["6M"],
 			psychup: ["6M"],
@@ -89582,8 +89588,13 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			toxic: ["6M"],
 			watergun: ["6E"],
 			worryseed: ["6T"],
-			zapcannon: ["6E"],
+			zapcannon: ["6E", "6S0"],
+			voltswitch: ["6S0"],
+			spore: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, nature: "Timid", ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, isHidden: true, moves: ["zapcannon", "powergem", "voltswitch", "spore"], pokeball: "cherishball"},
+		],
 	},
 	nupinnuclear: {
 		learnset: {
@@ -91932,7 +91943,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	selkid: {
 		learnset: {
-			amnesia: ["6E"],
+			amnesia: ["6E", "6S0"],
 			aquajet: ["6E"],
 			aquaring: ["6L36"],
 			attract: ["6M"],
@@ -91944,7 +91955,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			charm: ["6L3"],
 			coralbreak: ["6M"],
 			dazzlinggleam: ["6M"],
-			disarmingvoice: ["6E"],
+			disarmingvoice: ["6E", "6S0"],
 			dive: ["6M"],
 			doubleteam: ["6M"],
 			drainingkiss: ["6L18"],
@@ -91983,7 +91994,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			waterpulse: ["6L23", "6M"],
 			watersport: ["6L7"],
 			whirlpool: ["6L32"],
+			triattack: ["6S0"],
+			futuresight: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["swiftswim"], moves: ["disarmingvoice", "amnesia", "triattack", "futuresight"], pokeball: "cherishball"},
+		],
 	},
 	syrentide: {
 		learnset: {
@@ -93756,7 +93772,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			hiddenpower: ["6M"],
 			hyperbeam: ["6M"],
 			incinerate: ["6E"],
-			inferno: ["6E"],
+			inferno: ["6E", "6S0"],
 			lavaplume: ["6L38"],
 			magmastorm: ["6L69"],
 			nastyplot: ["6T"],
@@ -93783,7 +93799,13 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			willowisp: ["6M"],
 			withdraw: ["6L1"],
 			wrap: ["6L8"],
+			yawn: ["6S0"],
+			sacredfire: ["6S0"],
+			vcreate: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["inferno", "yawn", "sacredfire", "vcreate"], pokeball: "cherishball"},
+		],
 	},
 	swabone: {
 		learnset: {
@@ -95261,7 +95283,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			uproar: ["6T"],
 			voltswitch: ["6L49"],
 			wonderroom: ["6T"],
+			followme: ["6S0"],
+			quickguard: ["6S0"],
+			earthpower: ["6S0"],
+			quiverdance: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["followme", "quickguard", "earthpower", "quiverdance"], pokeball: "cherishball"},
+		],
 	},
 	neopunk: {
 		learnset: {
@@ -95333,7 +95362,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			uproar: ["6T"],
 			voltswitch: ["6L49"],
 			wonderroom: ["6T"],
+			psystrike: ["6S0"],
+			icebeam: ["6S0"],
+			quash: ["6S0"],
+			volttackle: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["psystrike", "icebeam", "quash", "volttackle"], pokeball: "cherishball"},
+		],
 	},
 	sheebit: {
 		learnset: {
