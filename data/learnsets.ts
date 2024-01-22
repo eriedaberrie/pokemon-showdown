@@ -84716,7 +84716,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swagger: ["6M"],
 			toxic: ["6M"],
 			uproar: ["6T", "6E"],
+			extremespeed: ["6S0"],
+			playrough: ["6S0"],
+			dragondance: ["6S0"],
+			leafstorm: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["extremespeed", "playrough", "dragondance", "leafstorm"], pokeball: "cherishball"},
+		],
 	},
 	terlard: {
 		learnset: {
@@ -85953,9 +85960,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			xscissor: ["6M"],
 			yawn: ["6E"],
 			extremespeed: ["6S0"],
+			infernalblade: ["6S1"],
+			rockclimb: ["6S1"],
+			willowisp: ["6S1"],
+			zenheadbutt: ["6S1"],
 		},
 		eventData: [
 			{generation: 6, level: 5, shiny: 1, gender: "M", nature: "Jolly", ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["runaway"], moves: ["tackle", "howl", "extremespeed"], pokeball: "cherishball"},
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, ablities: ["toughclaws"], moves: ["rockclimb", "willowisp", "zenheadbutt", "infernalblade"], pokeball: "cherishball"},
 		],
 	},
 	tancoonnuclear: {
@@ -92842,7 +92854,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			uproar: ["6T"],
 			venoshock: ["6E"],
 			xscissor: ["6M"],
+			geargrind: ["6S0"],
+			woodhammer: ["6S0"],
+			crunch: ["6S0"],
+			icepunch: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["poisontouch"], moves: ["geargrind", "woodhammer", "crunch", "icepunch"], pokeball: "cherishball"},
+		],
 	},
 	chupachonuclear: {
 		learnset: {
