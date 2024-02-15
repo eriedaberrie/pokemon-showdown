@@ -1211,7 +1211,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["healbell", "icywind", "protect", "scald", "toxic", "wish"],
 		randomDoubleBattleLevel: 88,
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	jolteon: {
@@ -7116,7 +7116,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	theriamp: {
 		randomBattleMoves: ["return", "quickattack", "stoneedge", "earthquake", "uturn", "icepunch"],
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	titanice: {
@@ -7181,7 +7181,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	nucleon: {
 		randomBattleMoves: ["hypervoice", "quickattack", "hiddenpowerfire", "batonpass"],
-		tier: "Beta",
+		tier: "Uber",
 		doublesTier: "Uranium",
 	},
 	ratsy: {

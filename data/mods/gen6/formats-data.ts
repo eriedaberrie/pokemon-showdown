@@ -812,7 +812,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	vaporeon: {
 		randomBattleMoves: ["healbell", "icebeam", "protect", "roar", "scald", "wish"],
 		randomDoubleBattleMoves: ["helpinghand", "hydropump", "icebeam", "muddywater", "protect", "scald", "toxic", "wish"],
-		tier: "Gamma",
+		tier: "Beta",
 		doublesTier: "Uranium",
 	},
 	jolteon: {

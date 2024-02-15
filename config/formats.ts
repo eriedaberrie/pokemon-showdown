@@ -12,7 +12,7 @@ export const Formats: FormatList = [
 		name: '[Gen 6] Gamma',
 		mod: 'gen6uranium',
 		ruleset: ['Standard', 'Nuclear Clause Mod', 'Soft Baton Pass Clause Mod', 'Uranium Pokedex'],
-		banlist: ['Uber', 'Shadow Tag', 'Atomizate', 'Belly Drum'],
+		banlist: ['Uber', 'Shadow Tag', 'Belly Drum'],
 	},
 	{
 		name: '[Gen 6] Beta',
