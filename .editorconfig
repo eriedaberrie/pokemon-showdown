@@ -25,3 +25,7 @@ trim_trailing_whitespace = false
 indent_style = tab
 indent_size = 8
 trim_trailing_whitespace = false
+
+[*.nix]
+indent_style = space
+indent_size = 2

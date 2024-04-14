@@ -32,6 +32,7 @@ const findFilesForPath = path => {
 		// race between readdirSync and statSync. Please, at some point someone
 		// fix this function to be more robust.
 		if (cur.includes('node_modules') || cur.includes("/logs") || cur.includes("/databases")) continue;
+		if (cur.includes('.direnv')) continue;
 		if (fs.statSync(cur).isDirectory()) {
 			out.push(...findFilesForPath(cur));
 		} else if (shouldBeCompiled(cur)) {
