@@ -1158,7 +1158,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	misdreavus: {
-		tier: "ULC",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	mismagius: {
@@ -1198,7 +1198,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	dunsparce: {
 		randomBattleMoves: ["bite", "bodyslam", "coil", "glare", "headbutt", "rockslide", "roost"],
 		randomDoubleBattleMoves: ["bite", "bodyslam", "coil", "glare", "headbutt", "protect", "rockslide"],
-		tier: "ULC",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	gligar: {

@@ -1638,7 +1638,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	misdreavus: {
-		tier: "ULC",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	mismagius: {
@@ -1678,7 +1678,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 90,
 		randomDoubleBattleMoves: ["glare", "headbutt", "protect", "rockslide"],
 		randomDoubleBattleLevel: 90,
-		tier: "ULC",
+		tier: "Alpha",
 		doublesTier: "Uranium",
 	},
 	gligar: {
