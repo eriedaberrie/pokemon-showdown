@@ -31828,7 +31828,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			sunnyday: ["8M", "7M", "6M", "5M", "4M", "3M"],
 			surf: ["8M", "7M", "6M", "5M", "4M", "3M"],
 			swagger: ["7M", "6M", "5M", "4M", "3T"],
-			sweetscent: ["8E", "7E", "6E", "5E", "4E", "3E"],
+			sweetscent: ["8E", "7E", "6E", "5E", "4E", "3E", "6S1"],
 			swordsdance: ["8M", "7M", "6M", "5M", "4M", "3T"],
 			synthesis: ["8E", "7T", "7E", "6T", "6E", "5T", "5E", "4T", "4E", "3E"],
 			teeterdance: ["8E", "7E", "6E", "5E"],
@@ -31840,9 +31840,13 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			waterpulse: ["7T", "6T", "5D", "4M", "3M"],
 			whirlpool: ["8M", "4M"],
 			zenheadbutt: ["8M", "8L38", "7T", "7L33", "6T", "6L31", "5T", "5L31", "4T", "4L27"],
+			softboiled: ["6S1"],
+			sing: ["6S1"],
+			ingrain: ["6S1"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["astonish", "growl", "absorb"], pokeball: "pokeball"},
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["softboiled", "sweetscent", "sing", "ingrain"], pokeball: "cherishball"},
 		],
 		encounters: [
 			{generation: 3, level: 3},
@@ -63629,7 +63633,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			toxic: ["7M", "6M"],
 			trickroom: ["8M", "7M", "6M"],
 			wish: ["8E", "7E", "6E"],
+			eggbomb: ["6S0"],
+			shellsmash: ["6S0"],
+			featherdance: ["6S0"],
+			spikyshield: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["eggbomb", "shellsmash", "featherdance", "spikyshield"], pokeball: "cherishball"},
+		],
 	},
 	aromatisse: {
 		learnset: {
@@ -85967,7 +85978,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		},
 		eventData: [
 			{generation: 6, level: 5, shiny: 1, gender: "M", nature: "Jolly", ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["runaway"], moves: ["tackle", "howl", "extremespeed"], pokeball: "cherishball"},
-			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, ablities: ["toughclaws"], moves: ["rockclimb", "willowisp", "zenheadbutt", "infernalblade"], pokeball: "cherishball"},
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, abilities: ["toughclaws"], moves: ["rockclimb", "willowisp", "zenheadbutt", "infernalblade"], pokeball: "cherishball"},
 		],
 	},
 	tancoonnuclear: {
@@ -89155,7 +89166,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			watergun: ["6L6"],
 			waterpulse: ["6M"],
 			watersport: ["6E"],
+			sharpen: ["6S0"],
+			transform: ["6S0"],
+			leafblade: ["6S0"],
+			razorshell: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, nature: "Impish", ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, isHidden: true, moves: ["sharpen", "transform", "leafblade", "razorshell"], pokeball: "cherishball"},
+		]
 	},
 	tubjawnuclear: {
 		learnset: {
@@ -90606,7 +90624,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			uturn: ["6M"],
 			willowisp: ["6M"],
 			zenheadbutt: ["6M"],
+			shadowsneak: ["6S0"],
+			suddenstrike: ["6S0"],
+			forestscurse: ["6S0"],
+			lusterpurge: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, nature: "Adamant", ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["shadowsneak", "suddenstrike", "forestscurse", "lusterpurge"], pokeball: "cherishball"},
+		],
 	},
 	inflagetah: {
 		learnset: {
@@ -92517,7 +92542,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			thief: ["6L1"],
 			thrash: ["6E"],
 			toxic: ["6M"],
+			belch: ["6S1"],
+			searingshot: ["6S0"],
+			healorder: ["6S0"],
+			freezedry: ["6S0"],
 		},
+		eventData: [
+			{generation: 6, level: 5, shiny: 1, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31}, isHidden: true, moves: ["belch", "searingshot", "healorder", "freezedry"], pokeball: "cherishball"},
+		],
 	},
 	raffiti: {
 		learnset: {

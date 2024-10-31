@@ -71,10 +71,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		noSketch: true,
 	},
-	searingshot: {
-		inherit: true,
-		noSketch: true,
-	},
 	firepledge: {
 		inherit: true,
 		noSketch: true,
@@ -223,10 +219,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		noSketch: true,
 	},
-	lusterpurge: {
-		inherit: true,
-		noSketch: true,
-	},
 	mistball: {
 		inherit: true,
 		noSketch: true,
@@ -271,10 +263,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		noSketch: true,
 	},
-	geargrind: {
-		inherit: true,
-		noSketch: true,
-	},
 	heavyslam: {
 		inherit: true,
 		noSketch: true,
@@ -316,10 +304,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		noSketch: true,
 	},
 	flyingpress: {
-		inherit: true,
-		noSketch: true,
-	},
-	forestscurse: {
 		inherit: true,
 		noSketch: true,
 	},
@@ -371,10 +355,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		noSketch: true,
 	},
-	spikyshield: {
-		inherit: true,
-		noSketch: true,
-	},
 	topsyturvy: {
 		inherit: true,
 		noSketch: true,
@@ -384,10 +364,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		noSketch: true,
 	},
 	watershuriken: {
-		inherit: true,
-		noSketch: true,
-	},
-	belch: {
 		inherit: true,
 		noSketch: true,
 	},
